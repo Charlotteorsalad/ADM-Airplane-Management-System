@@ -84,7 +84,7 @@ Advanced Database Management Assignment
 
 <h3>1. Queries</h3>
 <h4>Query1: Item and Customer Segmentation Analysis</h4>
-<p><strong>Purpose:</strong> This query helps identify key customer demographics and their purchasing behavior by analyzing the items purchased over a specific period. It provides insights into how different customer segments (based on state, gender, and age group) interact with different product categories.</p>
+<p><strong>Purpose:</strong> This query helps identify key customer demographics and their purchasing behavior by analyzing the items purchased over a specific period. It provides insights into how different customer segments (based on state, gender, and age group) interact with different product categories followed by market basket analysis.</p>
 <p><strong>Insights:</strong> This data can be used to design targeted marketing campaigns. For example, the high quantity of laptop purchases among young males in Selangor suggests a tech-savvy demographic that might respond well to promotions for electronics. Tailoring product recommendations based on these insights can lead to higher conversion rates and increased revenue.</p>
 
 <img src="https://github.com/user-attachments/assets/b29c6fbf-94db-4481-b009-5193afd713a0" alt="image" width="500"/>
