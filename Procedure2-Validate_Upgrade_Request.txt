@@ -1,0 +1,280 @@
+-- Enable DBMS_OUTPUT to show procedure results
+SET SERVEROUTPUT ON SIZE 1000000;
+SET VERIFY OFF;
+
+SET LINESIZE 100;
+SET PAGESIZE 1000;
+
+-- Define the procedure
+CREATE OR REPLACE PROCEDURE sp_ValidateUpgradeRequest (
+    p_ticket_id IN VARCHAR2,
+    p_new_class IN VARCHAR2,
+    p_is_valid OUT BOOLEAN,
+    p_message OUT VARCHAR2
+) AS
+    v_current_class VARCHAR2(50);
+    v_member_level VARCHAR2(50);
+    v_flight_id VARCHAR2(50);
+    v_departure_time TIMESTAMP;
+    v_member_points INT;
+    v_passenger_name VARCHAR2(100);
+    v_current_seat VARCHAR2(10);
+    v_member_id VARCHAR2(50);
+    v_seats_available NUMBER;
+    v_price_difference DECIMAL(10,2);
+    v_ticket_status VARCHAR2(50);
+
+    -- Function to determine class rank
+    FUNCTION get_class_rank(p_class VARCHAR2) RETURN INT IS
+    BEGIN
+        CASE p_class
+            WHEN 'Ultra Luxury' THEN RETURN 16;
+            WHEN 'Luxury' THEN RETURN 15;
+            WHEN 'Ultra First Class' THEN RETURN 14;
+            WHEN 'First Class Deluxe' THEN RETURN 13;
+            WHEN 'First Class Flex' THEN RETURN 12;
+            WHEN 'First Class' THEN RETURN 11;
+            WHEN 'Executive Business' THEN RETURN 10;
+            WHEN 'Business Elite' THEN RETURN 9;
+            WHEN 'Business Flex' THEN RETURN 8;
+            WHEN 'Business' THEN RETURN 7;
+            WHEN 'Premium Economy' THEN RETURN 6;
+            WHEN 'Economy Plus' THEN RETURN 5;
+            WHEN 'Economy Promo' THEN RETURN 4;
+            WHEN 'Economy Saver' THEN RETURN 3;
+            WHEN 'Economy' THEN RETURN 2;
+            WHEN 'Basic Economy' THEN RETURN 1;
+            ELSE RETURN 0;
+        END CASE;
+    END;
+
+    -- Procedure to display ticket details
+    PROCEDURE display_ticket_details IS
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE('Current Ticket Details:');
+        DBMS_OUTPUT.PUT_LINE('----------------------------------------');
+        DBMS_OUTPUT.PUT_LINE('Passenger: ' || v_passenger_name);
+        DBMS_OUTPUT.PUT_LINE('Current Class: ' || v_current_class);
+        DBMS_OUTPUT.PUT_LINE('Current Seat: ' || v_current_seat);
+        DBMS_OUTPUT.PUT_LINE('Flight ID: ' || v_flight_id);
+        DBMS_OUTPUT.PUT_LINE('Departure Time: ' || TO_CHAR(v_departure_time, 'DD-MON-YYYY HH24:MI'));
+        DBMS_OUTPUT.PUT_LINE('Membership Level: ' || v_member_level);
+        DBMS_OUTPUT.PUT_LINE('Available Points: ' || v_member_points);
+        DBMS_OUTPUT.PUT_LINE('----------------------------------------');
+    END;
+
+BEGIN
+    p_is_valid := TRUE;
+
+    -- Fetch current ticket details
+    BEGIN
+        SELECT 
+            sc.ClassType, 
+            m.MembershipLevel, 
+            f.FlightID,           
+            f.DepartureTime, 
+            m.Points, 
+            p.PassengerName,
+            t.SeatNumber,
+            m.MemberID,
+            t.TicketStatus
+        INTO 
+            v_current_class, 
+            v_member_level, 
+            v_flight_id, 
+            v_departure_time, 
+            v_member_points, 
+            v_passenger_name,
+            v_current_seat,
+            v_member_id,
+            v_ticket_status
+        FROM Ticket t
+        JOIN SeatClass sc ON t.ClassID = sc.ClassID
+        JOIN Booking b ON t.BookingID = b.BookingID
+        JOIN Member m ON b.MemberID = m.MemberID
+        JOIN Flight f ON t.FlightID = f.FlightID      
+        JOIN Passenger p ON t.PassengerID = p.PassengerID
+        WHERE t.TicketID = p_ticket_id;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            p_is_valid := FALSE;
+            p_message := 'Invalid ticket ID';
+            RETURN;
+    END;
+
+    -- Check if the ticket has already flown
+    IF v_ticket_status = 'Completed' THEN
+        p_is_valid := FALSE;
+        p_message := 'Flight has already departed. Upgrade not possible.';
+        RETURN;
+    END IF;
+
+    -- Display current ticket details
+    display_ticket_details();
+
+    -- Check if upgrade is valid
+    IF get_class_rank(p_new_class) <= get_class_rank(v_current_class) THEN
+        IF p_new_class = v_current_class THEN
+            p_is_valid := FALSE;
+            p_message := 'New class is the same as current class. No upgrade needed.';
+        ELSE
+            p_is_valid := FALSE;
+            p_message := 'Cannot downgrade to a lower class.';
+        END IF;
+        RETURN;
+    END IF;
+
+    -- Proceed with upgrade validation
+    IF v_departure_time - SYSTIMESTAMP < INTERVAL '1' DAY THEN
+        p_is_valid := FALSE;
+        p_message := 'Upgrades are not allowed within 24 hours or after departure';
+        RETURN;
+    END IF;
+
+    -- Check seat availability in the new class
+    SELECT COUNT(*)
+    INTO v_seats_available
+    FROM Ticket t
+    JOIN SeatClass sc ON t.ClassID = sc.ClassID
+    WHERE t.FlightID = v_flight_id
+    AND sc.ClassType = p_new_class;
+
+    IF v_seats_available = 0 THEN
+        p_is_valid := FALSE;
+        p_message := 'No seats available in requested class';
+        RETURN;
+    END IF;
+
+    -- Check price difference and member points
+    SELECT ABS(sc_new.ClassRate - sc_current.ClassRate)
+    INTO v_price_difference
+    FROM SeatClass sc_new, SeatClass sc_current
+    WHERE sc_new.ClassType = p_new_class
+    AND sc_current.ClassType = v_current_class;
+
+    IF v_member_points < v_price_difference * 10000 THEN 
+        p_is_valid := FALSE;
+        p_message := 'Insufficient points for upgrade';
+        RETURN;
+    END IF;
+
+    -- Check member eligibility based on membership level
+    IF (v_member_level = 'Bronze' AND p_new_class IN ('Business', 'First Class')) OR
+       (v_member_level = 'Silver' AND p_new_class = 'First Class') THEN
+        p_is_valid := FALSE;
+        p_message := v_member_level || ' members are not eligible for ' || p_new_class || ' upgrades';
+        RETURN;
+    END IF;
+
+    -- If all checks pass, the upgrade is valid
+    p_message := 'Upgrade request is valid. Price Difference: RM' || 
+                 TO_CHAR(v_price_difference, '999,999.99') || 
+                 ', Points Required: ' || TO_CHAR(v_price_difference * 10000, '999,999');
+
+    -- Update the Ticket table with the new class if valid
+    IF p_is_valid THEN
+        UPDATE Ticket
+        SET ClassID = (SELECT ClassID FROM SeatClass WHERE ClassType = p_new_class)
+        WHERE TicketID = p_ticket_id;
+    END IF;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        p_is_valid := FALSE;
+        p_message := 'An error occurred: ' || SQLERRM;
+END sp_ValidateUpgradeRequest;
+/
+
+-- Prompt for user input
+ACCEPT ticket_id CHAR PROMPT 'Enter the Ticket ID: '
+
+-- Display current class and allow user to select new class
+DECLARE
+    v_ticket_id VARCHAR2(50) := TRIM('&ticket_id');
+    v_current_class VARCHAR2(50);
+BEGIN
+    IF v_ticket_id IS NULL OR LENGTH(v_ticket_id) = 0 THEN
+        DBMS_OUTPUT.PUT_LINE('Error: Ticket ID cannot be empty.');
+        RETURN;
+    END IF;
+
+    BEGIN
+        SELECT sc.ClassType
+        INTO v_current_class
+        FROM Ticket t
+        JOIN SeatClass sc ON t.ClassID = sc.ClassID
+        WHERE t.TicketID = v_ticket_id;
+
+        DBMS_OUTPUT.PUT_LINE('Current Class: ' || v_current_class);
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            DBMS_OUTPUT.PUT_LINE('Error: Invalid ticket ID.');
+            RETURN;
+    END;
+END;
+/
+
+-- Display class selection menu in descending order (highest to lowest)
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Select the New Class:');
+    DBMS_OUTPUT.PUT_LINE('1. Ultra Luxury');
+    DBMS_OUTPUT.PUT_LINE('2. Luxury');
+    DBMS_OUTPUT.PUT_LINE('3. Ultra First Class');
+    DBMS_OUTPUT.PUT_LINE('4. First Class Deluxe');
+    DBMS_OUTPUT.PUT_LINE('5. First Class Flex');
+    DBMS_OUTPUT.PUT_LINE('6. First Class');
+    DBMS_OUTPUT.PUT_LINE('7. Executive Business');
+    DBMS_OUTPUT.PUT_LINE('8. Business Elite');
+    DBMS_OUTPUT.PUT_LINE('9. Business Flex');
+    DBMS_OUTPUT.PUT_LINE('10. Business');
+    DBMS_OUTPUT.PUT_LINE('11. Premium Economy');
+    DBMS_OUTPUT.PUT_LINE('12. Economy Plus');
+    DBMS_OUTPUT.PUT_LINE('13. Economy Promo');
+    DBMS_OUTPUT.PUT_LINE('14. Economy Saver');
+    DBMS_OUTPUT.PUT_LINE('15. Economy');
+    DBMS_OUTPUT.PUT_LINE('16. Basic Economy');
+END;
+/
+
+-- Get user input for the class selection
+ACCEPT class_selection NUMBER PROMPT 'Enter the number corresponding to the new class: '
+
+-- Convert class selection to class name and call the procedure
+DECLARE
+    v_new_class VARCHAR2(50);
+    v_is_valid BOOLEAN;
+    v_message VARCHAR2(1000);
+BEGIN
+    CASE &class_selection
+        WHEN 1 THEN v_new_class := 'Ultra Luxury';
+        WHEN 2 THEN v_new_class := 'Luxury';
+        WHEN 3 THEN v_new_class := 'Ultra First Class';
+        WHEN 4 THEN v_new_class := 'First Class Deluxe';
+        WHEN 5 THEN v_new_class := 'First Class Flex';
+        WHEN 6 THEN v_new_class := 'First Class';
+        WHEN 7 THEN v_new_class := 'Executive Business';
+        WHEN 8 THEN v_new_class := 'Business Elite';
+        WHEN 9 THEN v_new_class := 'Business Flex';
+        WHEN 10 THEN v_new_class := 'Business';
+        WHEN 11 THEN v_new_class := 'Premium Economy';
+        WHEN 12 THEN v_new_class := 'Economy Plus';
+        WHEN 13 THEN v_new_class := 'Economy Promo';
+        WHEN 14 THEN v_new_class := 'Economy Saver';
+        WHEN 15 THEN v_new_class := 'Economy';
+        WHEN 16 THEN v_new_class := 'Basic Economy';
+        ELSE
+            DBMS_OUTPUT.PUT_LINE('Error: Invalid class selection.');
+            RETURN;
+    END CASE;
+
+    -- Execute the procedure
+    sp_ValidateUpgradeRequest('&ticket_id', v_new_class, v_is_valid, v_message);
+    
+    -- Output the results
+    DBMS_OUTPUT.PUT_LINE('Upgrade Request Validation Results:');
+    DBMS_OUTPUT.PUT_LINE('----------------------------------------');
+    DBMS_OUTPUT.PUT_LINE('Requested Class: ' || v_new_class);
+    DBMS_OUTPUT.PUT_LINE('Validation Result: ' || CASE WHEN v_is_valid THEN 'VALID' ELSE 'INVALID' END);
+    DBMS_OUTPUT.PUT_LINE('Message: ' || v_message);
+END;
+/

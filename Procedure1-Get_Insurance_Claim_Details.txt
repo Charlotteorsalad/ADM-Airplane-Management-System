@@ -1,0 +1,172 @@
+CREATE OR REPLACE PROCEDURE sp_GetInsuranceClaimDetails (
+    p_claim_id IN VARCHAR2,
+    p_claim_details OUT SYS_REFCURSOR,
+    p_related_claims OUT SYS_REFCURSOR
+)
+AS
+BEGIN
+    -- Open the cursor for the main claim details
+    OPEN p_claim_details FOR
+    SELECT 
+        ic.ClaimID, 
+        TO_CHAR(ic.ClaimDate, 'DD-MON-YYYY') AS ClaimDate, 
+        ic.ClaimAmount, 
+        ic.ClaimStatus, 
+        ic.ClaimReason,
+        i.CoverageType AS Coverage,
+        i.Premium,
+        p.PassengerName AS Passenger,
+        f.FlightID AS Flight,
+        f.Origin || ' to ' || f.Destination AS Route,
+        TO_CHAR(f.DepartureTime, 'DD-MON-YYYY HH24:MI') AS Departure
+    FROM InsuranceClaim ic
+    JOIN Ticket t ON ic.TicketID = t.TicketID
+    JOIN Insurance i ON t.InsuranceID = i.InsuranceID
+    JOIN Passenger p ON t.PassengerID = p.PassengerID
+    JOIN Flight f ON t.FlightID = f.FlightID
+    WHERE ic.ClaimID = p_claim_id;
+
+    -- Open the cursor for related claims within the last 36 months
+    OPEN p_related_claims FOR
+    SELECT 
+        rc.ClaimID, 
+        TO_CHAR(rc.ClaimDate, 'DD-MON-YYYY') AS ClaimDate, 
+        rc.ClaimAmount, 
+        rc.ClaimStatus, 
+        rc.ClaimReason
+    FROM InsuranceClaim rc
+    WHERE rc.TicketID IN (
+        SELECT t.TicketID 
+        FROM Ticket t
+        JOIN Passenger p ON t.PassengerID = p.PassengerID
+        WHERE p.PassengerID = (SELECT PassengerID 
+                               FROM Ticket 
+                               WHERE TicketID = (SELECT TicketID 
+                                                 FROM InsuranceClaim 
+                                                 WHERE ClaimID = p_claim_id))
+    )
+    AND rc.ClaimDate >= ADD_MONTHS(SYSDATE, -24)
+    AND rc.ClaimID != p_claim_id; -- Exclude the current claim ID
+
+END sp_GetInsuranceClaimDetails;
+/
+
+
+-- Set up the display format
+SET PAGESIZE 1000
+SET LINESIZE 100
+SET FEEDBACK OFF
+SET VERIFY OFF
+SET SERVEROUTPUT ON SIZE 1000000
+
+-- Prompt for input
+ACCEPT claim_id CHAR PROMPT 'Enter the Claim ID: '
+
+-- PL/SQL block to call the procedure and handle errors
+DECLARE
+    v_claim_id VARCHAR2(50);
+    v_claim_details SYS_REFCURSOR;
+    v_related_claims SYS_REFCURSOR;
+
+    -- Variables for claim details
+    v_claim_date VARCHAR2(20);
+    v_claim_amount VARCHAR2(20);
+    v_status VARCHAR2(20);
+    v_reason VARCHAR2(30);
+    v_coverage VARCHAR2(30);
+    v_premium VARCHAR2(20);
+    v_passenger VARCHAR2(100);
+    v_flight VARCHAR2(20);
+    v_route VARCHAR2(100);
+    v_departure VARCHAR2(20);
+
+    -- Variables for related claims
+    v_rel_claim_id VARCHAR2(50);
+    v_rel_date VARCHAR2(20);
+    v_rel_amount VARCHAR2(20);
+    v_rel_status VARCHAR2(20);
+    v_rel_reason VARCHAR2(30);
+
+    -- Counter for related claims
+    v_related_count NUMBER := 0;
+BEGIN
+    -- Read the input
+    v_claim_id := '&claim_id';
+
+    -- Check if input is empty
+    IF v_claim_id IS NULL OR TRIM(v_claim_id) IS NULL THEN
+        DBMS_OUTPUT.PUT_LINE('Error: Claim ID cannot be empty. Exiting.');
+        RETURN;
+    END IF;
+
+    -- Add some space between input and output
+    DBMS_OUTPUT.PUT_LINE('');
+    DBMS_OUTPUT.PUT_LINE('----------------------------------------------------');
+    DBMS_OUTPUT.PUT_LINE('');
+
+    -- Call the stored procedure with the user input
+    sp_GetInsuranceClaimDetails(v_claim_id, v_claim_details, v_related_claims);
+
+    -- Fetch and display main claim details
+    FETCH v_claim_details INTO v_claim_id, v_claim_date, v_claim_amount, v_status, v_reason,
+                               v_coverage, v_premium, v_passenger, v_flight, v_route, v_departure;
+
+    IF v_claim_details%FOUND THEN
+        DBMS_OUTPUT.PUT_LINE('Insurance Claim Details:');
+        DBMS_OUTPUT.PUT_LINE('----------------------------------------------------');
+        DBMS_OUTPUT.PUT_LINE('Claim ID:    ' || v_claim_id);
+        DBMS_OUTPUT.PUT_LINE('Date:        ' || v_claim_date);
+        DBMS_OUTPUT.PUT_LINE('Amount:      RM' || v_claim_amount);
+        DBMS_OUTPUT.PUT_LINE('Status:      ' || v_status);
+        DBMS_OUTPUT.PUT_LINE('Reason:      ' || v_reason);
+        DBMS_OUTPUT.PUT_LINE('Coverage:    ' || v_coverage);
+        DBMS_OUTPUT.PUT_LINE('Premium:     RM' || v_premium);
+        DBMS_OUTPUT.PUT_LINE('Passenger:   ' || v_passenger);
+        DBMS_OUTPUT.PUT_LINE('Flight:      ' || v_flight);
+        DBMS_OUTPUT.PUT_LINE('Route:       ' || v_route);
+        DBMS_OUTPUT.PUT_LINE('Departure:   ' || v_departure);
+        DBMS_OUTPUT.PUT_LINE('----------------------------------------------------');
+
+         DBMS_OUTPUT.PUT_LINE(chr(10)); -- This should add a newline
+
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('No claim found with the given ID.');
+    END IF;
+
+    -- Fetch and display related claims
+    DBMS_OUTPUT.PUT_LINE('----------------------------------------------------');
+    DBMS_OUTPUT.PUT_LINE('Related Claims (Last 24 Months):');
+    DBMS_OUTPUT.PUT_LINE('----------------------------------------------------');
+    DBMS_OUTPUT.PUT_LINE('Claim ID    Date       Amount     Status     Reason');
+    DBMS_OUTPUT.PUT_LINE('----------------------------------------------------');
+
+    LOOP
+        FETCH v_related_claims INTO v_rel_claim_id, v_rel_date, v_rel_amount, v_rel_status, v_rel_reason;
+        EXIT WHEN v_related_claims%NOTFOUND;
+
+        DBMS_OUTPUT.PUT_LINE(RPAD(v_rel_claim_id, 12) || ' ' ||
+                             RPAD(v_rel_date, 10) || ' ' ||
+                             LPAD('RM' || v_rel_amount, 10) || ' ' ||
+                             RPAD(v_rel_status, 10) || ' ' ||
+                             v_rel_reason);
+
+        v_related_count := v_related_count + 1;
+        DBMS_OUTPUT.PUT_LINE('----------------------------------------------------');
+    END LOOP;
+
+    IF v_related_count = 0 THEN
+        DBMS_OUTPUT.PUT_LINE('No related claims found in the last 24 Months.');
+        DBMS_OUTPUT.PUT_LINE('----------------------------------------------------');
+    END IF;
+
+    CLOSE v_claim_details;
+    CLOSE v_related_claims;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
+END;
+/
+
+SET FEEDBACK ON
+SET VERIFY ON

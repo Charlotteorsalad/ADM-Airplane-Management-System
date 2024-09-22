@@ -1,0 +1,271 @@
+CLEAR COLUMNS;
+CLEAR COMPUTES;
+
+SET SERVEROUTPUT ON
+SET LINESIZE 150       
+SET PAGESIZE 50        
+SET VERIFY OFF
+SET FEEDBACK OFF
+
+-- Formatting for individual columns to align properly
+COLUMN booking_month FORMAT A10
+COLUMN total_bookings FORMAT 9999999
+COLUMN cancellations FORMAT 9999999
+COLUMN rate FORMAT 999.99
+COLUMN refund_amount FORMAT $99999.99
+COLUMN trend FORMAT A10
+COLUMN route FORMAT A30
+COLUMN cancellations_percent FORMAT 999.99
+COLUMN total_cancellations FORMAT 9999999
+COLUMN total_refund FORMAT $99999.99
+COLUMN avg_refund FORMAT $99999.99
+COLUMN cancellation_rate FORMAT 999.99
+
+ACCEPT p_start_date DATE FORMAT 'DD-MON-YYYY' PROMPT 'Enter the Start Date (DD-MON-YYYY): '
+ACCEPT p_end_date DATE FORMAT 'DD-MON-YYYY' PROMPT 'Enter the End Date (DD-MON-YYYY): '
+
+DECLARE
+    v_start_date DATE := TO_DATE('&p_start_date', 'DD-MON-YYYY');
+    v_end_date DATE := TO_DATE('&p_end_date', 'DD-MON-YYYY');
+    v_min_cancellations NUMBER := 5;
+    v_total_bookings NUMBER := 0;
+    v_total_cancellations NUMBER := 0;
+    v_total_refund NUMBER := 0;
+    v_avg_refund NUMBER := 0;
+    v_cancellation_rate NUMBER := 0;
+    v_prev_month_cancellations NUMBER := 0;
+    v_cancellation_trend NUMBER := 0;
+    v_max_cancellation_rate NUMBER := 0;
+    v_min_cancellation_rate NUMBER := 100;
+    v_max_cancellation_month VARCHAR2(7);
+    v_min_cancellation_month VARCHAR2(7);
+
+    -- Procedures for printing text
+    PROCEDURE print_centered(p_text IN VARCHAR2) IS
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE(RPAD(' ', (75 - LENGTH(p_text)) / 2) || p_text);
+    END;
+
+    PROCEDURE print_line IS
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE(LPAD('-', 150, '-'));
+    END;
+
+    FUNCTION predict_next_cancellation_rate RETURN NUMBER IS
+    BEGIN
+        RETURN DBMS_RANDOM.VALUE(0, 1); -- Example: Random prediction between 0% and 100%
+    END;
+
+BEGIN
+    IF v_start_date > v_end_date THEN
+        DBMS_OUTPUT.PUT_LINE('Error: Start date must be before end date');
+        RETURN;
+    END IF;
+
+ -- Print report header
+print_line;
+DBMS_OUTPUT.PUT_LINE('|                            		 	     BOOKING CANCELLATION AND REFUND ANALYSIS REPORT                             		     |'); 
+DBMS_OUTPUT.PUT_LINE('|                                  			     Period: ' || TO_CHAR(v_start_date, 'DD-MON-YYYY') || ' to ' || TO_CHAR(v_end_date, 'DD-MON-YYYY') || '                                  		     |');
+DBMS_OUTPUT.PUT_LINE('|                                  			     Generated on: ' || TO_CHAR(SYSDATE, 'DD-MON-YYYY HH24:MI:SS') || '                                  		     |');
+print_line;
+
+-- Print table header
+print_line;
+DBMS_OUTPUT.PUT_LINE('| Month    	| Total Bookings | Cancellations 	| Rate(%)   	| Refund Amount 	| Trend   					     |');
+print_line;
+
+-- Main cursor to calculate totals and averages
+FOR rec IN (
+    SELECT 
+        TO_CHAR(b.BookingTime, 'YYYY-MM') AS booking_month,
+        COUNT(*) AS total_bookings,
+        SUM(CASE WHEN b.BookingStatus = 'Cancelled' THEN 1 ELSE 0 END) AS cancellations,
+        SUM(CASE WHEN b.BookingStatus = 'Cancelled' THEN NVL(r.RefundAmount, 0) ELSE 0 END) AS total_refund
+    FROM 
+        Booking b
+        LEFT JOIN Ticket t ON b.BookingID = t.BookingID
+        LEFT JOIN Flight f ON t.FlightID = f.FlightID
+        LEFT JOIN Payment p ON b.BookingID = p.BookingID
+        LEFT JOIN Refund r ON p.PaymentID = r.PaymentID
+    WHERE 
+        b.BookingTime BETWEEN v_start_date AND v_end_date
+    GROUP BY 
+        TO_CHAR(b.BookingTime, 'YYYY-MM')
+    ORDER BY 
+        booking_month
+) LOOP
+    v_total_bookings := v_total_bookings + rec.total_bookings;
+    v_total_cancellations := v_total_cancellations + rec.cancellations;
+    v_total_refund := v_total_refund + rec.total_refund;
+    
+    -- Calculate month-over-month trend
+    IF v_prev_month_cancellations > 0 THEN
+        v_cancellation_trend := ((rec.cancellations - v_prev_month_cancellations) / NULLIF(v_prev_month_cancellations, 0)) * 100;
+    ELSE
+        v_cancellation_trend := 0;
+    END IF;
+
+    -- Calculate current cancellation rate
+    IF rec.total_bookings > 0 THEN
+        DECLARE
+            v_current_rate NUMBER := (rec.cancellations / rec.total_bookings) * 100;
+        BEGIN
+            -- Determine maximum and minimum cancellation rates and corresponding months
+            IF v_current_rate > v_max_cancellation_rate THEN
+                v_max_cancellation_rate := v_current_rate;
+                v_max_cancellation_month := rec.booking_month;
+            END IF;
+            
+            IF v_current_rate < v_min_cancellation_rate THEN
+                v_min_cancellation_rate := v_current_rate;
+                v_min_cancellation_month := rec.booking_month;
+            END IF;
+        END;
+    END IF;
+
+    -- Print monthly details
+    DBMS_OUTPUT.PUT_LINE(
+        '| ' || RPAD(rec.booking_month, 8) || 
+        ' 	| ' || LPAD(rec.total_bookings, 13) || 
+        '  | ' || LPAD(rec.cancellations, 12) || 
+        ' 	| ' || RPAD(TO_CHAR(ROUND(rec.cancellations / NULLIF(rec.total_bookings, 0) * 100, 2), '990.00') || ' %', 7, ' ') || 
+        ' 	| ' || RPAD('RM' || TO_CHAR(rec.total_refund, '999990.00'), 13, ' ') || 
+        ' 	| ' || RPAD(LPAD(CASE 
+            WHEN v_cancellation_trend > 0 THEN '+ ' || ROUND(v_cancellation_trend, 2) || '%'
+            WHEN v_cancellation_trend < 0 THEN '- ' || ABS(ROUND(v_cancellation_trend, 2)) || '%'
+            ELSE '0%'
+        END, 4), 7, ' ') || ' 					     |'
+    );
+
+    -- Update previous month cancellations for trend calculation
+    v_prev_month_cancellations := rec.cancellations;
+END LOOP;
+
+v_cancellation_rate := ROUND(v_total_cancellations / NULLIF(v_total_bookings, 0) * 100, 2);
+v_avg_refund := ROUND(v_total_refund / NULLIF(v_total_cancellations, 0), 2);
+
+-- Print summary statistics
+print_line;
+print_line;
+DBMS_OUTPUT.PUT_LINE('|                                   				   SUMMARY STATISTICS                                                  	             |');
+print_line;
+DBMS_OUTPUT.PUT_LINE('| Total Bookings:                  ' || 
+    LPAD(v_total_bookings, 10) || RPAD(' ', 121 - LENGTH(v_total_bookings) - LENGTH('Total Bookings:'), ' ') || ' |');
+DBMS_OUTPUT.PUT_LINE('| Total Cancellations:             ' || 
+    LPAD(v_total_cancellations, 10) || RPAD(' ', 124 - LENGTH(v_total_cancellations) - LENGTH('Total Cancellations:'), ' ') || ' |');
+DBMS_OUTPUT.PUT_LINE('| Overall Cancellation Rate:       ' || 
+    RPAD('    ' || TO_CHAR(v_cancellation_rate, '990.00') || '%', 17, ' ') || -- Added four spaces before the value
+    RPAD(' ', 132 - LENGTH(v_cancellation_rate) - LENGTH('Overall Cancellation Rate:    ') - 1, ' ') || '|');
+DBMS_OUTPUT.PUT_LINE('| Total Refund Amount:             RM' || 
+    RPAD(TO_CHAR(v_total_refund, '999990.00'), 10, ' ') || RPAD(' ', 131 - LENGTH(v_total_refund) - LENGTH('Total Refund Amount: RM'), ' ') || ' |');
+DBMS_OUTPUT.PUT_LINE('| Average Refund per Cancellation: RM' || 
+    RPAD(TO_CHAR(v_avg_refund, '999990.00'), 10, ' ') || RPAD(' ', 142 - LENGTH(v_avg_refund) - LENGTH('Average Refund per Cancellation: RM'), ' ') || ' |');
+
+print_line;
+
+-- Highest and Lowest Rate for selected date
+ 
+    print_line;
+DBMS_OUTPUT.PUT_LINE('| 							HIGHEST AND LOWEST RATE FOR SELECTED DATE RANGE 					     |');
+    print_line;
+    DBMS_OUTPUT.PUT_LINE('| ' || 
+    RPAD('Highest cancellation rate: ' || ROUND(v_max_cancellation_rate, 2) || '% in ' || v_max_cancellation_month, 146) || ' |');
+DBMS_OUTPUT.PUT_LINE('| ' || 
+    RPAD('Lowest cancellation rate: ' || ROUND(v_min_cancellation_rate, 2) || '% in ' || v_min_cancellation_month, 146) || ' |');
+
+   print_line;
+
+-- Print top 3 cancelled routes for the entire period
+print_line;
+DBMS_OUTPUT.PUT_LINE('| 							TOP 3 CANCELLED ROUTES FOR SELECTED DATE RANGE 					             |');
+print_line;
+
+FOR route_rec IN (
+    SELECT * FROM (
+        SELECT 
+            f.Origin || ' - ' || f.Destination AS route,
+            COUNT(*) AS cancellations
+        FROM 
+            Booking b
+            JOIN Ticket t ON b.BookingID = t.BookingID
+            JOIN Flight f ON t.FlightID = f.FlightID
+        WHERE 
+            b.BookingTime BETWEEN v_start_date AND v_end_date
+            AND b.BookingStatus = 'Cancelled'
+        GROUP BY 
+            f.Origin, f.Destination
+        ORDER BY 
+            cancellations DESC
+    )
+    WHERE ROWNUM <= 3 -- Limit to top 3 routes
+) LOOP
+    DBMS_OUTPUT.PUT_LINE('| ' || RPAD(route_rec.route, 65) || '	| ' || LPAD(route_rec.cancellations, 20) || ' (' || ROUND(route_rec.cancellations * 100 / NULLIF(v_total_cancellations, 0), 2) || '%) 					     |');
+END LOOP;
+
+DBMS_OUTPUT.PUT_LINE('');
+print_line;
+
+-- Prediction Section
+DECLARE
+    v_predicted_rate NUMBER;
+BEGIN
+    v_predicted_rate := predict_next_cancellation_rate;
+    print_line;
+  DBMS_OUTPUT.PUT_LINE('| 								PREDICTION FOR NEXT MONTH 					            	     |');
+    print_line;
+    DBMS_OUTPUT.PUT_LINE('| Predicted Cancellation Rate: ' || 
+    RPAD(ROUND(v_predicted_rate * 100, 2) || '%', 117) || ' |');
+
+IF v_predicted_rate > v_cancellation_rate / 100 THEN
+    DBMS_OUTPUT.PUT_LINE('| Warning: ' || 
+        RPAD('Cancellation rate is predicted to increase!', 137) || ' |'); 
+ELSE
+    DBMS_OUTPUT.PUT_LINE('| Good news: ' || 
+        RPAD('Cancellation rate is predicted to decrease or remain stable.', 137) || ' |'); 
+END IF;
+
+END;
+
+    -- Recommendations based on analysis
+    print_line;
+    print_line;
+    DBMS_OUTPUT.PUT_LINE('| 								RECOMMENDATIONS 					            	             |');
+    print_line;
+    DECLARE
+        v_rec_count NUMBER := 1;
+    BEGIN
+        IF v_cancellation_rate > 10 THEN
+           DBMS_OUTPUT.PUT_LINE('| ' || 
+    RPAD(v_rec_count || '. Review and improve cancellation policies to reduce the high cancellation rate.', 146) || ' |');
+            v_rec_count := v_rec_count + 1;
+        END IF;
+        IF v_cancellation_trend > 5 THEN
+            DBMS_OUTPUT.PUT_LINE('| ' || 
+    RPAD(v_rec_count || '. Investigate the cause of the increasing cancellation trend.', 146) || ' |');
+            v_rec_count := v_rec_count + 1;
+        END IF;
+        IF v_avg_refund > 100 THEN
+            DBMS_OUTPUT.PUT_LINE('| ' || 
+    RPAD(v_rec_count || '. Consider offering travel insurance to mitigate high refund costs.', 146) || ' |');
+            v_rec_count := v_rec_count + 1;
+        END IF;
+        IF v_max_cancellation_rate - v_min_cancellation_rate > 10 THEN
+            DBMS_OUTPUT.PUT_LINE('| ' || 
+    RPAD(v_rec_count || '. Analyze factors contributing to high variability in monthly cancellation rates.', 146) || ' |');
+            v_rec_count := v_rec_count + 1;
+        END IF;
+        DBMS_OUTPUT.PUT_LINE('| ' || 
+    RPAD(v_rec_count || '. Conduct customer surveys to understand reasons for cancellations and improve services accordingly.', 146) || ' |');
+v_rec_count := v_rec_count + 1;
+    END;
+
+    print_line;
+
+    -- Print end of report
+    DBMS_OUTPUT.PUT_LINE('====================================================================END OF REPORT=====================================================================');
+
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('| An error occurred: ' || SQLERRM || ' |');
+END;
+/

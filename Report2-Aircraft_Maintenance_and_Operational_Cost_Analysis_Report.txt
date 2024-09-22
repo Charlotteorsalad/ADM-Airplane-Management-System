@@ -1,0 +1,341 @@
+CLEAR COLUMNS;
+CLEAR COMPUTES;
+
+-- Enable server output and set formatting options
+SET SERVEROUTPUT ON
+SET LINESIZE 150
+SET PAGESIZE 50
+
+-- Prompt user for input dates
+ACCEPT start_date CHAR PROMPT 'Enter the start date (DD-MON-YYYY): '
+ACCEPT end_date CHAR PROMPT 'Enter the end date (DD-MON-YYYY): '
+
+-- Declare the procedure
+CREATE OR REPLACE PROCEDURE aircraft_maintenance_analysis(
+    p_start_date DATE,
+    p_end_date DATE
+) AS
+    -- Declare variables for calculations
+    v_top_n NUMBER := 5; -- Number of top items to display
+    v_rec_num NUMBER := 1; -- Dynamic numbering for recommendations
+    v_total_maintenance_cost NUMBER := 0; -- Total cost for percentage calculation
+    v_total_maintenance_count NUMBER := 0; -- Total count of maintenances
+    v_avg_maintenance_cost NUMBER := 0; -- Average cost per maintenance
+
+    -- Declare cursors
+    CURSOR c_model_breakdown IS
+        SELECT 
+            a.Model,
+            COUNT(DISTINCT am.AirplaneID) AS maintenance_count,
+            SUM(p.PartCost * am.PartQty) AS total_cost,
+            AVG(p.PartCost * am.PartQty) AS avg_cost_per_maintenance,
+            ROUND((COUNT(DISTINCT am.AirplaneID) / 
+                  NULLIF((SELECT COUNT(*) FROM Airplane WHERE Model = a.Model), 0)) * 100, 2) AS maintenance_frequency
+        FROM 
+            Airplane a
+            LEFT JOIN AirplaneMaintenance am ON a.AirplaneID = am.AirplaneID
+            LEFT JOIN Part p ON am.PartID = p.PartID
+        WHERE 
+            am.AirplaneMaintenanceDate BETWEEN p_start_date AND p_end_date
+            OR am.AirplaneMaintenanceDate IS NULL
+        GROUP BY 
+            a.Model
+        ORDER BY 
+            maintenance_frequency DESC;
+
+    CURSOR c_frequent_repairs IS
+        SELECT 
+            p.PartName,
+            COUNT(*) AS repair_count,
+            SUM(p.PartCost * am.PartQty) AS total_cost,
+            COUNT(DISTINCT am.AirplaneID) AS aircraft_affected -- Number of aircraft affected by each part repair
+        FROM 
+            AirplaneMaintenance am
+            JOIN Part p ON am.PartID = p.PartID
+        WHERE 
+            am.AirplaneMaintenanceDate BETWEEN p_start_date AND p_end_date
+        GROUP BY 
+            p.PartName
+        ORDER BY 
+            repair_count DESC;
+
+    -- Function to predict future maintenance costs
+    FUNCTION predict_future_cost(p_model VARCHAR2) RETURN NUMBER IS
+        v_avg_cost NUMBER;
+        v_maintenance_frequency NUMBER;
+        v_prediction NUMBER;
+    BEGIN
+        SELECT 
+            AVG(p.PartCost * am.PartQty),
+            COUNT(DISTINCT am.AirplaneID) / NULLIF(COUNT(DISTINCT a.AirplaneID), 0)
+        INTO 
+            v_avg_cost, v_maintenance_frequency
+        FROM 
+            Airplane a
+            LEFT JOIN AirplaneMaintenance am ON a.AirplaneID = am.AirplaneID
+            LEFT JOIN Part p ON am.PartID = p.PartID
+        WHERE 
+            a.Model = p_model
+            AND am.AirplaneMaintenanceDate BETWEEN p_start_date AND p_end_date;
+
+        -- Simple prediction: average cost * frequency * 12 months
+        v_prediction := v_avg_cost * v_maintenance_frequency * 12;
+        
+        RETURN v_prediction;
+    END predict_future_cost;
+
+    -- Procedure to print a horizontal line
+    PROCEDURE print_line IS
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE(LPAD('-', 150, '-'));
+    END print_line;
+
+BEGIN
+    -- Input validation
+    IF p_start_date > p_end_date THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Start date must be before end date');
+    END IF;
+
+    -- Print report header
+    print_line;
+    DBMS_OUTPUT.PUT_LINE('| ' || RPAD('                             				AIRCRAFT MAINTENANCE AND COST ANALYSIS REPORT', 125) || ' |');
+    DBMS_OUTPUT.PUT_LINE('| ' || RPAD('                            					Period: ' || TO_CHAR(p_start_date, 'DD-MON-YYYY') || ' to ' || TO_CHAR(p_end_date, 'DD-MON-YYYY'), 117) || ' |');
+    print_line;
+
+    -- Calculate totals
+    SELECT 
+        SUM(p.PartCost * am.PartQty),
+        COUNT(DISTINCT am.MaintenanceID)
+    INTO 
+        v_total_maintenance_cost, v_total_maintenance_count
+    FROM 
+        AirplaneMaintenance am
+        JOIN Part p ON am.PartID = p.PartID
+    WHERE 
+        am.AirplaneMaintenanceDate BETWEEN p_start_date AND p_end_date;
+
+    v_avg_maintenance_cost := ROUND(v_total_maintenance_cost / NULLIF(v_total_maintenance_count, 0), 2);
+
+    -- Print summary statistics
+    print_line;
+   DBMS_OUTPUT.PUT_LINE('| Total Maintenance Cost: RM' || RPAD(TO_CHAR(v_total_maintenance_cost, '999,999,999.00'), 120) || ' |');
+DBMS_OUTPUT.PUT_LINE('| Total Maintenance Count: ' || RPAD(v_total_maintenance_count, 121) || ' |');
+DBMS_OUTPUT.PUT_LINE('| Average Cost per Maintenance: RM' || RPAD(TO_CHAR(v_avg_maintenance_cost, '999,999,999.00'), 114) || ' |');
+
+    print_line;
+
+    -- Print most frequent repairs
+    print_line;
+    DBMS_OUTPUT.PUT_LINE('| ' || 
+    RPAD(LPAD('TOP ' || v_top_n || ' MOST FREQUENT REPAIRS', 
+    (140 + LENGTH('TOP ' || v_top_n || ' MOST FREQUENT REPAIRS')) / 2, ' '), 
+    146, ' ') || ' |');
+
+    print_line;
+    DBMS_OUTPUT.PUT_LINE('| Part Name' || RPAD(' ', 26 - LENGTH('Part Name')) || 
+                       ' | Repair Count' || RPAD(' ', 26 - LENGTH('Repair Count')) || 
+                       ' | Total Cost' || RPAD(' ', 26 - LENGTH('Total Cost')) || 
+                       ' | % of Total Cost' || RPAD(' ', 26 - LENGTH('% of Total Cost')) || 
+                       ' | No. of Aircraft Affected' || RPAD(' ', 30 - LENGTH('No. of Aircraft Affected')) || ' |');
+    print_line;
+
+    FOR rec IN c_frequent_repairs LOOP
+        EXIT WHEN c_frequent_repairs%ROWCOUNT > v_top_n;
+        DBMS_OUTPUT.PUT_LINE(
+            '| ' || RPAD(rec.PartName, 26) || ' | ' || 
+            LPAD(rec.repair_count, 26) || ' | ' ||     
+           LPAD('RM' || TO_CHAR(rec.total_cost, '999,999,999.00'), 26) || ' | ' ||
+            LPAD(ROUND((rec.total_cost / v_total_maintenance_cost) * 100, 2) || '%', 26) || ' | ' || 
+            LPAD(rec.aircraft_affected, 30) || ' |' 
+        );
+    END LOOP;
+
+    print_line;
+
+    -- Predict future maintenance costs
+    print_line;
+    -- Calculate one year date range from the current date
+    DECLARE
+        v_start_date DATE := SYSDATE;
+        v_end_date DATE := ADD_MONTHS(SYSDATE, 12);
+    BEGIN
+        -- Print header with date range and padding
+        DBMS_OUTPUT.PUT_LINE('| ' || 
+            LPAD(' ', (140 - LENGTH('PREDICTED ANNUAL MAINTENANCE COSTS BY MODEL: ' || 
+            TO_CHAR(v_start_date, 'DD-MON-YYYY') || ' to ' || TO_CHAR(v_end_date, 'DD-MON-YYYY'))) / 2) || 
+            'PREDICTED ANNUAL MAINTENANCE COSTS BY MODEL: ' || 
+            TO_CHAR(v_start_date, 'DD-MON-YYYY') || ' to ' || TO_CHAR(v_end_date, 'DD-MON-YYYY') || 
+            RPAD(' ', (140 - LENGTH('PREDICTED ANNUAL MAINTENANCE COSTS BY MODEL: ' || 
+            TO_CHAR(v_start_date, 'DD-MON-YYYY') || ' to ' || TO_CHAR(v_end_date, 'DD-MON-YYYY'))) / 2) || '      |');
+        print_line;
+
+        -- Print column headers
+        DBMS_OUTPUT.PUT_LINE('| ' || RPAD('Model', 70) || ' | ' || RPAD('Predicted Cost', 73) || ' |');
+        print_line;
+
+        -- Loop through the cursor to display data
+        FOR rec IN c_model_breakdown LOOP
+            DECLARE
+                v_predicted_cost NUMBER;
+            BEGIN
+                v_predicted_cost := predict_future_cost(rec.Model);
+                IF v_predicted_cost IS NOT NULL THEN
+                    DBMS_OUTPUT.PUT_LINE(
+                        '| ' || RPAD(rec.Model, 70) || 
+                        ' | ' || RPAD('RM' || TO_CHAR(v_predicted_cost, '999,999,999.00'), 73) || ' |'
+                    );
+                ELSE
+                    DBMS_OUTPUT.PUT_LINE('| ' || RPAD(rec.Model, 70) || ' | ' || RPAD('No Data Available', 73) || ' |');
+                END IF;
+            END;
+        END LOOP;
+    END;
+
+    print_line;
+
+-- Recommendations based on analysis
+print_line;
+DBMS_OUTPUT.PUT_LINE('| RECOMMENDATIONS ' || RPAD(' ', 131) || '|');  
+print_line;
+
+-- Combine recommendations for phasing out models
+DECLARE
+    v_models_to_phase_out VARCHAR2(4000) := '';
+    v_recommendation_text VARCHAR2(4000);
+    v_current_line VARCHAR2(150);
+    v_first_line BOOLEAN := TRUE; -- Flag to indicate if it is the first line
+BEGIN
+    FOR rec IN c_model_breakdown LOOP
+        IF rec.maintenance_frequency > 0.7 THEN
+            v_models_to_phase_out := v_models_to_phase_out || rec.Model || ', ';
+        END IF;
+    END LOOP;
+
+    IF v_models_to_phase_out IS NOT NULL THEN
+        v_models_to_phase_out := RTRIM(v_models_to_phase_out, ', ');
+        v_recommendation_text := v_rec_num || '. Consider phasing out or upgrading models due to high maintenance frequency: ' || v_models_to_phase_out;
+        
+        -- Wrapping the text with left padding and '|'
+        WHILE LENGTH(v_recommendation_text) > 0 LOOP
+            v_current_line := SUBSTR(v_recommendation_text, 1, 140);
+            v_recommendation_text := SUBSTR(v_recommendation_text, 121);
+            
+            IF v_first_line THEN
+                DBMS_OUTPUT.PUT_LINE('| ' || RPAD(v_current_line, 147) || '|'); -- First line with numbering
+                v_first_line := FALSE; -- Set the flag to false after the first line
+            ELSE
+                DBMS_OUTPUT.PUT_LINE('| ' || RPAD(' ' || v_current_line, 147) || '|'); -- Subsequent lines with leading space
+            END IF;
+        END LOOP;
+        
+        v_rec_num := v_rec_num + 1;
+    END IF;
+END;
+
+-- Combine recommendations for high failure rate parts
+DECLARE
+    v_parts_to_investigate VARCHAR2(4000) := '';
+    v_recommendation_text VARCHAR2(4000);
+    v_current_line VARCHAR2(150);
+    v_first_line BOOLEAN := TRUE; -- Flag to indicate if it is the first line
+BEGIN
+    FOR rec IN c_frequent_repairs LOOP
+        IF c_frequent_repairs%ROWCOUNT = 1 THEN
+            v_parts_to_investigate := v_parts_to_investigate || rec.PartName || ', ';
+        END IF;
+        EXIT WHEN c_frequent_repairs%ROWCOUNT > 1;
+    END LOOP;
+    
+    IF v_parts_to_investigate IS NOT NULL THEN
+        v_parts_to_investigate := RTRIM(v_parts_to_investigate, ', ');
+        v_recommendation_text := v_rec_num || '. Investigate the high failure rate of parts: ' || v_parts_to_investigate || ' and consider alternative suppliers or designs.';
+        
+        -- Wrapping the text with left padding and '|'
+        WHILE LENGTH(v_recommendation_text) > 0 LOOP
+            v_current_line := SUBSTR(v_recommendation_text, 1, 140); 
+            v_recommendation_text := SUBSTR(v_recommendation_text, 121);
+            
+            IF v_first_line THEN
+                DBMS_OUTPUT.PUT_LINE('| ' || RPAD(v_current_line, 147) || '|'); -- First line with numbering
+                v_first_line := FALSE; -- Set the flag to false after the first line
+            ELSE
+                DBMS_OUTPUT.PUT_LINE('| ' || RPAD(' ' || v_current_line, 147) || '|'); -- Subsequent lines with leading space
+            END IF;
+        END LOOP;
+        
+        v_rec_num := v_rec_num + 1;
+    END IF;
+END;
+
+
+-- Check for high average maintenance cost
+IF v_avg_maintenance_cost > 10000 THEN -- Assuming $10,000 is a high average cost
+    DBMS_OUTPUT.PUT_LINE('| ' || RPAD(v_rec_num || '. Review maintenance procedures to identify cost-saving opportunities.', 147) || '|');
+    v_rec_num := v_rec_num + 1;
+END IF;
+
+
+-- Trend analysis
+DECLARE
+    v_prev_year_cost NUMBER;
+    v_cost_trend NUMBER;
+BEGIN
+    SELECT SUM(p.PartCost * am.PartQty)
+    INTO v_prev_year_cost
+    FROM AirplaneMaintenance am
+    JOIN Part p ON am.PartID = p.PartID
+    WHERE am.AirplaneMaintenanceDate BETWEEN ADD_MONTHS(p_start_date, -12) AND ADD_MONTHS(p_end_date, -12);
+
+    v_cost_trend := (v_total_maintenance_cost - v_prev_year_cost) / NULLIF(v_prev_year_cost, 0) * 100;
+
+    print_line;
+    print_line;
+    -- Maintenance Cost Trend Analysis
+    DBMS_OUTPUT.PUT_LINE('| MAINTENANCE COST TREND' || RPAD(' ', 125) || '|');
+    print_line;
+
+    -- Calculate the Year-over-Year Change with the Sign
+    DECLARE
+        v_yoy_sign CHAR(1);
+    BEGIN
+        IF v_cost_trend > 0 THEN
+            v_yoy_sign := '+';
+        ELSIF v_cost_trend < 0 THEN
+            v_yoy_sign := '-';
+        ELSE
+            v_yoy_sign := ' ';
+        END IF;
+
+        -- Display the Year-over-Year Change with the appropriate sign
+        DBMS_OUTPUT.PUT_LINE('| Year-over-Year Change: ' || v_yoy_sign || ROUND(ABS(v_cost_trend), 2) || '% ' || RPAD(' ', 116) || '|');
+
+        -- Start numbering at 1
+        v_rec_num := 1;
+
+        IF v_cost_trend > 10 THEN
+            DBMS_OUTPUT.PUT_LINE('| ' || RPAD(v_rec_num || '. Investigate the significant increase in maintenance costs compared to last year.', 147) || '|');
+            v_rec_num := v_rec_num + 1;
+        ELSIF v_cost_trend < -10 THEN
+            DBMS_OUTPUT.PUT_LINE('| ' || RPAD(v_rec_num || '. Analyze the factors contributing to the decrease in maintenance costs for potential optimizations.', 147) || '|');
+            v_rec_num := v_rec_num + 1;
+        END IF;
+    END;
+
+    print_line;
+
+-- Print end of report
+    DBMS_OUTPUT.PUT_LINE('====================================================================END OF REPORT=====================================================================');
+
+END;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('An error occurred: ' || SQLERRM);
+END aircraft_maintenance_analysis;
+/
+
+-- Execute the procedure with user inputs
+BEGIN
+    aircraft_maintenance_analysis(TO_DATE('&start_date', 'DD-MON-YYYY'), TO_DATE('&end_date', 'DD-MON-YYYY'));
+END;
+/

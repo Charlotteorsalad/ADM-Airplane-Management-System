@@ -1,0 +1,245 @@
+-- Setup script with formatting adjustments
+CLEAR COLUMNS
+CLEAR COMPUTES
+
+SET SERVEROUTPUT ON
+SET LINESIZE 150
+SET PAGESIZE 1000
+
+-- Set the column sizes for specific output
+COLUMN MEMBERID FORMAT A10
+COLUMN MEMBERNAME FORMAT A20
+COLUMN MEMBERSHIPLEVEL FORMAT A15;
+COLUMN POINTS FORMAT 999999
+COLUMN LOG_ID FORMAT 99999
+COLUMN CHANGE_DATE FORMAT A20
+COLUMN OLD_LEVEL FORMAT A10
+COLUMN NEW_LEVEL FORMAT A10
+COLUMN POINTS_AT_CHANGE FORMAT 999999
+COLUMN CHANGE_REASON FORMAT A30
+COLUMN ERROR_MESSAGE FORMAT A40
+
+-- Create necessary tables
+PROMPT Creating necessary tables...
+
+BEGIN
+   EXECUTE IMMEDIATE 'CREATE TABLE membership_change_log (
+       log_id             NUMBER PRIMARY KEY,
+       member_id          VARCHAR2(50),
+       change_date        DATE,
+       old_level          VARCHAR2(20),
+       new_level          VARCHAR2(20),
+       points_at_change   NUMBER,
+       change_reason      VARCHAR2(100)
+   )';
+EXCEPTION
+   WHEN OTHERS THEN
+      IF SQLCODE = -955 THEN
+         DBMS_OUTPUT.PUT_LINE('Table membership_change_log already exists');
+      ELSE
+         RAISE;
+      END IF;
+END;
+/
+
+BEGIN
+   EXECUTE IMMEDIATE 'CREATE TABLE error_log (
+       log_id         NUMBER PRIMARY KEY,
+       error_date     DATE,
+       error_code     NUMBER,
+       error_message  VARCHAR2(4000),
+       member_id      VARCHAR2(50)
+   )';
+EXCEPTION
+   WHEN OTHERS THEN
+      IF SQLCODE = -955 THEN
+         DBMS_OUTPUT.PUT_LINE('Table error_log already exists');
+      ELSE
+         RAISE;
+      END IF;
+END;
+/
+
+-- Create sequences
+BEGIN
+   EXECUTE IMMEDIATE 'CREATE SEQUENCE membership_change_log_seq';
+EXCEPTION
+   WHEN OTHERS THEN
+      IF SQLCODE = -955 THEN
+         DBMS_OUTPUT.PUT_LINE('Sequence membership_change_log_seq already exists');
+      ELSE
+         RAISE;
+      END IF;
+END;
+/
+
+BEGIN
+   EXECUTE IMMEDIATE 'CREATE SEQUENCE error_log_seq';
+EXCEPTION
+   WHEN OTHERS THEN
+      IF SQLCODE = -955 THEN
+         DBMS_OUTPUT.PUT_LINE('Sequence error_log_seq already exists');
+      ELSE
+         RAISE;
+      END IF;
+END;
+/
+
+PROMPT Tables and sequences created or verified successfully.
+
+-- Create the package specification
+CREATE OR REPLACE PACKAGE membership_pkg AS
+    -- Membership level thresholds
+    g_bronze_threshold    CONSTANT NUMBER := 0;
+    g_silver_threshold    CONSTANT NUMBER := 10000;
+    g_gold_threshold      CONSTANT NUMBER := 50000;
+    g_platinum_threshold  CONSTANT NUMBER := 100000;
+
+    -- Function to determine membership level
+    FUNCTION get_membership_level(p_points NUMBER) RETURN VARCHAR2;
+
+    -- Procedure to log membership changes
+    PROCEDURE log_membership_change(
+        p_member_id     VARCHAR2,
+        p_old_level     VARCHAR2,
+        p_new_level     VARCHAR2,
+        p_points        NUMBER,
+        p_change_reason VARCHAR2
+    );
+END membership_pkg;
+/
+
+-- Create the package body
+CREATE OR REPLACE PACKAGE BODY membership_pkg AS
+    FUNCTION get_membership_level(p_points NUMBER) RETURN VARCHAR2 IS
+    BEGIN
+        RETURN CASE
+            WHEN p_points >= g_platinum_threshold THEN 'Platinum'
+            WHEN p_points >= g_gold_threshold     THEN 'Gold'
+            WHEN p_points >= g_silver_threshold   THEN 'Silver'
+            ELSE 'Bronze'
+        END;
+    END get_membership_level;
+
+    PROCEDURE log_membership_change(
+        p_member_id     VARCHAR2,
+        p_old_level     VARCHAR2,
+        p_new_level     VARCHAR2,
+        p_points        NUMBER,
+        p_change_reason VARCHAR2
+    ) IS
+    BEGIN
+        INSERT INTO membership_change_log (
+            log_id, member_id, change_date, old_level, new_level, points_at_change, change_reason
+        ) VALUES (
+            membership_change_log_seq.NEXTVAL, p_member_id, SYSDATE, p_old_level, p_new_level, p_points, p_change_reason
+        );
+    END log_membership_change;
+END membership_pkg;
+/
+
+PROMPT Setup completed successfully.
+
+BEGIN
+    EXECUTE IMMEDIATE '
+    CREATE OR REPLACE TRIGGER trg_update_member_level
+    AFTER INSERT OR UPDATE OF Points ON Member
+    FOR EACH ROW
+    DECLARE
+        v_new_level     VARCHAR2(20);
+        v_change_reason VARCHAR2(100);
+        v_member_id     Member.MemberID%TYPE;
+        v_error_code    NUMBER;
+        v_error_msg     VARCHAR2(2000);
+        PRAGMA AUTONOMOUS_TRANSACTION;
+    BEGIN
+        v_member_id := :NEW.MemberID;
+
+        -- Determine new membership level
+        v_new_level := membership_pkg.get_membership_level(:NEW.Points);
+
+        -- Check if membership level has changed
+        IF v_new_level != :OLD.MembershipLevel THEN
+            -- Determine reason for change
+            IF :NEW.Points > :OLD.Points THEN
+                v_change_reason := ''Points increase'';
+            ELSE
+                v_change_reason := ''Points adjustment'';
+            END IF;
+
+            -- Log the change
+            membership_pkg.log_membership_change(
+                v_member_id,
+                :OLD.MembershipLevel,
+                v_new_level,
+                :NEW.Points,
+                v_change_reason
+            );
+
+            -- Update membership level directly
+            UPDATE Member
+            SET MembershipLevel = v_new_level
+            WHERE MemberID = v_member_id;
+
+            -- Commit the autonomous transaction
+            COMMIT;
+        END IF;
+    EXCEPTION
+        WHEN OTHERS THEN
+            v_error_code := SQLCODE;
+            v_error_msg := SQLERRM;
+            -- Log the error
+            INSERT INTO error_log (
+                log_id, error_date, error_code, error_message, member_id
+            ) VALUES (
+                error_log_seq.NEXTVAL, SYSDATE, v_error_code, v_error_msg, v_member_id
+            );
+            -- Commit the error log entry
+            COMMIT;
+            -- Re-raise the error
+            RAISE;
+    END trg_update_member_level;
+    ';
+    DBMS_OUTPUT.PUT_LINE('Trigger trg_update_member_level created successfully.');
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Failed to create trigger trg_update_member_level: ' || SQLERRM);
+END;
+/
+-- test_membership_trigger.sql
+
+SET SERVEROUTPUT ON
+SET LINESIZE 150
+SET PAGESIZE 1000
+
+-- Insert new test data for Member 1
+PROMPT Inserting test data for Member 1...
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM99999', 'Alice Lim', 'Bronze', '014-1234567', 9000, 'alice@example.com', 'alicePass123', 'Active', TIMESTAMP '2023-10-01 10:00:00');
+
+-- Display initial state for Member 1
+PROMPT Initial state for Member 1:
+SELECT MemberID, MemberName, Points, MembershipLevel FROM Member WHERE MemberID = 'MEM99999';
+
+-- Add points to Member 1 to reach the Silver threshold
+PROMPT Adding 1000 points to Member 1...
+UPDATE Member SET Points = Points + 1000 WHERE MemberID = 'MEM99999';
+
+-- Insert new test data for Member 2
+PROMPT Inserting test data for Member 2...
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM88888', 'Bob Kim', 'Bronze', '014-9876543', 8500, 'bob@example.com', 'bobPass123', 'Active', TIMESTAMP '2023-10-01 11:00:00');
+
+-- Display initial state for Member 2
+PROMPT Initial state for Member 2:
+SELECT MemberID, MemberName, Points, MembershipLevel FROM Member WHERE MemberID = 'MEM88888';
+
+-- Add points to Member 2, but not enough to reach Silver
+PROMPT Adding 500 points to Member 2...
+UPDATE Member SET Points = Points + 500 WHERE MemberID = 'MEM88888';
+
+-- Display membership change log
+PROMPT Membership change log:
+SELECT * FROM membership_change_log WHERE member_id IN ('MEM99999', 'MEM88888');
+
+PROMPT Test completed.

@@ -1,0 +1,237 @@
+-- Define the vw_ItemPurchases view
+CREATE OR REPLACE VIEW vw_ItemPurchases AS
+WITH PassengerDemographics AS (
+    SELECT 
+        p.PassengerID,
+        CASE
+            WHEN TO_NUMBER(SUBSTR(p.PassengerIC, 1, 2)) BETWEEN 00 AND 23 THEN
+                CASE 
+                    WHEN REGEXP_LIKE(SUBSTR(p.PassengerIC, 3, 2), '^(0[1-9]|1[0-2])$') -- Valid Month (MM)
+                         AND REGEXP_LIKE(SUBSTR(p.PassengerIC, 5, 2), '^(0[1-9]|[12][0-9]|3[01])$') -- Valid Day (DD)
+                         AND LENGTH(p.PassengerIC) = 14 -- Ensure IC is the expected length
+                         THEN
+                             CASE 
+                                 WHEN REGEXP_LIKE('20' || SUBSTR(p.PassengerIC, 1, 6), '^\d{8}$')
+                                      AND TO_NUMBER(SUBSTR(p.PassengerIC, 5, 2)) <= CASE 
+                                           WHEN SUBSTR(p.PassengerIC, 3, 2) IN ('01', '03', '05', '07', '08', '10', '12') THEN 31
+                                           WHEN SUBSTR(p.PassengerIC, 3, 2) IN ('04', '06', '09', '11') THEN 30
+                                           ELSE CASE 
+                                               WHEN MOD(TO_NUMBER(SUBSTR(p.PassengerIC, 1, 2)), 4) = 0 AND SUBSTR(p.PassengerIC, 3, 2) = '02' THEN 29
+                                               ELSE 28
+                                           END 
+                                      END
+                                 THEN FLOOR(MONTHS_BETWEEN(SYSDATE, TO_DATE('20' || SUBSTR(p.PassengerIC, 1, 6), 'YYYYMMDD')) / 12)
+                                 ELSE NULL -- Invalid date format or values
+                             END
+                    ELSE NULL -- Invalid date format or values
+                END
+            ELSE
+                CASE 
+                    WHEN REGEXP_LIKE(SUBSTR(p.PassengerIC, 3, 2), '^(0[1-9]|1[0-2])$') -- Valid Month (MM)
+                         AND REGEXP_LIKE(SUBSTR(p.PassengerIC, 5, 2), '^(0[1-9]|[12][0-9]|3[01])$') -- Valid Day (DD)
+                         AND LENGTH(p.PassengerIC) = 14 -- Ensure IC is the expected length
+                         THEN 
+                             CASE 
+                                 WHEN REGEXP_LIKE('19' || SUBSTR(p.PassengerIC, 1, 6), '^\d{8}$')
+                                      AND TO_NUMBER(SUBSTR(p.PassengerIC, 5, 2)) <= CASE 
+                                           WHEN SUBSTR(p.PassengerIC, 3, 2) IN ('01', '03', '05', '07', '08', '10', '12') THEN 31
+                                           WHEN SUBSTR(p.PassengerIC, 3, 2) IN ('04', '06', '09', '11') THEN 30
+                                           ELSE CASE 
+                                               WHEN MOD(TO_NUMBER(SUBSTR(p.PassengerIC, 1, 2)), 4) = 0 AND SUBSTR(p.PassengerIC, 3, 2) = '02' THEN 29
+                                               ELSE 28
+                                           END 
+                                      END
+                                 THEN FLOOR(MONTHS_BETWEEN(SYSDATE, TO_DATE('19' || SUBSTR(p.PassengerIC, 1, 6), 'YYYYMMDD')) / 12)
+                                 ELSE NULL -- Invalid date format or values
+                             END
+                    ELSE NULL -- Invalid date format or values
+                END
+        END AS Age,
+        CASE 
+            WHEN MOD(TO_NUMBER(SUBSTR(p.PassengerIC, 13, 1)), 2) = 0 THEN 'Female'
+            ELSE 'Male'
+        END AS Gender,
+        CASE SUBSTR(p.PassengerIC, 8, 2)
+            WHEN '01' THEN 'Johor' WHEN '21' THEN 'Johor' WHEN '22' THEN 'Johor' WHEN '23' THEN 'Johor' WHEN '24' THEN 'Johor'
+            WHEN '02' THEN 'Kedah' WHEN '25' THEN 'Kedah' WHEN '26' THEN 'Kedah' WHEN '27' THEN 'Kedah'
+            WHEN '03' THEN 'Kelantan' WHEN '28' THEN 'Kelantan' WHEN '29' THEN 'Kelantan'
+            WHEN '04' THEN 'Melaka' WHEN '30' THEN 'Melaka'
+            WHEN '05' THEN 'Negeri Sembilan' WHEN '31' THEN 'Negeri Sembilan' WHEN '59' THEN 'Negeri Sembilan'
+            WHEN '06' THEN 'Pahang' WHEN '32' THEN 'Pahang' WHEN '33' THEN 'Pahang'
+            WHEN '07' THEN 'Pulau Pinang' WHEN '34' THEN 'Pulau Pinang' WHEN '35' THEN 'Pulau Pinang'
+            WHEN '08' THEN 'Perak' WHEN '36' THEN 'Perak' WHEN '37' THEN 'Perak' WHEN '38' THEN 'Perak' WHEN '39' THEN 'Perak'
+            WHEN '09' THEN 'Perlis' WHEN '40' THEN 'Perlis'
+            WHEN '10' THEN 'Selangor' WHEN '41' THEN 'Selangor' WHEN '42' THEN 'Selangor' WHEN '43' THEN 'Selangor' WHEN '44' THEN 'Selangor'
+            WHEN '11' THEN 'Terengganu' WHEN '45' THEN 'Terengganu' WHEN '46' THEN 'Terengganu'
+            WHEN '12' THEN 'Sabah' WHEN '47' THEN 'Sabah' WHEN '48' THEN 'Sabah' WHEN '49' THEN 'Sabah'
+            WHEN '13' THEN 'Sarawak' WHEN '50' THEN 'Sarawak' WHEN '51' THEN 'Sarawak' WHEN '52' THEN 'Sarawak' WHEN '53' THEN 'Sarawak'
+            WHEN '14' THEN 'Wilayah Persekutuan (Kuala Lumpur)' WHEN '54' THEN 'Wilayah Persekutuan (Kuala Lumpur)' 
+            WHEN '55' THEN 'Wilayah Persekutuan (Kuala Lumpur)' WHEN '56' THEN 'Wilayah Persekutuan (Kuala Lumpur)' WHEN '57' THEN 'Wilayah Persekutuan (Kuala Lumpur)'
+            WHEN '15' THEN 'Wilayah Persekutuan (Labuan)' WHEN '58' THEN 'Wilayah Persekutuan (Labuan)'
+            WHEN '16' THEN 'Wilayah Persekutuan (Putrajaya)'
+            WHEN '82' THEN 'Negeri Tidak Diketahui'
+            ELSE 'Unknown'
+        END AS State
+    FROM Passenger p
+)
+SELECT 
+    pd.PassengerID,
+    pd.Gender,
+    pd.State,
+    CASE 
+        WHEN pd.Age < 18 THEN 'Under 18'
+        WHEN pd.Age BETWEEN 18 AND 24 THEN '18-24'
+        WHEN pd.Age BETWEEN 25 AND 34 THEN '25-34'
+        WHEN pd.Age BETWEEN 35 AND 44 THEN '35-44'
+        WHEN pd.Age BETWEEN 45 AND 54 THEN '45-54'
+        WHEN pd.Age BETWEEN 55 AND 64 THEN '55-64'
+        ELSE '65+'
+    END AS AgeGroup,
+    i.Category,
+    i.ItemName,
+    SUM(pi.PurchaseItemQty) AS TotalQuantity,
+    SUM(pi.PurchaseItemQty * i.Price) AS TotalRevenue
+FROM PassengerDemographics pd
+JOIN Purchase pu ON pd.PassengerID = pu.PassengerID
+JOIN PurchaseItem pi ON pu.PurchaseID = pi.PurchaseID
+JOIN Item i ON pi.ItemID = i.ItemID
+WHERE pu.PurchaseDate >= ADD_MONTHS(TRUNC(SYSDATE), -24)
+GROUP BY pd.PassengerID, pd.Gender, pd.State, pd.Age, i.Category, i.ItemName;
+
+-- Define the vw_ItemAssociations view
+CREATE OR REPLACE VIEW vw_ItemAssociations AS
+SELECT 
+    ip1.State,
+    ip1.Gender,
+    ip1.AgeGroup,
+    ip1.ItemName AS Item1,
+    ip2.ItemName AS Item2,
+    COUNT(DISTINCT ip1.PassengerID) AS CommonCustomers,
+    COUNT(DISTINCT ip1.PassengerID) / NULLIF(COUNT(DISTINCT ip1.PassengerID), 0) AS ConfidenceLevel
+FROM vw_ItemPurchases ip1
+JOIN vw_ItemPurchases ip2 ON ip1.PassengerID = ip2.PassengerID AND ip1.ItemName < ip2.ItemName
+GROUP BY ip1.State, ip1.Gender, ip1.AgeGroup, ip1.ItemName, ip2.ItemName
+HAVING COUNT(DISTINCT ip1.PassengerID) >= 2;
+
+-- Define the vw_DemographicMBA view
+CREATE OR REPLACE VIEW vw_DemographicMBA AS
+WITH TopAssociations AS (
+    SELECT 
+        State,
+        Gender,
+        AgeGroup,
+        Item1 AS ItemName,
+        LISTAGG(Item2 || ' (Confidence: ' || ROUND(ConfidenceLevel * 100, 2) || '%)', '; ')
+        WITHIN GROUP (ORDER BY ConfidenceLevel DESC) AS TopAssociatedItems
+    FROM (
+        SELECT 
+            State, Gender, AgeGroup, Item1, Item2, ConfidenceLevel,
+            ROW_NUMBER() OVER (PARTITION BY State, Gender, AgeGroup, Item1 ORDER BY ConfidenceLevel DESC) AS rn
+        FROM vw_ItemAssociations
+    )
+    WHERE rn <= 3
+    GROUP BY State, Gender, AgeGroup, Item1
+)
+SELECT 
+    NVL(ip.State, 'All States') AS State,
+    NVL(ip.Gender, 'All Genders') AS Gender,
+    NVL(ip.AgeGroup, 'All Ages') AS AgeGroup,
+    NVL(ip.Category, 'All Categories') AS Category,
+    NVL(ip.ItemName, 'All Items') AS ItemName,
+    COUNT(DISTINCT ip.PassengerID) AS UniqueCustomers,
+    SUM(ip.TotalQuantity) AS TotalQuantitySold,
+    ROUND(SUM(ip.TotalRevenue), 2) AS TotalRevenue,
+    ROUND(SUM(ip.TotalRevenue) / NULLIF(SUM(ip.TotalQuantity), 0), 2) AS AvgPricePerUnit,
+    ROUND(SUM(ip.TotalQuantity) / NULLIF(COUNT(DISTINCT ip.PassengerID), 0), 2) AS AvgQuantityPerCustomer,
+    ROUND(SUM(ip.TotalRevenue) / NULLIF(COUNT(DISTINCT ip.PassengerID), 0), 2) AS AvgRevenuePerCustomer,
+    MAX(ta.TopAssociatedItems) AS TopAssociatedItems
+FROM vw_ItemPurchases ip
+LEFT JOIN TopAssociations ta ON ip.State = ta.State 
+                             AND ip.Gender = ta.Gender 
+                             AND ip.AgeGroup = ta.AgeGroup 
+                             AND ip.ItemName = ta.ItemName
+GROUP BY CUBE(ip.State, ip.Gender, ip.AgeGroup, ip.Category, ip.ItemName)
+ORDER BY 
+    GROUPING(ip.State), ip.State,
+    GROUPING(ip.Gender), ip.Gender,
+    GROUPING(ip.AgeGroup), ip.AgeGroup,
+    GROUPING(ip.Category), ip.Category,
+    GROUPING(ip.ItemName), ip.ItemName,
+    SUM(ip.TotalRevenue) DESC NULLS LAST;
+
+CLEAR COLUMNS;
+CLEAR COMPUTES;
+
+SET PAGESIZE 1000
+SET LINESIZE 700
+SET FEEDBACK OFF
+SET VERIFY OFF
+SET TERMOUT OFF 
+
+-- Define variables to store date range
+COLUMN start_date NEW_VALUE start_date
+COLUMN end_date NEW_VALUE end_date
+
+-- Assign the start and end dates to variables without displaying the result
+SELECT 
+    TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE, 'MM'), -24), 'MON-YYYY') AS start_date,
+    TO_CHAR(TRUNC(SYSDATE, 'MM'), 'MON-YYYY') AS end_date
+FROM dual;
+
+SET TERMOUT ON 
+
+-- Set up the report title without centering
+TTITLE '    					Item and Customer Segmentation Analysis Report for Past 12 Months (RM)' SKIP 1 - 
+       '    								From ' start_date ' to ' end_date SKIP 2
+
+BREAK ON State SKIP 1 ON Gender SKIP 1 ON AgeGroup SKIP 1 ON REPORT
+COMPUTE SUM LABEL 'Total:' OF TotalRevenue ON State
+COMPUTE SUM LABEL 'Total:' OF TotalRevenue ON REPORT
+
+-- Define column formats
+COLUMN State FORMAT A30
+COLUMN Gender FORMAT A10
+COLUMN AgeGroup FORMAT A10
+COLUMN Category FORMAT A20
+COLUMN ItemName FORMAT A27
+COLUMN TotalQuantitySold FORMAT 999,999,999
+COLUMN TotalRevenue FORMAT 999,999,999.99
+COLUMN AvgPricePerUnit FORMAT 999,999.99
+COLUMN AvgQuantityPerCustomer FORMAT 999.99
+COLUMN AvgRevenuePerCustomer FORMAT 999,999.99
+COLUMN TopAssociatedItems FORMAT A33
+
+
+-- Main query with ROW_NUMBER() to remove duplicates
+WITH FilteredData AS (
+    SELECT 
+        ip.State,
+        ip.Gender,
+        ip.AgeGroup,
+        ip.Category,
+        ip.ItemName,
+        ip.TotalQuantitySold,
+        ip.TotalRevenue,
+        COALESCE(ip.TopAssociatedItems, 'No Associated Item') AS TopAssociatedItems,
+        ROW_NUMBER() OVER (PARTITION BY ip.State, ip.Gender, ip.AgeGroup 
+                           ORDER BY ip.TotalQuantitySold DESC, ip.ItemName ASC) AS row_num
+    FROM vw_DemographicMBA ip
+    WHERE ip.State != 'All States'
+      AND ip.Gender != 'All Genders'
+      AND ip.AgeGroup != 'All Ages'
+      AND ip.Category != 'All Categories'
+      AND ip.ItemName != 'All Items'
+)
+-- Selecting only the top 5 items for each combination based on quantity
+SELECT State, Gender, AgeGroup, Category, ItemName,
+       TotalQuantitySold, TotalRevenue, TopAssociatedItems
+FROM FilteredData
+WHERE row_num <= 5 -- Keep only the top 5 items per combination
+ORDER BY State, Gender, AgeGroup, TotalQuantitySold DESC;
+
+-- Clean up after the report
+TTITLE OFF
+CLEAR BREAKS
+CLEAR COMPUTES
+SET FEEDBACK ON
+SET VERIFY ON;

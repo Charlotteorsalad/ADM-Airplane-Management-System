@@ -1,0 +1,166 @@
+CREATE OR REPLACE VIEW vw_TemporalLoyaltyDynamics AS
+WITH MemberBookings AS (
+    SELECT 
+        m.MemberID,
+        m.MemberName,
+        m.MembershipLevel,
+        b.BookingID,
+        b.BookingTime,
+        p.PaymentAmount,
+        ROW_NUMBER() OVER (PARTITION BY m.MemberID ORDER BY b.BookingTime) AS BookingNumber,
+        COUNT(b.BookingID) OVER (PARTITION BY m.MemberID) AS TotalBookings,
+        SUM(NVL(p.PaymentAmount, 0)) OVER (PARTITION BY m.MemberID ORDER BY b.BookingTime) AS CumulativeSpend,
+        AVG(NVL(p.PaymentAmount, 0)) OVER (PARTITION BY m.MemberID ORDER BY b.BookingTime ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS MovingAvgSpend,
+        EXTRACT(YEAR FROM b.BookingTime) AS BookingYear,
+        EXTRACT(MONTH FROM b.BookingTime) AS BookingMonth
+    FROM 
+        Member m
+    JOIN 
+        Booking b ON m.MemberID = b.MemberID
+    LEFT JOIN 
+        Payment p ON b.BookingID = p.BookingID
+    WHERE 
+        b.BookingTime IS NOT NULL
+        AND b.BookingTime >= ADD_MONTHS(TRUNC(SYSDATE, 'YEAR'), -24)
+        AND p.PaymentAmount IS NOT NULL
+),
+MemberMetrics AS (
+    SELECT 
+        MemberID,
+        MemberName,
+        MembershipLevel,
+        COUNT(BookingID) AS BookingsLast24Months,
+        ROUND(SUM(NVL(PaymentAmount, 0)), 2) AS TotalSpendLast24Months,
+        ROUND(AVG(NVL(PaymentAmount, 0)), 2) AS AvgBookingValue,
+        MAX(BookingTime) AS LastBookingDate,
+        MIN(BookingTime) AS FirstBookingDate,
+        ROUND(AVG(MONTHS_BETWEEN(SYSDATE, BookingTime)), 1) AS AvgMonthsBetweenBookings,
+        MAX(MovingAvgSpend) AS Last3BookingsAvgSpend,
+        LISTAGG(TO_CHAR(BookingMonth), ',') WITHIN GROUP (ORDER BY BookingMonth) AS BookingMonths,
+        COUNT(DISTINCT BookingYear) AS UniqueBookingYears
+    FROM 
+        MemberBookings
+    GROUP BY 
+        MemberID, MemberName, MembershipLevel
+),
+MemberYearlyMetrics AS (
+    SELECT
+        MemberID,
+        BookingYear,
+        COUNT(BookingID) AS YearlyBookings,
+        SUM(PaymentAmount) AS YearlySpend
+    FROM
+        MemberBookings
+    GROUP BY
+        MemberID, BookingYear
+)
+SELECT 
+    mm.*,
+    MONTHS_BETWEEN(SYSDATE, mm.LastBookingDate) AS MonthsSinceLastBooking,
+    CASE 
+        WHEN mm.BookingsLast24Months = 0 THEN 'Inactive'
+        WHEN mm.BookingsLast24Months <= 2 THEN 'Low Activity'
+        WHEN mm.BookingsLast24Months <= 5 THEN 'Moderate Activity'
+        ELSE 'High Activity'
+    END AS ActivityLevel,
+    CASE 
+        WHEN MONTHS_BETWEEN(SYSDATE, mm.LastBookingDate) > 12 THEN 'High Risk'
+        WHEN MONTHS_BETWEEN(SYSDATE, mm.LastBookingDate) > 6 THEN 'At Risk'
+        WHEN MONTHS_BETWEEN(SYSDATE, mm.LastBookingDate) > 3 THEN 'Needs Attention'
+        ELSE 'Active'
+    END AS RetentionStatus,
+    DENSE_RANK() OVER (PARTITION BY mm.MembershipLevel ORDER BY mm.TotalSpendLast24Months DESC) AS SpendRankInTier,
+    PERCENT_RANK() OVER (ORDER BY mm.TotalSpendLast24Months) AS TotalSpendPercentile,
+    CASE 
+        WHEN MONTHS_BETWEEN(SYSDATE, mm.FirstBookingDate) = 0 THEN 0
+        ELSE ROUND(mm.TotalSpendLast24Months / MONTHS_BETWEEN(SYSDATE, mm.FirstBookingDate), 2)
+    END AS LTVGrowthRate,
+    ROUND(
+        (1 - MONTHS_BETWEEN(SYSDATE, mm.LastBookingDate) / 24) * 0.35 +
+        (mm.BookingsLast24Months / 24) * 0.35 +
+        (mm.TotalSpendLast24Months / (SELECT MAX(TotalSpendLast24Months) FROM MemberMetrics)) * 0.3,
+        2
+    ) AS LoyaltyScore,
+    CASE 
+        WHEN REGEXP_COUNT(mm.BookingMonths, '12|1|2') > REGEXP_COUNT(mm.BookingMonths, '6|7|8') THEN 'Winter'
+        WHEN REGEXP_COUNT(mm.BookingMonths, '3|4|5') > REGEXP_COUNT(mm.BookingMonths, '9|10|11') THEN 'Spring'
+        WHEN REGEXP_COUNT(mm.BookingMonths, '6|7|8') > REGEXP_COUNT(mm.BookingMonths, '12|1|2') THEN 'Summer'
+        ELSE 'Fall'
+    END AS PreferredSeason,
+    NVL((SELECT YearlySpend FROM MemberYearlyMetrics mym WHERE mym.MemberID = mm.MemberID AND mym.BookingYear = EXTRACT(YEAR FROM SYSDATE) - 1), 0) AS LastYearSpend,
+    NVL((SELECT YearlySpend FROM MemberYearlyMetrics mym WHERE mym.MemberID = mm.MemberID AND mym.BookingYear = EXTRACT(YEAR FROM SYSDATE)), 0) AS CurrentYearSpend
+FROM 
+    MemberMetrics mm
+WHERE 
+    mm.TotalSpendLast24Months > 0;
+
+CLEAR COLUMNS;
+CLEAR COMPUTES;
+
+SET PAGESIZE 1200
+SET LINESIZE 250
+SET FEEDBACK OFF
+SET VERIFY OFF
+
+-- Adjust column formats
+COLUMN Membership FORMAT A12
+COLUMN Name FORMAT A22
+COLUMN Bookings24M FORMAT 999
+COLUMN Spend24M FORMAT 999,999,999.99
+COLUMN AvgBookVal FORMAT 999,999.99
+COLUMN Activity FORMAT A22
+COLUMN Retention FORMAT A15
+COLUMN LoyaltyScore FORMAT 990.99
+COLUMN PrefSeason FORMAT A8
+COLUMN YoYGrowth FORMAT A15 JUSTIFY RIGHT
+
+-- Set up the report title and breaks
+COLUMN report_title NEW_VALUE report_title NOPRINT
+SELECT 'Temporal Loyalty Dynamics: Member Engagement and Value Over Time (' || 
+       TO_CHAR(ADD_MONTHS(TRUNC(SYSDATE, 'MM'), -24), 'Mon YYYY') || ' - ' || 
+       TO_CHAR(TRUNC(SYSDATE, 'MM'), 'Mon YYYY') || ')' AS report_title
+FROM DUAL;
+
+-- Adjust title alignment to the left and add some spacing to simulate tab
+TTITLE LEFT '         			' report_title SKIP 2
+
+BREAK ON Membership SKIP 2 ON REPORT
+COMPUTE AVG LABEL 'Tier Average:' OF Spend24M LoyaltyScore ON Membership
+COMPUTE AVG LABEL 'Overall Avg:' OF Spend24M LoyaltyScore ON REPORT
+
+-- The main query to generate the report
+SELECT 
+    NVL(MembershipLevel, 'Unknown') AS Membership,
+    NVL(MemberName, 'Unknown') AS Name,
+    NVL(BookingsLast24Months, 0) AS Bookings24M,
+    NVL(TotalSpendLast24Months, 0) AS Spend24M,
+    NVL(AvgBookingValue, 0) AS AvgBookVal,
+    NVL(ActivityLevel, 'Unknown') AS Activity,
+    NVL(RetentionStatus, 'Unknown') AS Retention,
+    NVL(LoyaltyScore, 0) AS LoyaltyScore,
+    NVL(PreferredSeason, 'Unknown') AS PrefSeason,
+    CASE 
+        WHEN LastYearSpend = 0 AND CurrentYearSpend = 0 THEN LPAD('0%', 10) -- Right-align 0%
+        WHEN LastYearSpend = 0 THEN LPAD('New Member', 10) -- Right-align 'New Member'
+        ELSE LPAD(TO_CHAR(ROUND((CurrentYearSpend - LastYearSpend) / LastYearSpend * 100, 2), '9999990.99') || '%', 10)
+    END AS YoYGrowth
+FROM 
+    vw_TemporalLoyaltyDynamics
+ORDER BY 
+    CASE 
+        WHEN MembershipLevel = 'Platinum' THEN 1
+        WHEN MembershipLevel = 'Gold' THEN 2
+        WHEN MembershipLevel = 'Silver' THEN 3
+        WHEN MembershipLevel = 'Bronze' THEN 4
+        ELSE 5
+    END,
+    LoyaltyScore DESC;
+
+-- Clean up after the report
+TTITLE OFF
+CLEAR BREAKS
+CLEAR COMPUTES
+SET FEEDBACK ON
+SET VERIFY ON;
+
+

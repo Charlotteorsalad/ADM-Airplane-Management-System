@@ -1,0 +1,86 @@
+-- Enable DBMS_OUTPUT to show messages
+SET SERVEROUTPUT ON;
+SET VERIFY OFF;
+SET LINESIZE 150;
+SET PAGESIZE 100;
+
+-- Set column widths for the output
+COLUMN FlightID FORMAT A10;
+COLUMN Origin FORMAT A15;
+COLUMN Destination FORMAT A15;
+COLUMN Capacity FORMAT 999999;
+COLUMN ConfirmedSeats FORMAT 999999;
+
+-- Setup Step 1: Create the Trigger to Auto-Update Flight Availability on Booking Confirmation
+CREATE OR REPLACE TRIGGER trg_update_flight_availability
+AFTER UPDATE OF BookingStatus ON Booking
+FOR EACH ROW
+DECLARE
+    v_total_seats NUMBER;       -- Variable to store the total seats (Capacity)
+    v_confirmed_seats NUMBER;   -- Variable to store the count of confirmed seats
+    v_flight_id VARCHAR2(50);   -- Variable to store the FlightID
+BEGIN
+    -- Check if the BookingStatus was changed to 'Completed'
+    IF :NEW.BookingStatus = 'Completed' THEN
+        -- Fetch the FlightID from the Ticket table for the given BookingID
+        SELECT FlightID INTO v_flight_id
+        FROM Ticket
+        WHERE BookingID = :NEW.BookingID;
+
+        -- Fetch the total capacity (seats) for the flight
+        SELECT Capacity INTO v_total_seats
+        FROM Airplane
+        WHERE AirplaneID = (SELECT AirplaneID FROM Flight WHERE FlightID = v_flight_id);
+
+        -- Calculate the number of confirmed seats (bookings with status 'Completed') for this flight
+        SELECT COUNT(*) INTO v_confirmed_seats
+        FROM Ticket t
+        JOIN Booking b ON t.BookingID = b.BookingID
+        WHERE t.FlightID = v_flight_id
+        AND b.BookingStatus = 'Completed';
+
+        -- Check if there are available seats left
+        IF v_confirmed_seats < v_total_seats THEN
+            -- Allow the booking to be confirmed, and display a message with the remaining seats
+            DBMS_OUTPUT.PUT_LINE('Booking confirmed for FlightID: ' || v_flight_id);
+            DBMS_OUTPUT.PUT_LINE('Available seats remaining: ' || (v_total_seats - v_confirmed_seats - 1));
+        ELSE
+            -- If no available seats, prevent the booking from being confirmed
+            RAISE_APPLICATION_ERROR(-20001, 'Flight is fully booked for FlightID: ' || v_flight_id);
+        END IF;
+    END IF;
+END trg_update_flight_availability;
+/
+
+-- Output message
+PROMPT Trigger trg_update_flight_availability created successfully;
+
+-- Step 2: Manually Update BookingStatus to Test the Trigger
+ACCEPT booking_id PROMPT 'Enter the Booking ID to confirm: ';
+
+-- Update the BookingStatus to 'Completed' for the provided Booking ID
+UPDATE Booking
+SET BookingStatus = 'Completed'
+WHERE BookingID = '&booking_id';
+
+-- Commit the transaction to apply the update and fire the trigger
+COMMIT;
+
+-- Output message
+PROMPT Booking status updated and trigger fired for BookingID: &booking_id;
+
+-- Step 3: Check Total Capacity and Confirmed Bookings for the Flight
+ACCEPT flight_id PROMPT 'Enter the Flight ID to check: ';
+
+-- Query to show total capacity and confirmed seats for the given flight
+SELECT f.FlightID, f.Origin, f.Destination, a.Capacity,
+    (SELECT COUNT(*) FROM Ticket t
+     JOIN Booking b ON t.BookingID = b.BookingID
+     WHERE t.FlightID = f.FlightID
+     AND b.BookingStatus = 'Completed') AS ConfirmedSeats
+FROM Flight f
+JOIN Airplane a ON f.AirplaneID = a.AirplaneID
+WHERE f.FlightID = '&flight_id';
+
+-- Output message
+PROMPT Query executed successfully for FlightID: &flight_id;
