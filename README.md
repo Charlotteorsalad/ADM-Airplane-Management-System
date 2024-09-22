@@ -77,6 +77,10 @@ Advanced Database Management Assignment
   </li>
 </ol>
 
+<h2>ERD Diagram</h2>
+![image](https://github.com/user-attachments/assets/ae09fc78-aa15-4405-850e-4e31e41ab12e)
+
+
 <h2>Expected Output</h2>
 
 <h3>Example 1: Procedure1-Get_Insurance_Claim_Details</h3>
