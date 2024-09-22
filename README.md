@@ -108,19 +108,35 @@ Advanced Database Management Assignment
 
 <img src="https://github.com/user-attachments/assets/86410806-f1b9-4af8-8d90-27f39af00578" alt="image" width="500"/>
 
+<br>
+
 <img src="https://github.com/user-attachments/assets/ef4356dd-5285-4a63-94dd-e42914f4ca2c" alt="image" width="500"/>
+
+<br>
 
 <img src="https://github.com/user-attachments/assets/aa2caf27-6590-48ae-8386-4dbfa06ef28f" alt="image" width="500"/>
 
+<br>
+
 <img src="https://github.com/user-attachments/assets/3b269f6c-9602-453a-bfdf-3648a71d8029" alt="image" width="500"/>
+
+<br>
 
 <img src="https://github.com/user-attachments/assets/8d25e8b8-a3a4-4ecf-b234-d03dbd2de89c" alt="image" width="500"/>
 
+<br>
+
 <img src="https://github.com/user-attachments/assets/c453924e-32cd-466f-a66f-b9fe6b8f9172" alt="image" width="500"/>
+
+<br>
 
 <img src="https://github.com/user-attachments/assets/e5f8d16d-1881-4f39-812a-d744f5bc435a" alt="image" width="500"/>
 
+<br>
+
 <img src="https://github.com/user-attachments/assets/fed78b05-cb1f-4df1-b540-bc91c0ec9224" alt="image" width="500"/>
+
+<br>
 
 <h3>3. Triggers</h3>
 <h4>Trigger1: Auto Update Membership Level</h4>
@@ -129,7 +145,11 @@ Advanced Database Management Assignment
 
 <img src="https://github.com/user-attachments/assets/e68895d7-77d1-4f62-a570-f04ae31750b0" alt="image" width="500"/>
 
+<br>
+
 <img src="https://github.com/user-attachments/assets/db6acdc9-63c6-4761-8a25-503ce7dbaeea" alt="image" width="500"/>
+
+<br>
 
 <img src="https://github.com/user-attachments/assets/407f70bb-9205-4809-a0ac-7aa98aee1a15" alt="image" width="500"/>
 
@@ -146,9 +166,15 @@ Advanced Database Management Assignment
 
 <img src="https://github.com/user-attachments/assets/0f4b2a20-cd53-478d-b883-baea655bc932" alt="image" width="500"/>
 
+<br>
+
 <img src="https://github.com/user-attachments/assets/e2f8ade3-0801-4e87-9aa8-38c1b81356fa" alt="image" width="500"/>
 
+<br>
+
 <img src="https://github.com/user-attachments/assets/3c26cf79-1d67-4946-a25b-94d1e4df6cc4" alt="image" width="500"/>
+
+<br>
 
 <img src="https://github.com/user-attachments/assets/f6fb7c35-0026-4902-9be1-0d3b016715d5" alt="image" width="500"/>
 
@@ -157,6 +183,8 @@ Advanced Database Management Assignment
 <p><strong>Insights:</strong> Understanding maintenance patterns can help the business plan for future costs and potentially phase out high-maintenance models. By comparing maintenance frequency and costs across models, the company can make data-driven decisions about fleet management and optimize resource allocation.</p>
 
 <img src="https://github.com/user-attachments/assets/7642b4f2-a286-472c-ae37-7890bc78ec91" alt="image" width="500"/>
+
+<br>
 
 <img src="https://github.com/user-attachments/assets/15ffc106-e062-43b6-ba08-5f66f8504b98" alt="image" width="500"/>
 
