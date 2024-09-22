@@ -1,0 +1,24 @@
+DROP TABLE FlightStaff;
+DROP TABLE AirplaneMaintenance;
+DROP TABLE PurchaseItem;
+DROP TABLE InsuranceClaim;
+DROP TABLE UpgradeRequest;
+DROP TABLE Luggage;
+DROP TABLE Ticket;
+DROP TABLE Refund;
+DROP TABLE Item;
+DROP TABLE Insurance;
+DROP TABLE Part;
+DROP TABLE Maintenance;
+DROP TABLE Staff;
+DROP TABLE Department;
+DROP TABLE Payment;
+DROP TABLE Booking;
+DROP TABLE Purchase;
+DROP TABLE Passenger;
+DROP TABLE Member;
+DROP TABLE Flight;
+DROP TABLE Airplane;
+DROP TABLE SeatClass;
+
+SELECT table_name from user_tables;
