@@ -1,0 +1,482 @@
+-- Claim 1
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-18 12:30:45', '230918-CLM-384728', '850.00', 'Approved', 'Lost Baggage', '230819-TKT-083');
+
+-- Claim 2
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-01 10:15:25', '230801-CLM-892754', '480.00', 'Approved', 'Trip Cancellation', '230725-TKT-069');
+
+-- Claim 3
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-29 15:22:10', '230929-CLM-495612', '600.00', 'Denied', 'Medical Emergency', '210115-TKT-001');
+
+-- Claim 4
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-10-03 17:45:32', '231003-CLM-284723', '700.00', 'Approved', 'Flight Delay', '230819-TKT-096');
+
+-- Claim 5
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-05 13:30:12', '230805-CLM-973651', '1200.00', 'Approved', 'Medical Emergency', '210208-TKT-002');
+
+-- Claim 6
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-20 09:17:50', '230920-CLM-394825', '900.00', 'Denied', 'Trip Cancellation', '230819-TKT-133');
+
+-- Claim 7
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-07-18 14:12:45', '230718-CLM-827462', '837.50', 'Approved', 'Flight Cancellation', '230819-TKT-056');
+
+-- Claim 8
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-23 12:05:22', '230823-CLM-645923', '437.50', 'Approved', 'Lost Baggage', '230921-TKT-085');
+
+-- Claim 9
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-10 16:25:40', '230910-CLM-591732', '765.00', 'Denied', 'Trip Delay', '230510-TKT-064');
+
+-- Claim 10
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-07-15 11:45:13', '230715-CLM-387562', '392.00', 'Approved', 'Medical Emergency', '210312-TKT-003');
+
+-- Claim 11
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-25 10:30:21', '230925-CLM-284631', '930.00', 'Approved', 'Lost Baggage', '230628-TKT-075');
+
+-- Claim 12
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-22 09:10:12', '230922-CLM-583940', '465.00', 'Denied', 'Medical Expenses', '230715-TKT-121');
+
+-- Claim 13
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-28 14:32:11', '230828-CLM-938271', '512.00', 'Approved', 'Flight Delay', '210420-TKT-004');
+
+-- Claim 14
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-29 11:55:05', '230829-CLM-294571', '900.00', 'Approved', 'Lost Baggage', '230809-TKT-047');
+
+-- Claim 15
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-12 10:45:50', '230912-CLM-627491', '620.00', 'Approved', 'Flight Cancellation', '230912-TKT-319');
+
+-- Claim 16
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-03 09:05:32', '230803-CLM-824931', '252.50', 'Denied', 'Mechanical Failure', '210525-TKT-005');
+
+-- Claim 17
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-13 13:30:10', '230913-CLM-593172', '780.00', 'Approved', 'Trip Cancellation', '230714-TKT-117');
+
+-- Claim 18
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-07-22 10:20:22', '230722-CLM-419238', '720.00', 'Approved', 'Flight Delay', '210525-TKT-006');
+
+-- Claim 19
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-15 15:45:18', '230915-CLM-283740', '448.00', 'Denied', 'Mechanical Failure', '230929-TKT-159');
+
+-- Claim 20
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-07-10 16:05:35', '230710-CLM-381947', '925.00', 'Approved', 'Medical Expenses', '230915-TKT-057');
+
+-- Claim 21
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-30 14:55:43', '230830-CLM-938274', '1050.00', 'Approved', 'Medical Expenses', '230923-TKT-135');
+
+-- Claim 22
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-21 10:45:23', '230921-CLM-728941', '437.50', 'Approved', 'Flight Cancellation', '230922-TKT-123');
+
+-- Claim 23
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-07-19 15:55:20', '230719-CLM-372819', '560.00', 'Approved', 'Flight Delay', '230921-TKT-185');
+
+-- Claim 24
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-02 12:20:35', '230802-CLM-495710', '700.00', 'Denied', 'Lost Baggage', '210610-TKT-007');
+
+-- Claim 25
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-10 14:30:05', '230910-CLM-823574', '900.00', 'Approved', 'Medical Expenses', '210713-TKT-008');
+
+-- Claim 26
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-15 17:35:30', '230815-CLM-495731', '237.50', 'Approved', 'Trip Cancellation', '210819-TKT-009');
+
+-- Claim 27
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-23 12:25:13', '230923-CLM-491872', '930.00', 'Denied', 'Medical Expenses', '230628-TKT-074');
+
+-- Claim 28
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-05 13:55:42', '230905-CLM-192574', '637.50', 'Approved', 'Mechanical Failure', '210819-TKT-010');
+
+-- Claim 29
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-06 14:10:22', '230906-CLM-729405', '512.00', 'Approved', 'Lost Baggage', '221125-TKT-011');
+
+-- Claim 30
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-07-20 09:35:50', '230720-CLM-283794', '762.50', 'Denied', 'Medical Emergency', '221210-TKT-012');
+
+-- Claim 31
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-22 12:30:15', '230922-CLM-591732', '390.00', 'Approved', 'Flight Cancellation', '230115-TKT-013');
+
+-- Claim 32
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-05 10:12:45', '230905-CLM-284731', '675.00', 'Denied', 'Mechanical Failure', '230220-TKT-014');
+
+-- Claim 33
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-07 14:50:22', '230907-CLM-938172', '400.00', 'Approved', 'Lost Baggage', '230910-TKT-145');
+
+-- Claim 34
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-08 11:20:10', '230908-CLM-672384', '437.50', 'Approved', 'Flight Delay', '240107-TKT-015');
+
+-- Claim 35
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-14 16:15:55', '230914-CLM-284735', '650.00', 'Denied', 'Medical Emergency', '240218-TKT-016');
+
+-- Claim 36
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-11 10:05:32', '230911-CLM-384751', '450.00', 'Approved', 'Baggage Loss', '210819-TKT-017');
+
+-- Claim 37
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-17 13:45:22', '230817-CLM-192847', '900.00', 'Approved', 'Flight Cancellation', '230920-TKT-079');
+
+-- Claim 38
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-12 14:35:13', '230912-CLM-294851', '580.00', 'Denied', 'Medical Emergency', '210930-TKT-018');
+
+-- Claim 39
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-29 15:22:55', '230929-CLM-834726', '320.00', 'Approved', 'Lost Baggage', '211011-TKT-019');
+
+-- Claim 40
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-30 17:30:12', '230930-CLM-823651', '320.00', 'Approved', 'Medical Emergency', '211123-TKT-020');
+
+-- Claim 41
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-18 13:20:45', '230918-CLM-385721', '787.50', 'Denied', 'Flight Delay', '211212-TKT-021');
+
+-- Claim 42
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-25 16:35:12', '230925-CLM-937452', '930.00', 'Approved', 'Flight Cancellation', '220103-TKT-022');
+
+-- Claim 43
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-17 09:45:18', '230917-CLM-284731', '650.00', 'Approved', 'Mechanical Failure', '220214-TKT-023');
+
+-- Claim 44
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-08 11:15:12', '230908-CLM-483921', '512.00', 'Denied', 'Flight Delay', '220329-TKT-024');
+
+-- Claim 45
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-10 14:45:15', '230910-CLM-193748', '765.00', 'Approved', 'Trip Cancellation', '230510-TKT-065');
+
+-- Claim 46
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-25 13:55:22', '230825-CLM-495231', '525.00', 'Denied', 'Medical Expenses', '221125-TKT-025');
+
+-- Claim 47
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-23 11:32:12', '230823-CLM-284961', '675.00', 'Approved', 'Lost Baggage', '221210-TKT-026');
+
+-- Claim 48
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-16 09:25:35', '230916-CLM-983462', '525.00', 'Approved', 'Medical Emergency', '230115-TKT-027');
+
+-- Claim 49
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-24 15:15:13', '230924-CLM-593741', '450.00', 'Denied', 'Lost Baggage', '230115-TKT-028');
+
+-- Claim 50
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-31 13:32:10', '230831-CLM-928471', '700.00', 'Approved', 'Flight Cancellation', '240107-TKT-029');
+
+-- Claim 51
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-11 14:10:55', '230911-CLM-374852', '437.50', 'Approved', 'Flight Delay', '230220-TKT-030');
+
+-- Claim 52
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-28 12:05:32', '230928-CLM-482739', '900.00', 'Denied', 'Trip Cancellation', '230325-TKT-031');
+
+-- Claim 53
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-15 10:20:40', '230915-CLM-284917', '762.50', 'Approved', 'Medical Emergency', '240225-TKT-032');
+
+-- Claim 54
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-08-22 09:55:22', '230822-CLM-495128', '620.00', 'Denied', 'Trip Cancellation', '230315-TKT-033');
+
+-- Claim 55
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-20 15:40:55', '230920-CLM-948231', '925.00', 'Approved', 'Flight Delay', '230228-TKT-034');
+
+-- Claim 56
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-19 11:30:22', '230919-CLM-473829', '390.00', 'Denied', 'Mechanical Failure', '230612-TKT-035');
+
+-- Claim 57
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-18 12:35:10', '230918-CLM-827361', '275.00', 'Approved', 'Medical Expenses', '230706-TKT-036');
+
+-- Claim 58
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-12 09:40:22', '230912-CLM-584732', '875.00', 'Denied', 'Medical Emergency', '230813-TKT-037');
+
+-- Claim 59
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-16 13:25:45', '230916-CLM-837295', '900.00', 'Approved', 'Flight Cancellation', '230813-TKT-038');
+
+-- Claim 60
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-30 12:55:13', '230930-CLM-493127', '437.50', 'Approved', 'Trip Cancellation', '240211-TKT-039');
+
+-- Claim 61
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-07 10:45:22', '230907-CLM-394817', '450.00', 'Approved', 'Lost Baggage', '240310-TKT-040');
+
+-- Claim 62
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-21 14:15:35', '230921-CLM-238917', '520.00', 'Approved', 'Flight Cancellation', '230625-TKT-447');
+
+-- Claim 63
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-23 11:35:55', '230923-CLM-471283', '620.00', 'Denied', 'Medical Emergency', '240114-TKT-222');
+
+-- Claim 64
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-24 09:20:12', '230924-CLM-392847', '512.00', 'Approved', 'Flight Delay', '230403-TKT-041');
+
+-- Claim 65
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-27 14:55:15', '230927-CLM-918372', '600.00', 'Denied', 'Mechanical Failure', '230911-TKT-105');
+
+-- Claim 66
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-22 11:25:55', '230922-CLM-294832', '800.00', 'Approved', 'Trip Cancellation', '240408-TKT-042');
+
+-- Claim 67
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-14 12:45:22', '230914-CLM-192837', '937.50', 'Denied', 'Medical Expenses', '230527-TKT-043');
+
+-- Claim 68
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-18 15:05:13', '230918-CLM-483621', '550.00', 'Approved', 'Flight Delay', '230711-TKT-044');
+
+-- Claim 69
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-16 10:30:55', '230916-CLM-283910', '275.00', 'Approved', 'Lost Baggage', '240712-TKT-045');
+
+-- Claim 70
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-25 14:20:40', '230925-CLM-837463', '450.00', 'Approved', 'Medical Emergency', '230809-TKT-046');
+
+-- Claim 71
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-10 09:30:22', '230910-CLM-293741', '437.50', 'Denied', 'Flight Cancellation', '240818-TKT-048');
+
+-- Claim 72
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-14 13:55:32', '230914-CLM-483627', '787.50', 'Approved', 'Medical Expenses', '240809-TKT-049');
+
+-- Claim 73
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-18 15:20:55', '230918-CLM-294817', '675.00', 'Approved', 'Trip Cancellation', '230914-TKT-050');
+
+-- Claim 74
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-20 16:45:12', '230920-CLM-837294', '920.00', 'Denied', 'Lost Baggage', '230515-TKT-051');
+
+-- Claim 75
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-12 13:50:12', '230912-CLM-493741', '512.00', 'Approved', 'Mechanical Failure', '230527-TKT-052');
+
+-- Claim 76
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-16 11:25:32', '230916-CLM-192837', '920.00', 'Approved', 'Flight Delay', '230911-TKT-053');
+
+-- Claim 77
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-11 10:45:22', '230911-CLM-293841', '512.00', 'Denied', 'Medical Expenses', '240215-TKT-054');
+
+-- Claim 78
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-19 09:15:13', '230919-CLM-837194', '437.50', 'Approved', 'Medical Emergency', '240318-TKT-055');
+
+-- Claim 79
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-21 11:50:45', '230921-CLM-495283', '450.00', 'Approved', 'Lost Baggage', '240215-TKT-058');
+
+-- Claim 80
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-23 14:15:35', '230923-CLM-384921', '675.00', 'Approved', 'Trip Cancellation', '230921-TKT-059');
+
+-- Claim 81
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-25 16:40:12', '230925-CLM-495621', '900.00', 'Denied', 'Medical Emergency', '230907-TKT-060');
+
+-- Claim 82
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-14 10:25:55', '230914-CLM-483920', '875.00', 'Approved', 'Flight Delay', '240301-TKT-061');
+
+-- Claim 83
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-22 09:15:25', '230922-CLM-192847', '625.00', 'Denied', 'Mechanical Failure', '230623-TKT-062');
+
+-- Claim 84
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-13 11:32:10', '230913-CLM-483617', '900.00', 'Approved', 'Medical Expenses', '240518-TKT-063');
+
+-- Claim 85
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-15 13:25:45', '230915-CLM-483621', '675.00', 'Approved', 'Flight Cancellation', '240612-TKT-066');
+
+-- Claim 86
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-11 12:10:55', '230911-CLM-384728', '512.00', 'Denied', 'Flight Delay', '230916-TKT-067');
+
+-- Claim 87
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-26 10:35:22', '230926-CLM-827314', '450.00', 'Approved', 'Medical Emergency', '240220-TKT-068');
+
+-- Claim 88
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-19 15:20:13', '230919-CLM-384712', '437.50', 'Approved', 'Lost Baggage', '230816-TKT-070');
+
+-- Claim 89
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-30 14:35:55', '230930-CLM-283194', '620.00', 'Denied', 'Mechanical Failure', '240408-TKT-071');
+
+-- Claim 90
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-24 09:50:25', '230924-CLM-471239', '700.00', 'Approved', 'Medical Expenses', '230527-TKT-072');
+
+-- Claim 91
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-16 11:25:35', '230916-CLM-837291', '437.50', 'Approved', 'Trip Cancellation', '240511-TKT-073');
+
+-- Claim 92
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-14 13:35:45', '230914-CLM-283104', '390.00', 'Denied', 'Mechanical Failure', '240703-TKT-076');
+
+-- Claim 93
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-27 16:45:50', '230927-CLM-947102', '925.00', 'Approved', 'Medical Emergency', '230915-TKT-081');
+
+-- Claim 94
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-18 12:10:10', '230918-CLM-302748', '437.50', 'Approved', 'Baggage Loss', '230822-TKT-077');
+
+-- Claim 95
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-25 11:30:22', '230925-CLM-487195', '512.00', 'Denied', 'Flight Delay', '240815-TKT-078');
+
+-- Claim 96
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-22 09:40:55', '230922-CLM-384723', '900.00', 'Approved', 'Medical Expenses', '230922-TKT-379');
+
+-- Claim 97
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-17 16:15:35', '230917-CLM-837429', '675.00', 'Approved', 'Trip Cancellation', '240416-TKT-080');
+
+-- Claim 98
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-20 14:25:12', '230920-CLM-947128', '512.00', 'Denied', 'Mechanical Failure', '240510-TKT-082');
+
+-- Claim 99
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-19 09:10:22', '230919-CLM-293810', '900.00', 'Approved', 'Flight Delay', '230910-TKT-390');
+
+-- Claim 100
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-15 13:15:22', '230915-CLM-293741', '450.00', 'Approved', 'Medical Emergency', '240715-TKT-084');
+
+-- Claim 101
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-23 11:35:10', '230923-CLM-947531', '437.50', 'Denied', 'Lost Baggage', '240508-TKT-086');
+
+-- Claim 102
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-12 09:45:12', '230912-CLM-384129', '625.00', 'Approved', 'Trip Cancellation', '240114-TKT-223');
+
+-- Claim 103
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-27 14:15:35', '230927-CLM-387104', '787.50', 'Approved', 'Medical Expenses', '230526-TKT-087');
+
+-- Claim 104
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-29 16:45:12', '230929-CLM-294728', '512.00', 'Approved', 'Flight Delay', '230526-TKT-088');
+
+-- Claim 105
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-20 10:55:22', '230920-CLM-483921', '390.00', 'Denied', 'Mechanical Failure', '240610-TKT-089');
+
+-- Claim 106
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-14 09:25:55', '230914-CLM-294716', '512.00', 'Approved', 'Medical Emergency', '230726-TKT-090');
+
+-- Claim 107
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-22 14:10:32', '230922-CLM-294718', '675.00', 'Approved', 'Trip Cancellation', '240716-TKT-091');
+
+-- Claim 108
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-28 11:15:55', '230928-CLM-837172', '437.50', 'Denied', 'Medical Expenses', '230825-TKT-092');
+
+-- Claim 109
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-13 14:35:12', '230913-CLM-837495', '450.00', 'Approved', 'Lost Baggage', '240611-TKT-093');
+
+-- Claim 110
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-11 12:45:35', '230911-CLM-392847', '620.00', 'Approved', 'Flight Delay', '230527-TKT-094');
+
+-- Claim 111
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-18 15:20:40', '230918-CLM-947218', '787.50', 'Denied', 'Flight Cancellation', '240701-TKT-095');
+
+-- Claim 112
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-23 09:15:32', '230923-CLM-837291', '450.00', 'Approved', 'Medical Expenses', '240815-TKT-097');
+
+-- Claim 113
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-30 13:35:45', '230930-CLM-294817', '675.00', 'Approved', 'Trip Cancellation', '230917-TKT-098');
+
+-- Claim 114
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-14 14:55:55', '230914-CLM-483217', '900.00', 'Denied', 'Mechanical Failure', '240501-TKT-099');
+
+-- Claim 115
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-21 11:25:22', '230921-CLM-837210', '625.00', 'Approved', 'Medical Expenses', '230712-TKT-100');
+
+-- Claim 116
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-27 12:15:35', '230927-CLM-294618', '512.00', 'Denied', 'Flight Delay', '240613-TKT-101');
+
+-- Claim 117
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-24 14:25:40', '230924-CLM-392848', '450.00', 'Approved', 'Trip Cancellation', '230820-TKT-102');
+
+-- Claim 118
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-25 10:10:32', '230925-CLM-294721', '900.00', 'Approved', 'Medical Expenses', '240514-TKT-103');
+
+-- Claim 119
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-29 16:35:12', '230929-CLM-837510', '512.00', 'Approved', 'Flight Delay', '230911-TKT-104');
+
+-- Claim 120
+INSERT INTO InsuranceClaim (ClaimDate, ClaimID, ClaimAmount, ClaimStatus, ClaimReason, TicketID) 
+VALUES (TIMESTAMP '2023-09-13 11:35:22', '230913-CLM-847295', '437.50', 'Denied', 'Lost Baggage', '240507-TKT-106');
+
+
+SELECT COUNT(*) FROM InsuranceClaim;

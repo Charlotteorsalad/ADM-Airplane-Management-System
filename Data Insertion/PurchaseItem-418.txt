@@ -1,0 +1,1179 @@
+-- Record 1
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-001', 'ITM9617', 2);
+
+-- Record 2
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-002', 'ITM9634', 3);
+
+-- Record 3
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-003', 'ITM0000', 1);
+
+-- Record 4
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-004', 'ITM5007', 1);
+
+-- Record 5
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-005', 'ITM9634', 2);
+
+-- Record 6
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-006', 'ITM9617', 1);
+
+-- Record 7
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-007', 'ITM8285', 2);
+
+-- Record 8
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-008', 'ITM0258', 3);
+
+-- Record 9
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20251101-PCH-009', 'ITM9634', 1);
+
+-- Record 10
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-010', 'ITM1140', 2);
+
+-- Record 11
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-011', 'ITM0000', 2);
+
+-- Record 12
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230301-PCH-012', 'ITM3249', 1);
+
+-- Record 13
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-013', 'ITM6901', 1);
+
+-- Record 14
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221115-PCH-014', 'ITM2857', 3);
+
+-- Record 15
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20231005-PCH-015', 'ITM7969', 2);
+
+-- Record 16
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20231005-PCH-016', 'ITM9634', 2);
+
+-- Record 17
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221010-PCH-017', 'ITM9617', 1);
+
+-- Record 18
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-018', 'ITM8285', 1);
+
+-- Record 19
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-019', 'ITM9634', 3);
+
+-- Record 20
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-020', 'ITM0258', 2);
+
+-- Record 21
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-021', 'ITM1140', 2);
+
+-- Record 22
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220212-PCH-022', 'ITM9634', 1);
+
+-- Record 23
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220212-PCH-023', 'ITM9617', 1);
+
+-- Record 24
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-024', 'ITM3249', 1);
+
+-- Record 25
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20231005-PCH-025', 'ITM6901', 1);
+
+-- Record 26
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221222-PCH-026', 'ITM2857', 2);
+
+-- Record 27
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-027', 'ITM7969', 3);
+
+-- Record 28
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-028', 'ITM9634', 1);
+
+-- Record 29
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-029', 'ITM9617', 1);
+
+-- Record 30
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-030', 'ITM8285', 2);
+
+-- Record 31
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-031', 'ITM0258', 3);
+
+-- Record 32
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-032', 'ITM1140', 1);
+
+-- Record 33
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-033', 'ITM6901', 1);
+
+-- Record 34
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-034', 'ITM2857', 2);
+
+-- Record 35
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-035', 'ITM7969', 1);
+
+-- Record 36
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-036', 'ITM9634', 2);
+
+-- Record 37
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-037', 'ITM9617', 1);
+
+-- Record 38
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-038', 'ITM8285', 3);
+
+-- Record 39
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-039', 'ITM0258', 1);
+
+-- Record 40
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-040', 'ITM0000', 4);
+
+-- Record 41
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-041', 'ITM5007', 1);
+
+-- Record 42
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-042', 'ITM9634', 1);
+
+-- Record 43
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-043', 'ITM1140', 2);
+
+-- Record 44
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-044', 'ITM6901', 1);
+
+-- Record 45
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-045', 'ITM8285', 1);
+
+-- Record 46
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-046', 'ITM0000', 3);
+
+-- Record 47
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-047', 'ITM2857', 2);
+
+-- Record 48
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-048', 'ITM0258', 3);
+
+-- Record 49
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-049', 'ITM9617', 2);
+
+-- Record 50
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-050', 'ITM5007', 1);
+
+-- Record 51
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-051', 'ITM9634', 1);
+
+-- Record 52
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-052', 'ITM3249', 2);
+
+-- Record 53
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-053', 'ITM1140', 3);
+
+-- Record 54
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-054', 'ITM6901', 1);
+
+-- Record 55
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-055', 'ITM2857', 2);
+
+-- Record 56
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-056', 'ITM9634', 2);
+
+-- Record 57
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-057', 'ITM9617', 1);
+
+-- Record 58
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-058', 'ITM8285', 1);
+
+-- Record 59
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-059', 'ITM0258', 2);
+
+-- Record 60
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-060', 'ITM5007', 1);
+
+-- Record 61
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-061', 'ITM9634', 1);
+
+-- Record 62
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20251101-PCH-062', 'ITM1140', 2);
+
+-- Record 63
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-063', 'ITM6901', 3);
+
+-- Record 64
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-064', 'ITM2857', 1);
+
+-- Record 65
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-065', 'ITM3249', 1);
+
+-- Record 66
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-066', 'ITM9617', 1);
+
+-- Record 67
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-067', 'ITM9634', 2);
+
+-- Record 68
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-068', 'ITM6901', 2);
+
+-- Record 69
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-069', 'ITM5007', 1);
+
+-- Record 70
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-070', 'ITM9634', 2);
+
+-- Record 71
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-071', 'ITM9617', 1);
+
+-- Record 72
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-072', 'ITM8285', 1);
+
+-- Record 73
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20251101-PCH-073', 'ITM1140', 3);
+
+-- Record 74
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-074', 'ITM2857', 1);
+
+-- Record 75
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-075', 'ITM3249', 1);
+
+-- Record 76
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230301-PCH-076', 'ITM9617', 2);
+
+-- Record 77
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230301-PCH-077', 'ITM9634', 1);
+
+-- Record 78
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-078', 'ITM6901', 1);
+
+-- Record 79
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-079', 'ITM8285', 2);
+
+-- Record 80
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-080', 'ITM1140', 3);
+
+-- Record 81
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-081', 'ITM6901', 1);
+
+-- Record 82
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221010-PCH-082', 'ITM2857', 1);
+
+-- Record 83
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221010-PCH-083', 'ITM3249', 2);
+
+-- Record 84
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-084', 'ITM9617', 2);
+
+-- Record 85
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-085', 'ITM9634', 1);
+
+-- Record 86
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-086', 'ITM0000', 1);
+
+-- Record 87
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-087', 'ITM6901', 2);
+
+-- Record 88
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-088', 'ITM8285', 1);
+
+-- Record 89
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-089', 'ITM1140', 3);
+
+-- Record 90
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-090', 'ITM6901', 1);
+
+-- Record 91
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-091', 'ITM9634', 1);
+
+-- Record 92
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-092', 'ITM3249', 2);
+
+-- Record 93
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220212-PCH-093', 'ITM2857', 2);
+
+-- Record 94
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220212-PCH-094', 'ITM9634', 1);
+
+-- Record 95
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-095', 'ITM1140', 1);
+
+-- Record 96
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-096', 'ITM6901', 3);
+
+-- Record 97
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-097', 'ITM8285', 1);
+
+-- Record 98
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-098', 'ITM0000', 2);
+
+-- Record 99
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-099', 'ITM3249', 2);
+
+-- Record 100
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-100', 'ITM9634', 1);
+
+-- Record 101
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-101', 'ITM9617', 2);
+
+-- Record 102
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-102', 'ITM9634', 1);
+
+-- Record 103
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-103', 'ITM1140', 1);
+
+-- Record 104
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-104', 'ITM2857', 3);
+
+-- Record 105
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-105', 'ITM6901', 1);
+
+-- Record 106
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-106', 'ITM0000', 1);
+
+-- Record 107
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-107', 'ITM8285', 1);
+
+-- Record 108
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-108', 'ITM5007', 2);
+
+-- Record 109
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-109', 'ITM9634', 2);
+
+-- Record 110
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-110', 'ITM6901', 1);
+
+-- Record 111
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-111', 'ITM1140', 1);
+
+-- Record 112
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-112', 'ITM9634', 3);
+
+-- Record 113
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-113', 'ITM8285', 2);
+
+-- Record 114
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-114', 'ITM0000', 2);
+
+-- Record 115
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-115', 'ITM9617', 1);
+
+-- Record 116
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-116', 'ITM6901', 2);
+
+-- Record 117
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-117', 'ITM9634', 1);
+
+-- Record 118
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-118', 'ITM1140', 2);
+
+-- Record 119
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-119', 'ITM8285', 1);
+
+-- Record 120
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-120', 'ITM5007', 3);
+
+-- Record 121
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-041', 'ITM9634', 2);
+
+-- Record 122
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-042', 'ITM1140', 1);
+
+-- Record 123
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-043', 'ITM6901', 2);
+
+-- Record 124
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-044', 'ITM2857', 1);
+
+-- Record 125
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-045', 'ITM9617', 2);
+
+-- Record 126
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-046', 'ITM9634', 1);
+
+-- Record 127
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-047', 'ITM0000', 3);
+
+-- Record 128
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-048', 'ITM8285', 1);
+
+-- Record 129
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-049', 'ITM1140', 2);
+
+-- Record 130
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-050', 'ITM6901', 3);
+
+-- Record 131
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-051', 'ITM6901', 2);
+
+-- Record 132
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-052', 'ITM5007', 1);
+
+-- Record 133
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-053', 'ITM2857', 1);
+
+-- Record 134
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-054', 'ITM9617', 2);
+
+-- Record 135
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-055', 'ITM6901', 1);
+
+-- Record 136
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-056', 'ITM6901', 1);
+
+-- Record 137
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-057', 'ITM8285', 1);
+
+-- Record 138
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-058', 'ITM1140', 2);
+
+-- Record 139
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-059', 'ITM6901', 2);
+
+-- Record 140
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-060', 'ITM9634', 1);
+
+-- Record 141
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-061', 'ITM2857', 3);
+
+-- Record 142
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20251101-PCH-062', 'ITM9617', 1);
+
+-- Record 143
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-063', 'ITM9617', 2);
+
+-- Record 144
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-064', 'ITM9634', 1);
+
+-- Record 145
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-065', 'ITM8285', 2);
+
+-- Record 146
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-066', 'ITM1140', 3);
+
+-- Record 147
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-067', 'ITM6901', 1);
+
+-- Record 148
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-068', 'ITM9634', 1);
+
+-- Record 149
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-069', 'ITM2857', 2);
+
+-- Record 150
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-070', 'ITM9617', 2);
+
+-- Record 151
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-071', 'ITM6901', 1);
+
+-- Record 152
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-072', 'ITM9634', 3);
+
+-- Record 153
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20251101-PCH-073', 'ITM5007', 2);
+
+-- Record 154
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-074', 'ITM5007', 1);
+
+-- Record 155
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-075', 'ITM8285', 2);
+
+-- Record 156
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230301-PCH-076', 'ITM1140', 1);
+
+-- Record 157
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230301-PCH-077', 'ITM6901', 2);
+
+-- Record 158
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-078', 'ITM9634', 1);
+
+-- Record 159
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-079', 'ITM2857', 3);
+
+-- Record 160
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-080', 'ITM6901', 1);
+
+-- Record 161
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-081', 'ITM9634', 1);
+
+-- Record 162
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221010-PCH-082', 'ITM5007', 2);
+
+-- Record 163
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221010-PCH-083', 'ITM2857', 2);
+
+-- Record 164
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-084', 'ITM2857', 1);
+
+-- Record 165
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-085', 'ITM0000', 3);
+
+-- Record 166
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-086', 'ITM8285', 1);
+
+-- Record 167
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-087', 'ITM8285', 2);
+
+-- Record 168
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-088', 'ITM9634', 1);
+
+-- Record 169
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-089', 'ITM8285', 2);
+
+-- Record 170
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-090', 'ITM8285', 1);
+
+-- Record 171
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-091', 'ITM8285', 2);
+
+-- Record 172
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-092', 'ITM2857', 3);
+
+-- Record 173
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220212-PCH-093', 'ITM6901', 1);
+
+-- Record 174
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220212-PCH-094', 'ITM6901', 2);
+
+-- Record 175
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-095', 'ITM8285', 2);
+
+-- Record 176
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-096', 'ITM1140', 1);
+
+-- Record 177
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-097', 'ITM6901', 2);
+
+-- Record 178
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-098', 'ITM9634', 3);
+
+-- Record 179
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-099', 'ITM2857', 1);
+
+-- Record 180
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-100', 'ITM5007', 1);
+
+-- Record 181
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-101', 'ITM8285', 1);
+
+-- Record 182
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-102', 'ITM9617', 2);
+
+-- Record 183
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-103', 'ITM6901', 3);
+
+-- Record 184
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-104', 'ITM9634', 2);
+
+-- Record 185
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-105', 'ITM2857', 2);
+
+-- Record 186
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-106', 'ITM5007', 3);
+
+-- Record 187
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-107', 'ITM6901', 1);
+
+-- Record 188
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-108', 'ITM9634', 2);
+
+-- Record 189
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-109', 'ITM2857', 1);
+
+-- Record 190
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-110', 'ITM9617', 3);
+
+-- Record 191
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-111', 'ITM6901', 2);
+
+-- Record 192
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-112', 'ITM6901', 1);
+
+-- Record 193
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-113', 'ITM2857', 1);
+
+-- Record 194
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-114', 'ITM5007', 2);
+
+-- Record 195
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-115', 'ITM8285', 1);
+
+-- Record 196
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-116', 'ITM9634', 3);
+
+-- Record 197
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-117', 'ITM1140', 2);
+
+-- Record 198
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-118', 'ITM5007', 1);
+
+-- Record 199
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-119', 'ITM5007', 2);
+
+-- Record 200
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-120', 'ITM6901', 2);
+
+-- Record 201
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-041', 'ITM9617', 1);
+
+-- Record 202
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-042', 'ITM9617', 1);
+
+-- Record 203
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-043', 'ITM2857', 2);
+
+-- Record 204
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-044', 'ITM9634', 2);
+
+-- Record 205
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-045', 'ITM5007', 1);
+
+-- Record 206
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-046', 'ITM9617', 1);
+
+-- Record 207
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-047', 'ITM9617', 2);
+
+-- Record 208
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-048', 'ITM9634', 2);
+
+-- Record 209
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-049', 'ITM6901', 1);
+
+-- Record 210
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-050', 'ITM2857', 2);
+
+-- Record 211
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-051', 'ITM5007', 3);
+
+-- Record 212
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-052', 'ITM8285', 2);
+
+-- Record 213
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-053', 'ITM9617', 1);
+
+-- Record 214
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-054', 'ITM9634', 2);
+
+-- Record 215
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-055', 'ITM9634', 1);
+
+-- Record 216
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-056', 'ITM2857', 1);
+
+-- Record 217
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-057', 'ITM2857', 2);
+
+-- Record 218
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-058', 'ITM0000', 4);
+
+-- Record 219
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-059', 'ITM9634', 1);
+
+-- Record 220
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-060', 'ITM6901', 3);
+
+-- Record 221
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-061', 'ITM1140', 1);
+
+-- Record 222
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20251101-PCH-062', 'ITM8285', 2);
+
+-- Record 223
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-063', 'ITM9634', 1);
+
+-- Record 224
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-064', 'ITM8285', 3);
+
+-- Record 225
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-065', 'ITM5007', 1);
+
+-- Record 226
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-066', 'ITM6901', 2);
+
+-- Record 227
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-067', 'ITM9617', 1);
+
+-- Record 228
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-068', 'ITM2857', 2);
+
+-- Record 229
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-069', 'ITM8285', 3);
+
+-- Record 230
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-070', 'ITM8285', 1);
+
+-- Record 231
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-071', 'ITM8285', 1);
+
+-- Record 232
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-072', 'ITM5007', 2);
+
+-- Record 233
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20251101-PCH-073', 'ITM8285', 1);
+
+-- Record 234
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-074', 'ITM8285', 2);
+
+-- Record 235
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-075', 'ITM9634', 1);
+
+-- Record 236
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230301-PCH-076', 'ITM2857', 3);
+
+-- Record 237
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230301-PCH-077', 'ITM5007', 1);
+
+-- Record 238
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-078', 'ITM5007', 2);
+
+-- Record 239
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-079', 'ITM9617', 1);
+
+-- Record 240
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-080', 'ITM2857', 2);
+
+-- Record 241
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-081', 'ITM8285', 3);
+
+-- Record 242
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221010-PCH-082', 'ITM9634', 1);
+
+-- Record 243
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221010-PCH-083', 'ITM6901', 2);
+
+-- Record 244
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-084', 'ITM5007', 1);
+
+-- Record 245
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-085', 'ITM1140', 1);
+
+-- Record 246
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-086', 'ITM1140', 2);
+
+-- Record 247
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-087', 'ITM9634', 1);
+
+-- Record 248
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-088', 'ITM6901', 1);
+
+-- Record 249
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-089', 'ITM5007', 2);
+
+-- Record 250
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-090', 'ITM1140', 1);
+
+-- Record 251
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-091', 'ITM2857', 2);
+
+-- Record 252
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220410-PCH-092', 'ITM8285', 2);
+
+-- Record 253
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220212-PCH-093', 'ITM9634', 1);
+
+-- Record 254
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220212-PCH-094', 'ITM8285', 3);
+
+-- Record 255
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-095', 'ITM5007', 1);
+
+-- Record 256
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-096', 'ITM5007', 1);
+
+-- Record 257
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-097', 'ITM2857', 2);
+
+-- Record 258
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-098', 'ITM8285', 1);
+
+-- Record 259
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-099', 'ITM9634', 2);
+
+-- Record 260
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-100', 'ITM6901', 2);
+
+-- Record 261
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-101', 'ITM5007', 1);
+
+-- Record 262
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-102', 'ITM1140', 1);
+
+-- Record 263
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-103', 'ITM8285', 2);
+
+-- Record 264
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220518-PCH-104', 'ITM5007', 2);
+
+-- Record 265
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-105', 'ITM5007', 2);
+
+-- Record 266
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-106', 'ITM2857', 1);
+
+-- Record 267
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-107', 'ITM5007', 1);
+
+-- Record 268
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230815-PCH-108', 'ITM8285', 3);
+
+-- Record 269
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-109', 'ITM6901', 2);
+
+-- Record 270
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-110', 'ITM9634', 1);
+
+-- Record 271
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-111', 'ITM2857', 2);
+
+-- Record 272
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-112', 'ITM9617', 1);
+
+-- Record 273
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-113', 'ITM1140', 1);
+
+-- Record 274
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-114', 'ITM8285', 2);
+
+-- Record 275
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-115', 'ITM9634', 1);
+
+-- Record 276
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-116', 'ITM8285', 1);
+
+-- Record 277
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-117', 'ITM5007', 2);
+
+-- Record 278
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-118', 'ITM9617', 1);
+
+-- Record 279
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-119', 'ITM9617', 1);
+
+-- Record 280
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211021-PCH-120', 'ITM9634', 2);
+
+-- Record 281
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-001', 'ITM5007', 1);
+
+-- Record 282
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210105-PCH-002', 'ITM1140', 2);
+
+-- Record 283
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-003', 'ITM8285', 3);
+
+-- Record 284
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-004', 'ITM9617', 1);
+
+-- Record 285
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210212-PCH-005', 'ITM9617', 1);
+
+-- Record 286
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230701-PCH-006', 'ITM2857', 2);
+
+-- Record 287
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210508-PCH-007', 'ITM6901', 3);
+
+-- Record 288
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-008', 'ITM8285', 1);
+
+-- Record 289
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20251101-PCH-009', 'ITM5007', 2);
+
+-- Record 290
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211115-PCH-010', 'ITM5007', 1);
+
+-- Record 291
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220810-PCH-011', 'ITM9617', 2);
+
+-- Record 292
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20230301-PCH-012', 'ITM2857', 3);
+
+-- Record 293
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220315-PCH-013', 'ITM2857', 1);
+
+-- Record 294
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221115-PCH-014', 'ITM5007', 2);
+
+-- Record 295
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20231005-PCH-015', 'ITM8285', 1);
+
+-- Record 296
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20231005-PCH-016', 'ITM9617', 2);
+
+-- Record 297
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20221010-PCH-017', 'ITM9634', 1);
+
+-- Record 298
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20211210-PCH-018', 'ITM2857', 2);
+
+-- Record 299
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20220105-PCH-019', 'ITM6901', 3);
+
+-- Record 300
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20210909-PCH-020', 'ITM8285', 2);
+
+-- Purchase 121: Passenger PSG078, PurchaseID 20240105-PCH-121
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240105-PCH-121', 'ITM9617', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240105-PCH-121', 'ITM5007', 1);
+
+-- Purchase 122: Passenger PSG099, PurchaseID 20240110-PCH-122
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240110-PCH-122', 'ITM8285', 3);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240110-PCH-122', 'ITM1140', 1);
+
+-- Purchase 123: Passenger PSG081, PurchaseID 20240115-PCH-123
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240115-PCH-123', 'ITM9634', 2);
+
+-- Purchase 124: Passenger PSG110, PurchaseID 20240125-PCH-124
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240125-PCH-124', 'ITM5007', 1);
+
+-- Purchase 125: Passenger PSG114, PurchaseID 20240205-PCH-125
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240205-PCH-125', 'ITM9617', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240205-PCH-125', 'ITM9634', 3);
+
+-- Purchase 126: Passenger PSG120, PurchaseID 20240220-PCH-126
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240220-PCH-126', 'ITM6901', 2);
+
+-- Purchase 127: Passenger PSG095, PurchaseID 20240305-PCH-127
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240305-PCH-127', 'ITM9634', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240305-PCH-127', 'ITM5007', 1);
+
+-- Purchase 128: Passenger PSG102, PurchaseID 20240312-PCH-128
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240312-PCH-128', 'ITM1140', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240312-PCH-128', 'ITM7969', 3);
+
+-- Purchase 129: Passenger PSG103, PurchaseID 20240329-PCH-129
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240329-PCH-129', 'ITM9617', 1);
+
+-- Purchase 130: Passenger PSG108, PurchaseID 20240410-PCH-130
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240410-PCH-130', 'ITM6901', 1);
+
+-- Purchase 131: Passenger PSG127, PurchaseID 20240509-PCH-131
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240509-PCH-131', 'ITM9634', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240509-PCH-131', 'ITM7969', 1);
+
+-- Purchase 132: Passenger PSG088, PurchaseID 20240601-PCH-132
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240601-PCH-132', 'ITM6349', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240601-PCH-132', 'ITM1140', 3);
+
+-- Purchase 133: Passenger PSG105, PurchaseID 20240701-PCH-133
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240701-PCH-133', 'ITM9634', 2);
+
+-- Purchase 134: Passenger PSG121, PurchaseID 20240715-PCH-134
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240715-PCH-134', 'ITM9617', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240715-PCH-134', 'ITM5007', 1);
+
+-- Purchase 135: Passenger PSG133, PurchaseID 20240820-PCH-135
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240820-PCH-135', 'ITM7969', 3);
+
+-- Purchase 136: Passenger PSG097, PurchaseID 20240912-PCH-136
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240912-PCH-136', 'ITM6349', 2);
+
+-- Purchase 137: Passenger PSG106, PurchaseID 20241001-PCH-137
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241001-PCH-137', 'ITM9634', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241001-PCH-137', 'ITM1140', 2);
+
+-- Purchase 138: Passenger PSG115, PurchaseID 20241010-PCH-138
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241010-PCH-138', 'ITM9617', 1);
+
+-- Purchase 139: Passenger PSG124, PurchaseID 20241101-PCH-139
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241101-PCH-139', 'ITM5007', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241101-PCH-139', 'ITM8285', 3);
+
+-- Purchase 140: Passenger PSG137, PurchaseID 20241201-PCH-140
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241201-PCH-140', 'ITM9617', 2);
+
+-- Purchase 141: Passenger PSG079, PurchaseID 20240210-PCH-141
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240210-PCH-141', 'ITM9634', 3);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240210-PCH-141', 'ITM8285', 1);
+
+-- Purchase 142: Passenger PSG077, PurchaseID 20240220-PCH-142
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240220-PCH-142', 'ITM5007', 1);
+
+-- Purchase 143: Passenger PSG093, PurchaseID 20240322-PCH-143
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240322-PCH-143', 'ITM9634', 2);
+
+-- Purchase 144: Passenger PSG084, PurchaseID 20240411-PCH-144
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240411-PCH-144', 'ITM6901', 2);
+
+-- Purchase 145: Passenger PSG118, PurchaseID 20240510-PCH-145
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240510-PCH-145', 'ITM9617', 1);
+
+-- Purchase 146: Passenger PSG090, PurchaseID 20240620-PCH-146
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240620-PCH-146', 'ITM5007', 1);
+
+-- Purchase 147: Passenger PSG073, PurchaseID 20240705-PCH-147
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240705-PCH-147', 'ITM7969', 2);
+
+-- Purchase 148: Passenger PSG130, PurchaseID 20240815-PCH-148
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240815-PCH-148', 'ITM6901', 1);
+
+-- Purchase 149: Passenger PSG144, PurchaseID 20240922-PCH-149
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240922-PCH-149', 'ITM9634', 3);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240922-PCH-149', 'ITM6901', 2);
+
+-- Purchase 150: Passenger PSG128, PurchaseID 20241005-PCH-150
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241005-PCH-150', 'ITM9617', 2);
+
+-- Purchase 151: Passenger PSG092, PurchaseID 20241015-PCH-151
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241015-PCH-151', 'ITM7969', 3);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241015-PCH-151', 'ITM1140', 1);
+
+-- Purchase 152: Passenger PSG066, PurchaseID 20241020-PCH-152
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241020-PCH-152', 'ITM5007', 1);
+
+-- Purchase 153: Passenger PSG112, PurchaseID 20241105-PCH-153
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241105-PCH-153', 'ITM9634', 2);
+
+-- Purchase 154: Passenger PSG140, PurchaseID 20241201-PCH-154
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241201-PCH-154', 'ITM6901', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20241201-PCH-154', 'ITM1140', 1);
+
+-- Purchase 155: Passenger PSG149, PurchaseID 20240105-PCH-155
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240105-PCH-155', 'ITM8285', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240105-PCH-155', 'ITM9617', 1);
+
+-- Purchase 156: Passenger PSG152, PurchaseID 20240221-PCH-156
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240221-PCH-156', 'ITM9634', 3);
+
+-- Purchase 157: Passenger PSG103, PurchaseID 20240330-PCH-157
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240330-PCH-157', 'ITM5007', 1);
+
+-- Purchase 158: Passenger PSG145, PurchaseID 20240415-PCH-158
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240415-PCH-158', 'ITM6901', 2);
+
+-- Purchase 159: Passenger PSG107, PurchaseID 20240525-PCH-159
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240525-PCH-159', 'ITM7969', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240525-PCH-159', 'ITM9634', 1);
+
+-- Purchase 160: Passenger PSG151, PurchaseID 20240620-PCH-160
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240620-PCH-160', 'ITM5007', 1);
+
+-- Purchase 161: Passenger PSG098, PurchaseID 20240115-PCH-161
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240115-PCH-161', 'ITM1140', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240115-PCH-161', 'ITM9617', 1);
+
+-- Purchase 162: Passenger PSG153, PurchaseID 20240212-PCH-162
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240212-PCH-162', 'ITM8285', 2);
+
+-- Purchase 163: Passenger PSG161, PurchaseID 20240222-PCH-163
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240222-PCH-163', 'ITM9634', 3);
+
+-- Purchase 164: Passenger PSG168, PurchaseID 20240308-PCH-164
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240308-PCH-164', 'ITM6901', 1);
+
+-- Purchase 165: Passenger PSG142, PurchaseID 20240328-PCH-165
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240328-PCH-165', 'ITM1140', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240328-PCH-165', 'ITM5007', 2);
+
+-- Purchase 166: Passenger PSG162, PurchaseID 20240412-PCH-166
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240412-PCH-166', 'ITM9617', 1);
+
+-- Purchase 167: Passenger PSG125, PurchaseID 20240420-PCH-167
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240420-PCH-167', 'ITM5007', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240420-PCH-167', 'ITM8285', 3);
+
+-- Purchase 168: Passenger PSG116, PurchaseID 20240512-PCH-168
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240512-PCH-168', 'ITM9634', 2);
+
+-- Purchase 169: Passenger PSG137, PurchaseID 20240525-PCH-169
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240525-PCH-169', 'ITM6901', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240525-PCH-169', 'ITM9617', 1);
+
+-- Purchase 170: Passenger PSG175, PurchaseID 20240610-PCH-170
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240610-PCH-170', 'ITM9634', 3);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240610-PCH-170', 'ITM5007', 1);
+
+-- Purchase 171: Passenger PSG114, PurchaseID 20240625-PCH-171
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240625-PCH-171', 'ITM7969', 2);
+
+-- Purchase 172: Passenger PSG160, PurchaseID 20240629-PCH-172
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240629-PCH-172', 'ITM9617', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240629-PCH-172', 'ITM6901', 2);
+
+-- Purchase 173: Passenger PSG180, PurchaseID 20240715-PCH-173
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240715-PCH-173', 'ITM9634', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240715-PCH-173', 'ITM1140', 1);
+
+-- Purchase 174: Passenger PSG176, PurchaseID 20240728-PCH-174
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240728-PCH-174', 'ITM9617', 1);
+
+-- Purchase 175: Passenger PSG129, PurchaseID 20240805-PCH-175
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240805-PCH-175', 'ITM7969', 3);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240805-PCH-175', 'ITM6901', 2);
+
+-- Purchase 176: Passenger PSG113, PurchaseID 20240819-PCH-176
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240819-PCH-176', 'ITM9634', 1);
+
+-- Purchase 177: Passenger PSG089, PurchaseID 20240310-PCH-177
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240310-PCH-177', 'ITM9617', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240310-PCH-177', 'ITM5007', 1);
+
+-- Purchase 178: Passenger PSG121, PurchaseID 20240320-PCH-178
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240320-PCH-178', 'ITM6901', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240320-PCH-178', 'ITM8285', 3);
+
+-- Purchase 179: Passenger PSG138, PurchaseID 20240410-PCH-179
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240410-PCH-179', 'ITM9617', 1);
+
+-- Purchase 180: Passenger PSG135, PurchaseID 20240418-PCH-180
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240418-PCH-180', 'ITM9634', 2);
+
+-- Purchase 181: Passenger PSG107, PurchaseID 20240508-PCH-181
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240508-PCH-181', 'ITM5007', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240508-PCH-181', 'ITM9634', 1);
+
+-- Purchase 182: Passenger PSG154, PurchaseID 20240601-PCH-182
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240601-PCH-182', 'ITM6901', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240601-PCH-182', 'ITM8285', 2);
+
+-- Purchase 183: Passenger PSG141, PurchaseID 20240612-PCH-183
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240612-PCH-183', 'ITM9617', 1);
+
+-- Purchase 184: Passenger PSG104, PurchaseID 20240706-PCH-184
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240706-PCH-184', 'ITM9634', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240706-PCH-184', 'ITM7969', 3);
+
+-- Purchase 185: Passenger PSG119, PurchaseID 20240721-PCH-185
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240721-PCH-185', 'ITM6901', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240721-PCH-185', 'ITM1140', 1);
+
+-- Purchase 186: Passenger PSG145, PurchaseID 20240721-PCH-186
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240721-PCH-186', 'ITM8285', 2);
+
+-- Purchase 187: Passenger PSG099, PurchaseID 20240728-PCH-187
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240728-PCH-187', 'ITM9617', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240728-PCH-187', 'ITM9634', 2);
+
+-- Purchase 188: Passenger PSG179, PurchaseID 20240810-PCH-188
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240810-PCH-188', 'ITM6901', 1);
+
+-- Purchase 189: Passenger PSG152, PurchaseID 20240816-PCH-189
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240816-PCH-189', 'ITM5007', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240816-PCH-189', 'ITM1140', 1);
+
+-- Purchase 190: Passenger PSG090, PurchaseID 20240824-PCH-190
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240824-PCH-190', 'ITM9634', 3);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240824-PCH-190', 'ITM9617', 2);
+
+-- Purchase 191: Passenger PSG091, PurchaseID 20240830-PCH-191
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240830-PCH-191', 'ITM6901', 2);
+
+-- Purchase 192: Passenger PSG088, PurchaseID 20240902-PCH-192
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240902-PCH-192', 'ITM9617', 1);
+
+-- Purchase 193: Passenger PSG146, PurchaseID 20240905-PCH-193
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240905-PCH-193', 'ITM7969', 3);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240905-PCH-193', 'ITM6901', 1);
+
+-- Purchase 194: Passenger PSG136, PurchaseID 20240912-PCH-194
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240912-PCH-194', 'ITM9634', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240912-PCH-194', 'ITM5007', 1);
+
+-- Purchase 195: Passenger PSG083, PurchaseID 20240913-PCH-195
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240913-PCH-195', 'ITM1140', 1);
+
+-- Purchase 196: Passenger PSG082, PurchaseID 20240915-PCH-196
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240915-PCH-196', 'ITM6901', 1);
+
+-- Purchase 197: Passenger PSG108, PurchaseID 20240918-PCH-197
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240918-PCH-197', 'ITM9617', 2);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240918-PCH-197', 'ITM8285', 1);
+
+-- Purchase 198: Passenger PSG063, PurchaseID 20240920-PCH-198
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240920-PCH-198', 'ITM9634', 2);
+
+-- Purchase 199: Passenger PSG105, PurchaseID 20240925-PCH-199
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240925-PCH-199', 'ITM7969', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240925-PCH-199', 'ITM9617', 1);
+
+-- Purchase 200: Passenger PSG122, PurchaseID 20240930-PCH-200
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240930-PCH-200', 'ITM6901', 1);
+INSERT INTO PurchaseItem (PurchaseID, ItemID, PurchaseItemQty) VALUES ('20240930-PCH-200', 'ITM1140', 1);
+
+SELECT COUNT(*) FROM PurchaseItem;

@@ -1,0 +1,22 @@
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART0876', 'Air Filter', 'Filters the air entering the engine', '57569.15', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART9261', 'Oil Filter', 'Filters the engine oil to remove contaminants', '259289.03', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART5278', 'Brake Pads', 'Essential part of the braking system', '113425.49', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART6693', 'Spark Plugs', 'Ignites the air-fuel mixture in the engine', '887785.8', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART6062', 'Timing Belt', 'Synchronizes the engine''s valves and pistons', '64980.29', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART7760', 'Fuel Pump', 'Delivers fuel from the tank to the engine', '586041.86', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART8028', 'Water Pump', 'Circulates coolant through the engine', '990847.91', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART6178', 'Alternator', 'Charges the battery and powers the electrical system', '585205.89', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART5980', 'Battery', 'Powers the vehicle’s electrical components', '930400.48', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART9146', 'Tire', 'Essential for vehicle movement and safety', '602031.44', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART7136', 'Radiator', 'Helps in cooling the engine', '610431.25', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART6288', 'Fan Belt', 'Drives engine accessories like the alternator and water pump', '215698.28', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART1284', 'Clutch Plate', 'Transfers power from the engine to the transmission', '614360.63', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART6046', 'Shock Absorber', 'Absorbs impacts from the road', '702087.87', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART5742', 'Headlight Bulb', 'Provides illumination for night driving', '534981.39', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART2388', 'Wiper Blade', 'Clears the windshield of rain and debris', '858822.47', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART8142', 'Thermostat', 'Regulates engine temperature', '339824.18', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART0369', 'Transmission Fluid', 'Lubricates and cools the transmission', '560410.66', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART5353', 'Coolant', 'Prevents the engine from overheating', '693804.36', 'Active');
+INSERT INTO Part (PartID, PartName, PartDesc, PartCost, PartStatus) VALUES ('PART7356', 'Engine Oil', 'Lubricates engine parts to reduce friction and wear', '432596.03', 'Active');
+
+select count(*) from part;

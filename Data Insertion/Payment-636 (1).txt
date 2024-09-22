@@ -1,0 +1,1480 @@
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210115-PYM-349', 97.50, 'CreditCard', 'Refunded', TO_TIMESTAMP('2021-01-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210115-BKG-293884', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210208-PYM-277', 378.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2021-02-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210208-BKG-574112', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210312-PYM-379', 281.76, 'CreditCard', 'Refunded', TO_TIMESTAMP('2021-03-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210312-BKG-394811', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210420-PYM-206', 455.25, 'CreditCard', 'Refunded', TO_TIMESTAMP('2021-04-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210420-BKG-674832', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210525-PYM-934', 3234.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2021-05-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210525-BKG-982316', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210610-PYM-371', 161.45, 'CreditCard', 'Refunded', TO_TIMESTAMP('2021-06-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210610-BKG-447382', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210713-PYM-725', 264.14, 'CreditCard', 'Refunded', TO_TIMESTAMP('2021-07-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210713-BKG-935462', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210819-PYM-891', 2941.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2021-08-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210819-BKG-283091', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('221125-PYM-165', 3206.82, 'CreditCard', 'Refunded', TO_TIMESTAMP('2022-11-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '221125-BKG-547632', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('221210-PYM-898', 2535.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2022-12-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '221210-BKG-923761', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230115-PYM-347', 4443.75, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-01-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230115-BKG-421968', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230220-PYM-335', 2399.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-02-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230220-BKG-847239', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240107-PYM-214', 5575.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240107-BKG-472938', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240218-PYM-362', 3150.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240218-BKG-294837', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('210930-PYM-921', 288.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2021-09-30 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '210930-BKG-827163', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('211011-PYM-471', 1305.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2021-10-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '211011-BKG-198742', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('211123-PYM-449', 361.64, 'CreditCard', 'Refunded', TO_TIMESTAMP('2021-11-23 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '211123-BKG-591746', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('211212-PYM-423', 1428.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2021-12-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '211212-BKG-876342', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220103-PYM-851', 423.50, 'CreditCard', 'Completed', TO_TIMESTAMP('2022-01-03 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220103-BKG-456731', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220214-PYM-549', 346.56, 'CreditCard', 'Refunded', TO_TIMESTAMP('2022-02-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220214-BKG-123896', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220329-PYM-179', 407.29, 'CreditCard', 'Completed', TO_TIMESTAMP('2022-03-29 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220329-BKG-274385', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230325-PYM-168', 470.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-03-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230325-BKG-987543', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240225-PYM-652', 3200.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240225-BKG-948326', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230315-PYM-435', 315.78, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-03-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230315-BKG-523476', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230228-PYM-909', 814.91, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-02-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230228-BKG-173926', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230612-PYM-153', 347.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230612-BKG-817362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230706-PYM-105', 507.17, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-06 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230706-BKG-837102', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230813-PYM-649', 975.71, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230813-BKG-293571', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240211-PYM-111', 2100.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240211-BKG-745963', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240310-PYM-432', 5120.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240310-BKG-983726', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230403-PYM-133', 1893.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-04-03 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230403-BKG-385674', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240408-PYM-526', 725.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240408-BKG-938172', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230527-PYM-941', 718.25, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-27 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230527-BKG-162738', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230711-PYM-386', 186.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230711-BKG-982316', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240712-PYM-679', 650.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-07-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240712-BKG-283567', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230809-PYM-481', 1383.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230809-BKG-128763', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240818-PYM-129', 4960.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240818-BKG-129487', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240809-PYM-268', 2400.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240809-BKG-173284', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230914-PYM-506', 2138.91, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230914-BKG-283174', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230515-PYM-497', 430.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230515-BKG-823749', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230527-PYM-567', 414.82, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-05-27 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230527-BKG-537891', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230911-PYM-430', 1541.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230911-BKG-845172', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240215-PYM-651', 4800.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-02-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240215-BKG-173284', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240318-PYM-190', 2325.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240318-BKG-728394', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230819-PYM-188', 400.29, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230819-BKG-329845', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230915-PYM-323', 1069.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230915-BKG-134879', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240215-PYM-951', 2175.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240215-BKG-745927', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230921-PYM-402', 825.68, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-09-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230921-BKG-987541', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230907-PYM-446', 2327.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230907-BKG-543189', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240301-PYM-127', 5120.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240301-BKG-194738', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230623-PYM-689', 718.64, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-06-23 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230623-BKG-543287', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240518-PYM-714', 2250.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240518-BKG-239487', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230510-PYM-326', 1192.60, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230510-BKG-238497', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240612-PYM-921', 925.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240612-BKG-473819', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230916-PYM-174', 1651.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230916-BKG-182763', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240220-PYM-352', 1575.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240220-BKG-647391', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230725-PYM-109', 348.22, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230725-BKG-293471', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230816-PYM-255', 750.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230816-BKG-937614', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240408-PYM-387', 4320.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240408-BKG-238471', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230527-PYM-930', 464.75, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-27 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230527-BKG-273849', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240511-PYM-775', 2175.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-05-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240511-BKG-174839', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230628-PYM-521', 1367.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230628-BKG-485631', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240703-PYM-519', 5120.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-03 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240703-BKG-839274', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230822-PYM-327', 598.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230822-BKG-273850', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240815-PYM-154', 2625.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240815-BKG-492836', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230920-PYM-603', 1824.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230920-BKG-587123', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240416-PYM-493', 4800.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240416-BKG-948120', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230915-PYM-413', 707.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230915-BKG-923847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240510-PYM-681', 2325.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240510-BKG-192837', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230819-PYM-334', 304.91, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-08-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230819-BKG-192874', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240715-PYM-259', 675.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240715-BKG-293874', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230921-PYM-275', 344.03, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230921-BKG-394752', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240508-PYM-667', 4960.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240508-BKG-182736', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230526-PYM-475', 823.49, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-05-26 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230526-BKG-647583', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240610-PYM-947', 1575.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240610-BKG-273845', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230726-PYM-542', 746.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-26 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230726-BKG-273846', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240716-PYM-332', 2775.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240716-BKG-938745', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230825-PYM-109', 332.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230825-BKG-293874', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240611-PYM-471', 2325.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240611-BKG-937584', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230527-PYM-593', 483.95, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-27 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230527-BKG-293847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240701-PYM-319', 2250.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240701-BKG-394718', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230819-PYM-690', 615.68, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230819-BKG-293849', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240815-PYM-596', 925.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240815-BKG-847392', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230917-PYM-952', 1132.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230917-BKG-647295', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240501-PYM-797', 2325.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240501-BKG-273846', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230712-PYM-324', 153.90, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230712-BKG-123498', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240613-PYM-136', 3250.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240613-BKG-394817', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230820-PYM-979', 351.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230820-BKG-948726', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240514-PYM-421', 2800.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240514-BKG-283910', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230911-PYM-857', 817.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230911-BKG-583210', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240507-PYM-284', 1575.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240507-BKG-918746', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230927-PYM-912', 654.65, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-27 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230927-BKG-273846', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240616-PYM-143', 2750.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240616-BKG-475839', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230817-PYM-363', 312.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230817-BKG-293847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240619-PYM-259', 775.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-06-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240619-BKG-583021', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230730-PYM-228', 408.07, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-07-30 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230730-BKG-394612', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240712-PYM-805', 2250.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-07-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240712-BKG-184756', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230622-PYM-531', 231.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230622-BKG-739281', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240515-PYM-554', 3500.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240515-BKG-293874', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230703-PYM-362', 647.08, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-03 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230703-BKG-847539', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240813-PYM-571', 2250.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240813-BKG-948362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230714-PYM-596', 606.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230714-BKG-837562', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240520-PYM-997', 600.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240520-BKG-758193', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230921-PYM-342', 205.24, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230921-BKG-638594', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240622-PYM-795', 525.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240622-BKG-102948', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230715-PYM-258', 361.43, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230715-BKG-384716', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240704-PYM-191', 2175.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-04 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240704-BKG-203874', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230922-PYM-288', 344.03, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230922-BKG-948735', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240617-PYM-514', 3750.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240617-BKG-847329', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230716-PYM-957', 422.84, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230716-BKG-584762', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240801-PYM-739', 700.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240801-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230820-PYM-522', 433.91, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230820-BKG-394872', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240701-PYM-788', 1650.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240701-BKG-837594', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230914-PYM-694', 402.62, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-09-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230914-BKG-583764', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240705-PYM-576', 525.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-07-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240705-BKG-193872', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230925-PYM-855', 212.32, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230925-BKG-948536', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240716-PYM-571', 2250.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240716-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230819-PYM-752', 650.86, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230819-BKG-293847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240729-PYM-608', 4000.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-29 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240729-BKG-948362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230923-PYM-975', 427.78, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-23 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230923-BKG-847329', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240825-PYM-546', 675.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240825-BKG-293847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230726-PYM-878', 340.06, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-07-26 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230726-BKG-583920', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240907-PYM-952', 1350.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240907-BKG-847328', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230621-PYM-349', 695.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230621-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240808-PYM-233', 725.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240808-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230909-PYM-722', 306.68, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230909-BKG-948726', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240909-PYM-131', 1350.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240909-BKG-293847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230820-PYM-835', 462.84, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230820-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240818-PYM-738', 4275.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240818-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230910-PYM-474', 314.55, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-09-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230910-BKG-938472', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240829-PYM-832', 2250.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-29 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240829-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230725-PYM-665', 384.75, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230725-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240704-PYM-873', 3875.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-04 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240704-BKG-948726', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230813-PYM-535', 362.76, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-08-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230813-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240731-PYM-276', 2025.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-31 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240731-BKG-293847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230922-PYM-211', 294.89, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230922-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240724-PYM-174', 700.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240724-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230824-PYM-506', 727.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230824-BKG-394827', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240919-PYM-127', 4375.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240919-BKG-948726', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230822-PYM-360', 340.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230822-BKG-847290', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240702-PYM-121', 1575.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240702-BKG-394825', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230824-PYM-536', 361.59, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230824-BKG-394825', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240904-PYM-853', 2250.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-09-04 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240904-BKG-948726', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230929-PYM-108', 352.29, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-29 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230929-BKG-847290', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240803-PYM-921', 1950.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-03 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240803-BKG-847329', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230912-PYM-459', 601.57, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230912-BKG-938472', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240727-PYM-187', 750.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-27 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240727-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230917-PYM-138', 495.41, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230917-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240822-PYM-647', 1350.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240822-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230831-PYM-384', 316.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-31 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230831-BKG-948735', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240811-PYM-825', 800.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240811-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230923-PYM-552', 465.53, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-23 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230923-BKG-948736', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240902-PYM-918', 1650.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240902-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230809-PYM-564', 545.32, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230809-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240807-PYM-542', 700.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240807-BKG-948736', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230925-PYM-121', 495.41, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230925-BKG-847329', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240804-PYM-400', 2625.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-04 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240804-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230821-PYM-131', 254.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230821-BKG-948736', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240909-PYM-777', 2775.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240909-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230712-PYM-549', 209.86, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-07-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230712-BKG-847290', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240911-PYM-919', 725.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240911-BKG-948736', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230825-PYM-318', 562.91, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230825-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240907-PYM-891', 6650.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240907-BKG-847329', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230918-PYM-222', 825.68, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230918-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230928-PYM-306', 365.66, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230928-BKG-847290', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240805-PYM-266', 725.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240805-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230813-PYM-209', 205.23, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230813-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240819-PYM-861', 2250.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240819-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230921-PYM-560', 440.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230921-BKG-847290', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230806-PYM-203', 703.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-06 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230806-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240812-PYM-615', 525.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240812-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230911-PYM-731', 330.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230911-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240814-PYM-631', 1950.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240814-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230715-PYM-589', 301.19, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230715-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240906-PYM-802', 450.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-06 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240906-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230923-PYM-237', 440.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-23 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230923-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240810-PYM-565', 2025.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240810-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230824-PYM-525', 750.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230824-BKG-847329', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240807-PYM-915', 3625.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240807-BKG-847362', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230918-PYM-789', 294.89, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-09-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230918-BKG-847290', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240911-PYM-550', 1350.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240911-BKG-193847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230726-PYM-208', 408.07, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-26 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230726-BKG-847290', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240901-PYM-483', 700.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-09-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240901-BKG-847329', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230601-PYM-407', 309.09, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-06-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230601-BKG-845201', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230815-PYM-958', 703.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230815-BKG-981202', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230411-PYM-870', 137.45, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-04-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230411-BKG-672203', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240105-PYM-210', 900.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240105-BKG-789204', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231210-PYM-280', 512.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-12-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231210-BKG-652205', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230512-PYM-377', 614.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230512-BKG-748206', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230925-PYM-602', 943.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230925-BKG-982207', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230314-PYM-480', 394.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-03-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230314-BKG-657208', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230719-PYM-637', 1119.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230719-BKG-843209', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240301-PYM-347', 1960.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240301-BKG-962210', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230628-PYM-375', 772.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230628-BKG-372211', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240114-PYM-604', 1860.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-01-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240114-BKG-985212', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231110-PYM-542', 572.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-11-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231110-BKG-865213', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230805-PYM-593', 641.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230805-BKG-748214', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240210-PYM-356', 1880.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240210-BKG-569215', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230703-PYM-146', 1321.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-03 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230703-BKG-982216', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230918-PYM-446', 1509.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230918-BKG-124217', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240105-PYM-991', 2200.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240105-BKG-481219', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231101-PYM-471', 1988.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-11-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231101-BKG-753220', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230410-PYM-289', 1496.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-04-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230410-BKG-672221', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230725-PYM-482', 808.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230725-BKG-983222', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230518-PYM-125', 1352.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230518-BKG-674223', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240115-PYM-129', 1240.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240115-BKG-285224', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240302-PYM-669', 1800.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-03-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240302-BKG-486225', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230618-PYM-217', 1854.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230618-BKG-384226', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230905-PYM-733', 2123.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230905-BKG-193227', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230528-PYM-838', 1505.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230528-BKG-485228', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231002-PYM-306', 1740.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231002-BKG-674229', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240222-PYM-765', 3000.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240222-BKG-857230', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230419-PYM-797', 2672.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-04-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230419-BKG-764231', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230810-PYM-575', 3049.09, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-08-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230810-BKG-283232', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230605-PYM-117', 2410.91, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230605-BKG-184233', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231022-PYM-914', 1740.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231022-BKG-948234', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240228-PYM-227', 4900.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240228-BKG-394235', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230328-PYM-198', 227.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-03-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230328-BKG-374236', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230707-PYM-296', 466.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230707-BKG-185237', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230515-PYM-285', 276.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230515-BKG-496238', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240108-PYM-184', 900.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240108-BKG-782239', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240312-PYM-566', 1240.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240312-BKG-983240', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230501-PYM-127', 614.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230501-BKG-284241', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230615-PYM-564', 803.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230615-BKG-673242', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230411-PYM-882', 916.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-04-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230411-BKG-938243', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240122-PYM-283', 1240.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240122-BKG-486244', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240309-PYM-384', 1440.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240309-BKG-295245', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230212-PYM-225', 830.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-02-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230212-BKG-123246', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230910-PYM-688', 1069.45, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-09-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230910-BKG-374247', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230608-PYM-522', 1112.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230608-BKG-482248', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240219-PYM-466', 1800.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240219-BKG-839249', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240328-PYM-597', 2100.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240328-BKG-937250', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230503-PYM-255', 691.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-03 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230503-BKG-456251', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230719-PYM-220', 855.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230719-BKG-583252', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230805-PYM-183', 938.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230805-BKG-784253', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240112-PYM-261', 1500.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240112-BKG-892254', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240324-PYM-921', 1800.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240324-BKG-192255', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230312-PYM-778', 531.36, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-03-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230312-BKG-485256', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230825-PYM-737', 781.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230825-BKG-756257', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230510-PYM-892', 921.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230510-BKG-987258', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240102-PYM-959', 1500.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240102-BKG-364259', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240315-PYM-667', 1800.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240315-BKG-583260', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230217-PYM-767', 754.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-02-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230217-BKG-583261', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230912-PYM-628', 1132.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230912-BKG-672262', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230607-PYM-172', 1406.36, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-06-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230607-BKG-923263', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240106-PYM-287', 2400.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-06 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240106-BKG-485264', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240308-PYM-940', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240308-BKG-674265', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230520-PYM-793', 845.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230520-BKG-984266', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231001-PYM-730', 1138.91, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231001-BKG-753267', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230815-PYM-478', 1422.91, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-08-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230815-BKG-465268', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240114-PYM-246', 2400.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240114-BKG-948269', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240320-PYM-963', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240320-BKG-174270', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230410-PYM-511', 992.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-04-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230410-BKG-582271', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230822-PYM-524', 1407.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230822-BKG-936272', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230614-PYM-524', 1607.27, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-06-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230614-BKG-783273', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240216-PYM-654', 2700.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240216-BKG-482274', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240401-PYM-224', 3230.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240401-BKG-761275', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230615-PYM-734', 1081.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230615-BKG-382276', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230905-PYM-466', 1415.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230905-BKG-748277', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230520-PYM-313', 1597.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230520-BKG-563278', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240105-PYM-250', 2550.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-01-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240105-BKG-936279', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240312-PYM-959', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240312-BKG-741280', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230618-PYM-175', 1004.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230618-BKG-125281', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231015-PYM-695', 1423.64, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-10-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231015-BKG-647282', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230708-PYM-832', 1616.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230708-BKG-983283', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240109-PYM-586', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240109-BKG-985284', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240325-PYM-668', 3060.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-03-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240325-BKG-786285', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230522-PYM-855', 1075.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230522-BKG-739286', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230925-PYM-731', 1415.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230925-BKG-856287', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230801-PYM-309', 1626.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230801-BKG-475288', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240112-PYM-399', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240112-BKG-629289', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240405-PYM-883', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240405-BKG-283290', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230510-PYM-679', 1075.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230510-BKG-935291', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230922-PYM-364', 1415.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230922-BKG-364292', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230715-PYM-696', 1616.73, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-07-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230715-BKG-928293', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240118-PYM-965', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240118-BKG-984294', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240402-PYM-236', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240402-BKG-673295', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230611-PYM-849', 927.27, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-06-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230611-BKG-364296', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230910-PYM-198', 1321.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230910-BKG-746297', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230705-PYM-522', 1616.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230705-BKG-875298', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240125-PYM-353', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240125-BKG-639299', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240318-PYM-734', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240318-BKG-582300', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230612-PYM-442', 1081.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230612-BKG-483301', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231005-PYM-461', 1423.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231005-BKG-738302', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230702-PYM-442', 1616.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230702-BKG-182303', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240110-PYM-120', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240110-BKG-849304', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240321-PYM-124', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240321-BKG-592305', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230618-PYM-988', 1004.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230618-BKG-293306', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231010-PYM-243', 1328.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231010-BKG-874307', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230720-PYM-852', 1515.68, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230720-BKG-985308', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240115-PYM-775', 2400.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240115-BKG-192309', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240310-PYM-354', 2890.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240310-BKG-485310', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230625-PYM-232', 1081.82, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-06-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230625-BKG-927311', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231105-PYM-846', 1431.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-11-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231105-BKG-489312', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230818-PYM-451', 1626.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230818-BKG-981313', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240122-PYM-738', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240122-BKG-582314', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240317-PYM-290', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240317-BKG-738315', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230712-PYM-454', 1088.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230712-BKG-295316', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230920-PYM-244', 1415.45, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-09-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230920-BKG-486317', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230815-PYM-661', 1626.18, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-08-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230815-BKG-567318', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240222-PYM-252', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240222-BKG-683319', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240319-PYM-341', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240319-BKG-493320', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230718-PYM-359', 1010.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230718-BKG-284321', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231010-PYM-304', 1328.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231010-BKG-657322', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230901-PYM-854', 1635.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230901-BKG-347323', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240215-PYM-262', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240215-BKG-582324', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240405-PYM-286', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240405-BKG-738325', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230625-PYM-196', 1081.82, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230625-BKG-384326', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230928-PYM-383', 1415.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230928-BKG-497327', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230812-PYM-527', 1626.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230812-BKG-738328', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240125-PYM-848', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240125-BKG-582329', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240315-PYM-221', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240315-BKG-849330', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230722-PYM-769', 1088.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230722-BKG-295331', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230920-PYM-544', 1415.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230920-BKG-738332', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230810-PYM-481', 1626.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230810-BKG-984333', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240119-PYM-351', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240119-BKG-485334', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240305-PYM-347', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240305-BKG-849335', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230725-PYM-867', 1088.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230725-BKG-495336', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230925-PYM-639', 1415.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230925-BKG-394337', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230805-PYM-833', 1626.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230805-BKG-284338', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240125-PYM-870', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240125-BKG-738339', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240318-PYM-343', 3060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240318-BKG-849340', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230620-PYM-244', 1004.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230620-BKG-583341', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230929-PYM-240', 1321.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-29 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230929-BKG-849342', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230822-PYM-423', 1524.55, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230822-BKG-972343', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240105-PYM-263', 2400.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-01-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240105-BKG-194344', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240317-PYM-984', 2890.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240317-BKG-583345', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230730-PYM-958', 1088.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-30 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230730-BKG-473346', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231015-PYM-965', 1423.64, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-10-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231015-BKG-394347', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230820-PYM-339', 1626.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230820-BKG-485348', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240110-PYM-874', 2550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240110-BKG-583349', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240322-PYM-446', 3060.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-03-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240322-BKG-849350', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230718-PYM-249', 932.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230718-BKG-192351', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230925-PYM-998', 1226.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230925-BKG-573352', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230822-PYM-182', 1422.91, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230822-BKG-485353', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240115-PYM-846', 2250.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240115-BKG-384354', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240320-PYM-391', 2720.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240320-BKG-849355', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220415-PYM-910', 559.41, 'CreditCard', 'Completed', TO_TIMESTAMP('2022-04-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220415-BKG-394287', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220508-PYM-258', 85.74, 'CreditCard', 'Refunded', TO_TIMESTAMP('2022-05-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220508-BKG-728194', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220611-PYM-677', 1443.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2022-06-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220611-BKG-128763', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220720-PYM-383', 4402.33, 'CreditCard', 'Completed', TO_TIMESTAMP('2022-07-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220720-BKG-635921', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220809-PYM-872', 2523.05, 'CreditCard', 'Completed', TO_TIMESTAMP('2022-08-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220809-BKG-849231', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('220915-PYM-875', 2304.87, 'CreditCard', 'Completed', TO_TIMESTAMP('2022-09-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '220915-BKG-765192', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('221008-PYM-395', 554.95, 'CreditCard', 'Completed', TO_TIMESTAMP('2022-10-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '221008-BKG-328461', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230305-PYM-402', 2672.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-03-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230305-BKG-934851', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230418-PYM-511', 1848.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-04-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230418-BKG-387614', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230509-PYM-505', 1382.73, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230509-BKG-295174', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230622-PYM-228', 618.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230622-BKG-986452', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230708-PYM-945', 380.86, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230708-BKG-631547', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230817-PYM-617', 2638.64, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230817-BKG-451732', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230930-PYM-281', 519.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-30 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230930-BKG-123965', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231018-PYM-220', 4429.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231018-BKG-865431', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231105-PYM-517', 2088.07, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-11-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231105-BKG-193867', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231215-PYM-363', 1254.40, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-12-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231215-BKG-846193', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240205-PYM-976', 500.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-02-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240205-BKG-736491', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240222-PYM-426', 294.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240222-BKG-796922', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231223-PYM-209', 3072.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-12-23 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231223-BKG-347861', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240112-PYM-976', 362.50, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240112-BKG-973452', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240305-PYM-199', 735.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240305-BKG-847129', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240422-PYM-273', 1890.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240422-BKG-298174', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240517-PYM-330', 4480.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240517-BKG-847263', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240607-PYM-501', 495.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240607-BKG-385194', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240615-PYM-408', 660.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240615-BKG-987123', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240725-PYM-585', 500.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240725-BKG-928475', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240805-PYM-846', 367.50, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-08-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240805-BKG-763849', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240815-PYM-276', 650.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240815-BKG-492863', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230905-PYM-792', 165.14, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230905-BKG-827456', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230812-PYM-844', 506.62, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-08-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230812-BKG-376894', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231101-PYM-420', 1217.05, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-11-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231101-BKG-932154', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240110-PYM-189', 2175.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240110-BKG-157239', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240228-PYM-259', 4640.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240228-BKG-948326', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240318-PYM-590', 480.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240318-BKG-392145', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240412-PYM-380', 2625.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240412-BKG-748129', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240510-PYM-161', 4060.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240510-BKG-123876', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240622-PYM-665', 420.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240622-BKG-649273', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240725-PYM-781', 4375.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240725-BKG-498132', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240805-PYM-130', 313.60, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-08-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240805-BKG-491235', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230719-PYM-733', 1469.05, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-19 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230719-BKG-665123', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240228-PYM-489', 775.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240228-BKG-345987', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230930-PYM-568', 176.93, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-09-30 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230930-BKG-754321', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240115-PYM-676', 595.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-01-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240115-BKG-765098', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231222-PYM-476', 2160.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-12-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231222-BKG-123876', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240507-PYM-845', 440.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-05-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240507-BKG-635219', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240213-PYM-833', 660.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-02-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240213-BKG-973422', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240301-PYM-597', 594.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240301-BKG-129887', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240130-PYM-744', 330.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-30 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240130-BKG-763025', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231129-PYM-329', 2545.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-11-29 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231129-BKG-456988', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240105-PYM-521', 380.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240105-BKG-543219', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240210-PYM-151', 960.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240210-BKG-984712', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230902-PYM-839', 2193.95, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230902-BKG-879221', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240530-PYM-361', 3750.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-30 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240530-BKG-467231', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230825-PYM-475', 2908.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230825-BKG-523496', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230618-PYM-973', 730.23, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230618-BKG-153798', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230508-PYM-827', 691.36, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230508-BKG-652341', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240607-PYM-559', 2625.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-07 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240607-BKG-863002', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240322-PYM-285', 525.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-03-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240322-BKG-453901', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230405-PYM-256', 4154.18, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-04-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230405-BKG-293847', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230513-PYM-753', 852.68, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230513-BKG-938402', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240410-PYM-268', 1110.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-04-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240410-BKG-129583', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240521-PYM-334', 3750.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-21 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240521-BKG-293758', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230913-PYM-301', 138.71, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230913-BKG-385942', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231022-PYM-730', 1898.18, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231022-BKG-847930', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240708-PYM-183', 2750.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240708-BKG-948573', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240715-PYM-718', 232.50, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-07-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240715-BKG-102384', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240620-PYM-932', 4625.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-06-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240620-BKG-837495', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231102-PYM-897', 2434.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-11-02 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231102-BKG-749210', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230518-PYM-774', 145.19, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-05-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230518-BKG-238745', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230709-PYM-878', 1282.50, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-07-09 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230709-BKG-839201', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240117-PYM-993', 630.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-01-17 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240117-BKG-485920', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231222-PYM-457', 2960.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-12-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231222-BKG-593874', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240612-PYM-841', 315.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-12 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240612-BKG-385724', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240224-PYM-158', 1550.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-02-24 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240224-BKG-174958', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230814-PYM-932', 151.99, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230814-BKG-283910', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240725-PYM-193', 1100.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240725-BKG-485720', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230611-PYM-127', 1247.95, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-11 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230611-BKG-572398', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230429-PYM-940', 1993.09, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-04-29 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230429-BKG-293487', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231015-PYM-426', 1439.45, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-10-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231015-BKG-284901', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231118-PYM-699', 375.85, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-11-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231118-BKG-193840', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240320-PYM-799', 480.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-03-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240320-BKG-392874', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240516-PYM-421', 2700.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-05-16 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240516-BKG-485263', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230225-PYM-141', 415.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-02-25 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230225-BKG-392817', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230908-PYM-367', 731.32, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-08 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230908-BKG-284936', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231222-PYM-847', 576.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-12-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231222-BKG-394876', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240601-PYM-977', 852.50, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-06-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240601-BKG-938476', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230313-PYM-450', 239.11, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-03-13 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230313-BKG-293487', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240714-PYM-568', 3672.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-14 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240714-BKG-584920', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230720-PYM-735', 524.66, 'CreditCard', 'Refunded', TO_TIMESTAMP('2023-07-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230720-BKG-183295', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230615-PYM-850', 927.27, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-06-15 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230615-BKG-182392', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230905-PYM-327', 825.68, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-09-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230905-BKG-834672', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231210-PYM-241', 4760.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-12-10 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231210-BKG-123498', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('231128-PYM-765', 3460.23, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-11-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '231128-BKG-584201', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240405-PYM-953', 825.00, 'CreditCard', 'Refunded', TO_TIMESTAMP('2024-04-05 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240405-BKG-284716', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('240718-PYM-539', 435.00, 'CreditCard', 'Completed', TO_TIMESTAMP('2024-07-18 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '240718-BKG-948726', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230820-PYM-894', 562.91, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-08-20 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230820-BKG-293174', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230522-PYM-689', 852.68, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-05-22 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230522-BKG-193458', NULL);
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) VALUES ('230228-PYM-792', 697.95, 'CreditCard', 'Completed', TO_TIMESTAMP('2023-02-28 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), '230228-BKG-295218', NULL);
+
+
+-- Payment for PurchaseID: 20210105-PCH-001
+-- Items: ITM9617 (2 @ $15 = $30), ITM5007 (1 @ $40 = $40)
+-- Total: $70
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210105-74839-PYM-491-2B34', 70.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2021-01-05 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210105-PCH-001');
+
+-- Payment for PurchaseID: 20210105-PCH-002
+-- Items: ITM9634 (3 @ $50 = $150), ITM1140 (2 @ $10 = $20)
+-- Total: $170
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210105-52781-PYM-826-9A17', 170.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-01-05 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210105-PCH-002');
+
+-- Payment for PurchaseID: 20220315-PCH-003 (Overweight Purchase)
+-- Items: ITM0000 (1 @ $50 = $50), ITM8285 (3 @ $10 = $30)
+-- Total: $80
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-38492-PYM-914-6C32', 80.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2022-03-15 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-003');
+
+-- Payment for PurchaseID: 20210212-PCH-004
+-- Items: ITM5007 (1 @ $40 = $40), ITM9617 (1 @ $15 = $15)
+-- Total: $55
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210212-68149-PYM-297-3D28', 55.00, 'PayPal', 'Completed', TO_TIMESTAMP('2021-02-12 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210212-PCH-004');
+
+-- Payment for PurchaseID: 20210212-PCH-005
+-- Items: ITM9634 (2 @ $50 = $100), ITM9617 (1 @ $15 = $15)
+-- Total: $115
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210212-48327-PYM-546-7K59', 115.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2021-02-12 17:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210212-PCH-005');
+
+-- Payment for PurchaseID: 20230701-PCH-006
+-- Items: ITM9617 (1 @ $15 = $15), ITM2857 (2 @ $60 = $120)
+-- Total: $135
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-28567-PYM-849-1D65', 135.00, 'Boost', 'Completed', TO_TIMESTAMP('2023-07-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-006');
+
+-- Payment for PurchaseID: 20210508-PCH-007
+-- Items: ITM8285 (2 @ $10 = $20), ITM6901 (3 @ $5 = $15)
+-- Total: $35
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210508-18296-PYM-217-4F12', 35.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2021-05-08 12:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210508-PCH-007');
+
+-- Payment for PurchaseID: 20210909-PCH-008
+-- Items: ITM0258 (3 @ $20 = $60), ITM8285 (1 @ $10 = $10)
+-- Total: $70
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-97384-PYM-654-5B83', 70.00, 'Maybank QRPay', 'Completed', TO_TIMESTAMP('2021-09-09 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-008');
+
+-- Payment for PurchaseID: 20220105-PCH-009
+-- Items: ITM9634 (1 @ $50 = $50), ITM5007 (2 @ $40 = $80)
+-- Total: $130
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220105-83472-PYM-382-9C47', 50.00, 'PayPal', 'Completed', TO_TIMESTAMP('2022-01-05 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20251101-PCH-009');
+
+-- Payment for PurchaseID: 20211115-PCH-010
+-- Items: ITM1140 (2 @ $10 = $20)
+-- Total: $20
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211115-93726-PYM-648-2G71', 60.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-11-15 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211115-PCH-010');
+
+-- Payment for PurchaseID: 20220810-PCH-011 (Overweight Purchase)
+-- Items: ITM0000 (2 @ $50 = $100), ITM9617 (2 @ $15 = $30)
+-- Total: $130
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220810-46138-PYM-784-4L92', 130.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2022-08-10 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220810-PCH-011');
+
+-- Payment for PurchaseID: 20230301-PCH-012
+-- Items: ITM3249 (1 @ $25 = $25)
+-- Total: $25
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230301-59482-PYM-193-6F85', 205.00, 'Alipay', 'Completed', TO_TIMESTAMP('2023-03-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230301-PCH-012');
+
+-- Payment for PurchaseID: 20220315-PCH-013
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-63825-PYM-284-9H67', 65.00, 'Cash', 'Completed', TO_TIMESTAMP('2022-03-15 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-013');
+
+-- Payment for PurchaseID: 20221115-PCH-014
+-- Items: ITM2857 (3 @ $60 = $180)
+-- Total: $180
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20221115-48173-PYM-273-5J63', 260.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2022-11-15 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20221115-PCH-014');
+
+-- Payment for PurchaseID: 20231005-PCH-015
+-- Items: ITM7969 (2 @ $8 = $16), ITM8285 (1 @ $10 = $10)
+-- Total: $26
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20231005-62849-PYM-784-1A85', 26.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2023-10-05 13:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20231005-PCH-015');
+
+-- Payment for PurchaseID: 20231005-PCH-016
+-- Items: ITM9634 (2 @ $50 = $100), ITM9617 (2 @ $15 = $30)
+-- Total: $130
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20231005-39582-PYM-256-6M82', 130.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2023-10-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20231005-PCH-016');
+
+-- Payment for PurchaseID: 20221010-PCH-017
+-- Items: ITM9617 (1 @ $15 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20221010-74839-PYM-324-9F65', 65.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2022-10-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20221010-PCH-017');
+
+-- Payment for PurchaseID: 20211210-PCH-018
+-- Items: ITM8285 (1 @ $10 = $10), ITM2857 (2 @ $60 = $120)
+-- Total: $130
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211210-54928-PYM-973-6A54', 130.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2021-12-10 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211210-PCH-018');
+
+-- Payment for PurchaseID: 20220105-PCH-019
+-- Items: ITM9634 (3 @ $50 = $150), ITM6901 (3 @ $5 = $15)
+-- Total: $165
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220105-98136-PYM-468-9C76', 165.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2022-01-05 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220105-PCH-019');
+
+-- Payment for PurchaseID: 20210909-PCH-020
+-- Items: ITM0258 (2 @ $20 = $40), ITM8285 (2 @ $10 = $20)
+-- Total: $60
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-38274-PYM-296-7B94', 60.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2021-09-09 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-020');
+
+-- Payment for PurchaseID: 20220410-PCH-021
+-- Items: ITM1140 (2 @ $10 = $20), ITM8285 (3 @ $10 = $30)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-28496-PYM-587-2H35', 20.00, 'PayPal', 'Completed', TO_TIMESTAMP('2022-04-10 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-021');
+
+-- Payment for PurchaseID: 20220212-PCH-022
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220212-64819-PYM-935-8K54', 50.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2022-02-12 14:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220212-PCH-022');
+
+-- Payment for PurchaseID: 20220212-PCH-023
+-- Items: ITM9617 (1 @ $15 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220212-19472-PYM-473-1D96', 15.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2022-02-12 15:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220212-PCH-023');
+
+-- Payment for PurchaseID: 20211021-PCH-024
+-- Items: ITM3249 (1 @ $25 = $25)
+-- Total: $25
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-94738-PYM-283-5G48', 25.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2021-10-21 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-024');
+
+-- Payment for PurchaseID: 20231005-PCH-025
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20231005-83756-PYM-324-9F74', 5.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2023-10-05 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20231005-PCH-025');
+
+-- Payment for PurchaseID: 20221222-PCH-026
+-- Items: ITM2857 (2 @ $60 = $120)
+-- Total: $120
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20221222-18273-PYM-493-2M45', 120.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2022-12-22 06:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20221222-PCH-026');
+
+-- Payment for PurchaseID: 20230815-PCH-027
+-- Items: ITM7969 (3 @ $8 = $24), ITM8285 (1 @ $10 = $10)
+-- Total: $34
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230815-29743-PYM-728-3N61', 24.00, 'Cash', 'Completed', TO_TIMESTAMP('2023-08-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230815-PCH-027');
+
+-- Payment for PurchaseID: 20230815-PCH-028
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230815-59173-PYM-493-1J34', 50.00, 'Maybank QRPay', 'Completed', TO_TIMESTAMP('2023-08-15 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230815-PCH-028');
+
+-- Payment for PurchaseID: 20211021-PCH-029
+-- Items: ITM9617 (1 @ $15 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-26487-PYM-486-5K79', 15.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2021-10-21 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-029');
+
+-- Payment for PurchaseID: 20211210-PCH-030
+-- Items: ITM8285 (2 @ $10 = $20)
+-- Total: $20
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211210-84736-PYM-294-2L85', 20.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2021-12-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211210-PCH-030');
+
+-- Payment for PurchaseID: 20220410-PCH-031
+-- Items: ITM0258 (3 @ $20 = $60)
+-- Total: $60
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-74628-PYM-532-6T93', 60.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2022-04-10 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-031');
+
+-- Payment for PurchaseID: 20220810-PCH-032
+-- Items: ITM1140 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220810-32984-PYM-478-3J65', 10.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2022-08-10 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220810-PCH-032');
+
+-- Payment for PurchaseID: 20211210-PCH-033
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211210-98217-PYM-159-7H34', 5.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2021-12-10 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211210-PCH-033');
+
+-- Payment for PurchaseID: 20220105-PCH-034
+-- Items: ITM2857 (2 @ $60 = $120)
+-- Total: $120
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220105-29481-PYM-567-8N96', 120.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2022-01-05 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220105-PCH-034');
+
+-- Payment for PurchaseID: 20230815-PCH-035
+-- Items: ITM7969 (1 @ $8 = $8)
+-- Total: $8
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230815-28473-PYM-248-9L57', 8.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2023-08-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230815-PCH-035');
+
+-- Payment for PurchaseID: 20211021-PCH-036
+-- Items: ITM9634 (2 @ $50 = $100)
+-- Total: $100
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-52834-PYM-754-7C96', 100.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-10-21 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-036');
+
+-- Payment for PurchaseID: 20230815-PCH-037
+-- Items: ITM9617 (1 @ $15 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230815-49238-PYM-691-5N34', 15.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2023-08-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230815-PCH-037');
+
+-- Payment for PurchaseID: 20220410-PCH-038
+-- Items: ITM8285 (3 @ $10 = $30)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-93764-PYM-274-8D94', 30.00, 'Cash', 'Completed', TO_TIMESTAMP('2022-04-10 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-038');
+
+-- Payment for PurchaseID: 20220410-PCH-039
+-- Items: ITM0258 (1 @ $20 = $20)
+-- Total: $20
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-16285-PYM-473-1G53', 20.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2022-04-10 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-039');
+
+-- Payment for PurchaseID: 20220810-PCH-040
+-- Items: ITM0000 (4 @ $50 = $200) -- Overweight Item for PSG019
+-- Total: $200
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220810-47381-PYM-192-5K37', 200.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2022-08-10 15:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220810-PCH-040');
+
+-- Payment for PurchaseID: 20210105-PCH-041
+-- Items: ITM5007 (1 @ $40 = $40), ITM9634 (2 @ $50 = $100)
+-- Total: $140
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210105-93824-PYM-754-8H23', 155.00, 'Boost', 'Completed', TO_TIMESTAMP('2021-01-05 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210105-PCH-041');
+
+-- Payment for PurchaseID: 20210105-PCH-042
+-- Items: ITM9634 (1 @ $50 = $50), ITM1140 (1 @ $10 = $10)
+-- Total: $60
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210105-93748-PYM-829-4J93', 75.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2021-01-05 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210105-PCH-042');
+
+-- Payment for PurchaseID: 20220315-PCH-043
+-- Items: ITM1140 (2 @ $10 = $20), ITM6901 (2 @ $5 = $10)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-19482-PYM-493-1L94', 150.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2022-03-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-043');
+
+-- Payment for PurchaseID: 20220315-PCH-044
+-- Items: ITM2857 (1 @ $60 = $60)
+-- Total: $60
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-93765-PYM-194-7K84', 165.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2022-03-15 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-044');
+
+-- Payment for PurchaseID: 20230701-PCH-045
+-- Items: ITM8285 (1 @ $10 = $10), ITM9617 (2 @ $15 = $30)
+-- Total: $40
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-54827-PYM-473-1G94', 80.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2023-07-01 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-045');
+
+-- Payment for PurchaseID: 20230701-PCH-046
+-- Items: ITM0000 (3 @ $50 = $150) -- Overweight Item for PSG005
+-- Total: $150
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-47382-PYM-284-8F52', 215.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2023-07-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-046');
+
+-- Payment for PurchaseID: 20230701-PCH-047
+-- Items: ITM2857 (2 @ $60 = $120)
+-- Total: $120
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-28476-PYM-957-1L87', 300.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2023-07-01 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-047');
+
+-- Payment for PurchaseID: 10508-PCH-048
+-- Items: ITM0258 (3 @ $20 = $60)
+-- Total: $60
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210508-74928-PYM-637-3K28', 170.00, 'Cash', 'Completed', TO_TIMESTAMP('2021-05-08 12:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210508-PCH-048');
+
+-- Payment for PurchaseID: 20210508-PCH-049
+-- Items: ITM9617 (2 @ $15 = $30)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210508-37641-PYM-274-5J94', 55.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2021-05-08 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210508-PCH-049');
+
+-- Payment for PurchaseID: 20210909-PCH-050
+-- Items: ITM5007 (1 @ $40 = $40)
+-- Total: $40
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-28476-PYM-837-2F63', 175.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2021-09-09 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-050');
+
+-- Payment for PurchaseID: 20210909-PCH-051
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-59837-PYM-524-3D75', 180.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-09-09 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-051');
+
+-- Payment for PurchaseID: 20210508-PCH-052
+-- Items: ITM3249 (2 @ $25 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210508-49238-PYM-194-4G95', 110.00, 'Boost', 'Completed', TO_TIMESTAMP('2021-05-08 12:50:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210508-PCH-052');
+
+-- Payment for PurchaseID: 20210508-PCH-053
+-- Items: ITM1140 (3 @ $10 = $30)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210508-83724-PYM-194-5K48', 105.00, 'DuitNow', 'Completed', TO_TIMESTAMP('2021-05-08 13:25:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210508-PCH-053');
+
+-- Payment for PurchaseID: 20230701-PCH-054
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-48293-PYM-837-9H34', 135.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2023-07-01 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-054');
+
+-- Payment for PurchaseID: 20220315-PCH-055
+-- Items: ITM2857 (2 @ $60 = $120)
+-- Total: $120
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-62984-PYM-473-6K59', 175.00, 'PayPal', 'Completed', TO_TIMESTAMP('2022-03-15 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-055');
+
+-- Payment for PurchaseID: 20210105-PCH-056
+-- Items: ITM9634 (2 @ $50 = $100)
+-- Total: $100
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210105-18427-PYM-293-3G58', 165.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-01-05 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210105-PCH-056');
+
+-- Payment for PurchaseID: 20210212-PCH-057
+-- Items: ITM9617 (1 @ $15 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210212-48295-PYM-937-8K48', 145.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2021-02-12 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210212-PCH-057');
+
+-- Payment for PurchaseID: 20210212-PCH-058
+-- Items: ITM8285 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210212-92837-PYM-394-2J73', 230.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2021-02-12 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210212-PCH-058');
+
+-- Payment for PurchaseID: 20210508-PCH-059
+-- Items: ITM0258 (2 @ $20 = $40)
+-- Total: $40
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210508-49538-PYM-857-3N94', 100.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2021-05-08 12:40:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210508-PCH-059');
+
+-- Payment for PurchaseID: 20210909-PCH-060
+-- Items: ITM5007 (1 @ $40 = $40)
+-- Total: $40
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-75839-PYM-384-9L27', 105.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2021-09-09 10:50:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-060');
+
+-- Payment for PurchaseID: 20210508-PCH-061
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210508-98432-PYM-493-8L28', 240.00, 'Boost', 'Completed', TO_TIMESTAMP('2021-05-08 13:20:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210508-PCH-061');
+
+-- Payment for PurchaseID: 20251101-PCH-062
+-- Items: ITM1140 (2 @ $10 = $20), ITM8285 (2 @ $10 = $20)
+-- Total: $40
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20251101-28473-PYM-937-2G83', 55.00, 'Cash', 'Completed', TO_TIMESTAMP('2025-11-01 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20251101-PCH-062');
+
+-- Payment for PurchaseID: 20210105-PCH-063
+-- Items: ITM6901 (3 @ $5 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210105-47391-PYM-284-5K39', 95.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2021-01-05 08:55:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210105-PCH-063');
+
+-- Payment for PurchaseID: 20210212-PCH-064
+-- Items: ITM2857 (1 @ $60 = $60)
+-- Total: $60
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210212-49532-PYM-395-8G48', 140.00, 'DuitNow', 'Completed', TO_TIMESTAMP('2021-02-12 17:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210212-PCH-064');
+
+-- Payment for PurchaseID: 20210212-PCH-065
+-- Items: ITM3249 (1 @ $25 = $25)
+-- Total: $25
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210212-84639-PYM-182-9L83', 85.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2021-02-12 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210212-PCH-065');
+
+-- Payment for PurchaseID: 20230701-PCH-066
+-- Items: ITM9617 (1 @ $15 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-59384-PYM-385-3H48', 55.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2023-07-01 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-066');
+
+-- Payment for PurchaseID: 20230701-PCH-067
+-- Items: ITM9634 (2 @ $50 = $100)
+-- Total: $100
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-98234-PYM-294-5F94', 120.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2023-07-01 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-067');
+
+-- Payment for PurchaseID: 20220315-PCH-068
+-- Items: ITM6901 (2 @ $5 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-37485-PYM-295-4K58', 180.00, 'DuitNow', 'Completed', TO_TIMESTAMP('2022-03-15 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-068');
+
+-- Payment for PurchaseID: 20210508-PCH-069
+-- Items: ITM5007 (1 @ $40 = $40)
+-- Total: $40
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210508-59834-PYM-185-3L82', 190.00, 'Maybank QRPay', 'Completed', TO_TIMESTAMP('2021-05-08 12:10:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210508-PCH-069');
+
+-- Payment for PurchaseID: 20210909-PCH-070
+-- Items: ITM9634 (2 @ $50 = $100)
+-- Total: $100
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-83729-PYM-472-5J39', 140.00, 'Alipay', 'Completed', TO_TIMESTAMP('2021-09-09 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-070');
+
+-- Payment for PurchaseID: 20210105-PCH-071
+-- Items: ITM9617 (1 @ $15 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210105-39824-PYM-927-6F48', 30.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-01-05 08:40:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210105-PCH-071');
+
+-- Payment for PurchaseID: 20220315-PCH-072
+-- Items: ITM8285 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-58293-PYM-483-2G63', 240.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2022-03-15 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-072');
+
+-- Payment for PurchaseID: 20251101-PCH-073
+-- Items: ITM5007 (2 @ $40 = $80)
+-- Total: $80
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20251101-83759-PYM-582-4K38', 110.00, 'Cash', 'Completed', TO_TIMESTAMP('2025-11-01 23:20:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20251101-PCH-073');
+
+-- Payment for PurchaseID: 20210105-PCH-074
+-- Items: ITM2857 (1 @ $60 = $60)
+-- Total: $60
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210105-38293-PYM-937-4G58', 120.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2021-01-05 08:50:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210105-PCH-074');
+
+-- Payment for PurchaseID: 20210909-PCH-075
+-- Items: ITM3249 (1 @ $25 = $25)
+-- Total: $25
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-84725-PYM-572-3L29', 95.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2021-09-09 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-075');
+
+-- Payment for PurchaseID: 20230301-PCH-076
+-- Items: ITM9617 (2 @ $15 = $30)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230301-58293-PYM-394-6F58', 220.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2023-03-01 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230301-PCH-076');
+
+-- Payment for PurchaseID: 20230301-PCH-077
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230301-29348-PYM-495-2J47', 100.00, 'PayPal', 'Completed', TO_TIMESTAMP('2023-03-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230301-PCH-077');
+
+-- Payment for PurchaseID: 20220410-PCH-078
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-83928-PYM-748-9G59', 135.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2022-04-10 08:20:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-078');
+
+-- Payment for PurchaseID: 20220410-PCH-079
+-- Items: ITM8285 (2 @ $10 = $20)
+-- Total: $20
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-28472-PYM-495-6K58', 215.00, 'Cash', 'Completed', TO_TIMESTAMP('2022-04-10 09:10:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-079');
+
+-- Payment for PurchaseID: 20211210-PCH-080
+-- Items: ITM1140 (3 @ $10 = $30)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211210-73849-PYM-192-8L93', 155.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-12-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211210-PCH-080');
+
+-- Payment for PurchaseID: 20211210-PCH-081
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211210-59473-PYM-294-3K59', 85.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2021-12-10 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211210-PCH-081');
+
+-- Payment for PurchaseID: 20221010-PCH-082
+-- Items: ITM2857 (1 @ $60 = $60)
+-- Total: $60
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20221010-47394-PYM-274-4G58', 190.00, 'Maybank QRPay', 'Completed', TO_TIMESTAMP('2022-10-10 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20221010-PCH-082');
+
+-- Payment for PurchaseID: 20221010-PCH-083
+-- Items: ITM3249 (2 @ $25 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20221010-38475-PYM-483-7L29', 180.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2022-10-10 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20221010-PCH-083');
+
+-- Payment for PurchaseID: 20220105-PCH-084
+-- Items: ITM9617 (2 @ $15 = $30)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220105-92847-PYM-948-2H73', 130.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2022-01-05 08:10:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220105-PCH-084');
+
+-- Payment for PurchaseID: 20220105-PCH-085
+-- Items: ITM0000 (3 @ $50 = $150)
+-- Total: $150 -- Overweight charge for PSG057
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220105-73984-PYM-283-7J29', 210.00, 'DuitNow', 'Completed', TO_TIMESTAMP('2022-01-05 09:50:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220105-PCH-085');
+
+-- Payment for PurchaseID: 20220410-PCH-086
+-- Items: ITM0000 (1 @ $50 = $50)
+-- Total: $50 -- Overweight charge for PSG064
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-93485-PYM-384-3K58', 80.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2022-04-10 08:35:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-086');
+
+-- Payment for PurchaseID: 20220810-PCH-087
+-- Items: ITM6901 (2 @ $5 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220810-29384-PYM-584-4J48', 80.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2022-08-10 15:20:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220810-PCH-087');
+
+-- Payment for PurchaseID: 20220810-PCH-088
+-- Items: ITM8285 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220810-49582-PYM-593-8K38', 65.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2022-08-10 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220810-PCH-088');
+
+-- Payment for PurchaseID: 20230815-PCH-089
+-- Items: ITM1140 (3 @ $10 = $30)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230815-38472-PYM-394-7F38', 130.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2023-08-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230815-PCH-089');
+
+-- Payment for PurchaseID: 20230815-PCH-090
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230815-93847-PYM-295-8G59', 25.00, 'PayPal', 'Completed', TO_TIMESTAMP('2023-08-15 11:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230815-PCH-090');
+
+-- Payment for PurchaseID: 20220410-PCH-091
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-28472-PYM-473-9K29', 190.00, 'Boost', 'Completed', TO_TIMESTAMP('2022-04-10 08:50:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-091');
+
+-- Payment for PurchaseID: 20220410-PCH-092
+-- Items: ITM3249 (2 @ $25 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220410-83948-PYM-384-2J49', 250.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2022-04-10 09:40:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220410-PCH-092');
+
+-- Payment for PurchaseID: 20220212-PCH-093
+-- Items: ITM2857 (2 @ $60 = $120)
+-- Total: $120
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220212-29485-PYM-592-4L28', 175.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2022-02-12 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220212-PCH-093');
+
+-- Payment for PurchaseID: 20220212-PCH-094
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220212-39584-PYM-473-5K38', 90.00, 'Razer Pay', 'Completed', TO_TIMESTAMP('2022-02-12 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220212-PCH-094');
+
+-- Payment for PurchaseID: 20210909-PCH-095
+-- Items: ITM1140 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-48293-PYM-948-2J58', 70.00, 'DuitNow', 'Completed', TO_TIMESTAMP('2021-09-09 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-095');
+
+-- Payment for PurchaseID: 20210909-PCH-096
+-- Items: ITM6901 (3 @ $5 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210909-59382-PYM-384-6L38', 65.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2021-09-09 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210909-PCH-096');
+
+-- Payment for PurchaseID: 20220518-PCH-097
+-- Items: ITM8285 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220518-38247-PYM-482-4J39', 140.00, 'Alipay', 'Completed', TO_TIMESTAMP('2022-05-18 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220518-PCH-097');
+
+-- Payment for PurchaseID: 20220518-PCH-098
+-- Items: ITM0000 (2 @ $50 = $100)
+-- Total: $100 -- Overweight charge for PSG123
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220518-29473-PYM-938-4L49', 260.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2022-05-18 11:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220518-PCH-098');
+
+-- Payment for PurchaseID: 20211021-PCH-099
+-- Items: ITM3249 (2 @ $25 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-48593-PYM-294-7J39', 210.00, 'Maybank QRPay', 'Completed', TO_TIMESTAMP('2021-10-21 12:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-099');
+
+-- Payment for PurchaseID: 20211021-PCH-100
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-58492-PYM-395-9L84', 100.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2021-10-21 20:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-100');
+
+-- Payment for PurchaseID: 20211210-PCH-101
+-- Items: ITM9617 (2 @ $15 = $30)
+-- Total: $30
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211210-58394-PYM-384-2K39', 80.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2021-12-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211210-PCH-101');
+
+-- Payment for PurchaseID: 20211210-PCH-102
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211210-49583-PYM-583-4J29', 90.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-12-10 09:50:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211210-PCH-102');
+
+-- Payment for PurchaseID: 20220518-PCH-103
+-- Items: ITM1140 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220518-29384-PYM-284-7J39', 45.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2022-05-18 11:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220518-PCH-103');
+
+-- Payment for PurchaseID: 20220518-PCH-104
+-- Items: ITM2857 (3 @ $60 = $180)
+-- Total: $180
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220518-58493-PYM-384-5K39', 360.00, 'PayPal', 'Completed', TO_TIMESTAMP('2022-05-18 11:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220518-PCH-104');
+
+-- Payment for PurchaseID: 20230701-PCH-105
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-48392-PYM-283-9J49', 205.00, 'Cash', 'Completed', TO_TIMESTAMP('2023-07-01 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-105');
+
+-- Payment for PurchaseID: 20230701-PCH-106
+-- Items: ITM0000 (1 @ $50 = $50)
+-- Total: $50 -- Overweight charge for PSG099
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230701-29485-PYM-582-3L39', 230.00, 'Razer Pay', 'Completed', TO_TIMESTAMP('2023-07-01 16:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230701-PCH-106');
+
+-- Payment for PurchaseID: 20230815-PCH-107
+-- Items: ITM8285 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230815-38492-PYM-593-7J29', 55.00, 'Boost', 'Completed', TO_TIMESTAMP('2023-08-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230815-PCH-107');
+
+-- Payment for PurchaseID: 20230815-PCH-108
+-- Items: ITM5007 (2 @ $40 = $80)
+-- Total: $80
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20230815-58493-PYM-284-4J49', 210.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2023-08-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20230815-PCH-108');
+
+-- Payment for PurchaseID: 20211021-PCH-109
+-- Items: ITM9634 (2 @ $50 = $100)
+-- Total: $100
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-39458-PYM-483-5K38', 170.00, 'Maybank QRPay', 'Completed', TO_TIMESTAMP('2021-10-21 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-109');
+
+-- Payment for PurchaseID: 20211021-PCH-110
+-- Items: ITM6901 (1 @ $5 = $5)
+-- Total: $5
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-48573-PYM-395-2L38', 100.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2021-10-21 19:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-110');
+
+-- Payment for PurchaseID: 20211115-PCH-111
+-- Items: ITM1140 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211115-48293-PYM-593-4J49', 140.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2021-11-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211115-PCH-111');
+
+-- Payment for PurchaseID: 20211115-PCH-112
+-- Items: ITM9634 (3 @ $50 = $150)
+-- Total: $150
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211115-58492-PYM-384-6L39', 170.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2021-11-15 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211115-PCH-112');
+
+-- Payment for PurchaseID: 20211115-PCH-113
+-- Items: ITM8285 (2 @ $10 = $20)
+-- Total: $20
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211115-29385-PYM-492-3J58', 90.00, 'Alipay', 'Completed', TO_TIMESTAMP('2021-11-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211115-PCH-113');
+
+-- Payment for PurchaseID: 20211115-PCH-114
+-- Items: ITM0000 (2 @ $50 = $100)
+-- Total: $100 -- Overweight charge for PSG111
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211115-39584-PYM-583-4K29', 200.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2021-11-15 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211115-PCH-114');
+
+-- Payment for PurchaseID: 20220315-PCH-115
+-- Items: ITM9617 (1 @ $15 = $15)
+-- Total: $15
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-28493-PYM-392-5L48', 75.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2022-03-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-115');
+
+-- Payment for PurchaseID: 20220315-PCH-116
+-- Items: ITM6901 (2 @ $5 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20220315-58492-PYM-482-6J39', 170.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2022-03-15 10:50:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20220315-PCH-116');
+
+-- Payment for PurchaseID: 20210212-PCH-117
+-- Items: ITM9634 (1 @ $50 = $50)
+-- Total: $50
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210212-49573-PYM-593-5L48', 150.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2021-02-12 14:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210212-PCH-117');
+
+-- Payment for PurchaseID: 20210212-PCH-118
+-- Items: ITM1140 (2 @ $10 = $20)
+-- Total: $20
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20210212-59384-PYM-284-4J58', 75.00, 'PayPal', 'Completed', TO_TIMESTAMP('2021-02-12 17:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20210212-PCH-118');
+
+-- Payment for PurchaseID: 20211021-PCH-119
+-- Items: ITM8285 (1 @ $10 = $10)
+-- Total: $10
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-28394-PYM-583-5K29', 105.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2021-10-21 13:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-119');
+
+-- Payment for PurchaseID: 20211021-PCH-120
+-- Items: ITM5007 (3 @ $40 = $120)
+-- Total: $120
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID)
+VALUES ('20211021-59483-PYM-385-6L49', 230.00, 'Boost', 'Completed', TO_TIMESTAMP('2021-10-21 20:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20211021-PCH-120');
+
+-- Purchase 121: Passenger PSG078, PurchaseID 20240105-PCH-121
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240105-61239-PYM-721-4C9X', 70.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-01-05 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240105-PCH-121');
+
+-- Purchase 122: Passenger PSG099, PurchaseID 20240110-PCH-122
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240110-45873-PYM-672-9M5D', 40.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2024-01-10 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240110-PCH-122');
+
+-- Purchase 123: Passenger PSG081, PurchaseID 20240115-PCH-123
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240115-61239-PYM-749-6D85', 100.00, 'PayPal', 'Completed', TO_TIMESTAMP('2024-01-15 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240115-PCH-123');
+
+-- Purchase 124: Passenger PSG110, PurchaseID 20240125-PCH-124
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240125-38473-PYM-982-3Z7L', 40.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2024-01-25 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240125-PCH-124');
+
+-- Purchase 125: Passenger PSG114, PurchaseID 20240205-PCH-125
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240205-58723-PYM-487-2K3D', 165.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2024-02-05 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240205-PCH-125');
+
+-- Purchase 126: Passenger PSG120, PurchaseID 20240220-PCH-126
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240220-12498-PYM-184-7G5N', 10.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2024-02-20 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240220-PCH-126');
+
+-- Purchase 127: Passenger PSG095, PurchaseID 20240305-PCH-127
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240305-98134-PYM-756-3Q2L', 90.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-03-05 07:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240305-PCH-127');
+
+-- Purchase 128: Passenger PSG102, PurchaseID 20240312-PCH-128
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240312-74829-PYM-341-9V8X', 44.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2024-03-12 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240312-PCH-128');
+
+-- Purchase 129: Passenger PSG103, PurchaseID 20240329-PCH-129
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240329-29371-PYM-678-6P5D', 15.00, 'Cash', 'Completed', TO_TIMESTAMP('2024-03-29 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240329-PCH-129');
+
+-- Purchase 130: Passenger PSG108, PurchaseID 20240410-PCH-130
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240410-54983-PYM-452-4H7S', 5.00, 'Boost', 'Completed', TO_TIMESTAMP('2024-04-10 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240410-PCH-130');
+
+-- Purchase 131: Passenger PSG127, PurchaseID 20240509-PCH-131
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240509-13729-PYM-962-1W9L', 108.00, 'DuitNow', 'Completed', TO_TIMESTAMP('2024-05-09 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240509-PCH-131');
+
+-- Purchase 132: Passenger PSG088, PurchaseID 20240601-PCH-132
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240601-58291-PYM-827-5M7R', 80.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2024-06-01 17:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240601-PCH-132');
+
+-- Purchase 133: Passenger PSG105, PurchaseID 20240701-PCH-133
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240701-49153-PYM-935-4S8F', 100.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-07-01 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240701-PCH-133');
+
+-- Purchase 134: Passenger PSG121, PurchaseID 20240715-PCH-134
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240715-75913-PYM-351-2T8X', 70.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2024-07-15 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240715-PCH-134');
+
+-- Purchase 135: Passenger PSG133, PurchaseID 20240820-PCH-135
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240820-18273-PYM-671-3C4L', 24.00, 'Alipay', 'Completed', TO_TIMESTAMP('2024-08-20 17:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240820-PCH-135');
+
+-- Purchase 136: Passenger PSG097, PurchaseID 20240912-PCH-136
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240912-29163-PYM-729-1X9P', 50.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2024-09-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240912-PCH-136');
+
+-- Purchase 137: Passenger PSG106, PurchaseID 20241001-PCH-137
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241001-78361-PYM-918-8K6F', 70.00, 'PayPal', 'Completed', TO_TIMESTAMP('2024-10-01 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241001-PCH-137');
+
+-- Purchase 138: Passenger PSG115, PurchaseID 20241010-PCH-138
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241010-45291-PYM-164-9J5L', 15.00, 'Cash', 'Completed', TO_TIMESTAMP('2024-10-10 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241010-PCH-138');
+
+-- Purchase 139: Passenger PSG124, PurchaseID 20241101-PCH-139
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241101-17853-PYM-257-3N8X', 70.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-11-01 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241101-PCH-139');
+
+-- Purchase 140: Passenger PSG137, PurchaseID 20241201-PCH-140
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241201-65937-PYM-291-6B4L', 30.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2024-12-01 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241201-PCH-140');
+
+-- Purchase 141: Passenger PSG079, PurchaseID 20240210-PCH-141
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240210-71639-PYM-481-2Q7F', 160.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2024-02-10 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240210-PCH-141');
+
+-- Purchase 142: Passenger PSG077, PurchaseID 20240220-PCH-142
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240220-62394-PYM-261-5D8L', 40.00, 'Boost', 'Completed', TO_TIMESTAMP('2024-02-20 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240220-PCH-142');
+
+-- Purchase 143: Passenger PSG093, PurchaseID 20240322-PCH-143
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240322-13984-PYM-672-1F7X', 100.00, 'DuitNow', 'Completed', TO_TIMESTAMP('2024-03-22 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240322-PCH-143');
+
+-- Purchase 144: Passenger PSG084, PurchaseID 20240411-PCH-144
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240411-82134-PYM-349-6L9P', 10.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2024-04-11 22:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240411-PCH-144');
+
+-- Purchase 145: Passenger PSG118, PurchaseID 20240510-PCH-145
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240510-45918-PYM-729-3S5N', 15.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-05-10 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240510-PCH-145');
+
+-- Purchase 146: Passenger PSG090, PurchaseID 20240620-PCH-146
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240620-24819-PYM-371-8J9K', 40.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2024-06-20 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240620-PCH-146');
+
+-- Purchase 147: Passenger PSG073, PurchaseID 20240705-PCH-147
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240705-92148-PYM-582-6B2L', 16.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2024-07-05 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240705-PCH-147');
+
+-- Purchase 148: Passenger PSG130, PurchaseID 20240815-PCH-148
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240815-53726-PYM-962-7H9T', 5.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-08-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240815-PCH-148');
+
+-- Purchase 149: Passenger PSG144, PurchaseID 20240922-PCH-149
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240922-37619-PYM-814-3C7P', 160.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2024-09-22 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240922-PCH-149');
+
+-- Purchase 150: Passenger PSG128, PurchaseID 20241005-PCH-150
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241005-83924-PYM-631-4D8S', 30.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-10-05 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241005-PCH-150');
+
+-- Purchase 151: Passenger PSG092, PurchaseID 20241015-PCH-151
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241015-47153-PYM-263-1F9K', 34.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2024-10-15 17:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241015-PCH-151');
+
+-- Purchase 152: Passenger PSG066, PurchaseID 20241020-PCH-152
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241020-51283-PYM-742-7L5V', 40.00, 'Boost', 'Completed', TO_TIMESTAMP('2024-10-20 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241020-PCH-152');
+
+-- Purchase 153: Passenger PSG112, PurchaseID 20241105-PCH-153
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241105-67248-PYM-935-5N2L', 100.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2024-11-05 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241105-PCH-153');
+
+-- Purchase 154: Passenger PSG140, PurchaseID 20241201-PCH-154
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20241201-29463-PYM-378-2X9M', 15.00, 'Cash', 'Completed', TO_TIMESTAMP('2024-12-01 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20241201-PCH-154');
+
+-- Purchase 155: Passenger PSG149, PurchaseID 20240105-PCH-155
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240105-61492-PYM-193-1B8T', 35.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2024-01-05 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240105-PCH-155');
+
+-- Purchase 156: Passenger PSG152, PurchaseID 20240221-PCH-156
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240221-76284-PYM-547-2H9K', 150.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2024-02-21 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240221-PCH-156');
+
+-- Purchase 157: Passenger PSG103, PurchaseID 20240330-PCH-157
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240330-51932-PYM-847-5J6L', 40.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-03-30 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240330-PCH-157');
+
+-- Purchase 158: Passenger PSG145, PurchaseID 20240415-PCH-158
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240415-29475-PYM-621-3F7M', 10.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2024-04-15 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240415-PCH-158');
+
+-- Purchase 159: Passenger PSG107, PurchaseID 20240525-PCH-159
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240525-51963-PYM-863-7L8T', 66.00, 'Razer Pay', 'Completed', TO_TIMESTAMP('2024-05-25 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240525-PCH-159');
+
+-- Purchase 160: Passenger PSG151, PurchaseID 20240620-PCH-160
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240620-68153-PYM-184-1F4K', 40.00, 'Alipay', 'Completed', TO_TIMESTAMP('2024-06-20 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240620-PCH-160');
+
+-- Purchase 161: Passenger PSG098, PurchaseID 20240115-PCH-161
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240115-92341-PYM-937-9L4X', 35.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2024-01-15 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240115-PCH-161');
+
+-- Purchase 162: Passenger PSG153, PurchaseID 20240212-PCH-162
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240212-59347-PYM-273-5S9V', 20.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2024-02-12 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240212-PCH-162');
+
+-- Purchase 163: Passenger PSG161, PurchaseID 20240222-PCH-163
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240222-32857-PYM-682-4J2K', 150.00, 'Boost', 'Completed', TO_TIMESTAMP('2024-02-22 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240222-PCH-163');
+
+-- Purchase 164: Passenger PSG168, PurchaseID 20240308-PCH-164
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240308-95137-PYM-475-9G4L', 5.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2024-03-08 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240308-PCH-164');
+
+-- Purchase 165: Passenger PSG142, PurchaseID 20240328-PCH-165
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240328-76182-PYM-347-1S9M', 90.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-03-28 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240328-PCH-165');
+
+-- Purchase 166: Passenger PSG162, PurchaseID 20240412-PCH-166
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240412-94356-PYM-291-8L5V', 15.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2024-04-12 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240412-PCH-166');
+
+-- Purchase 167: Passenger PSG125, PurchaseID 20240420-PCH-167
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240420-12639-PYM-863-7F4K', 70.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2024-04-20 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240420-PCH-167');
+
+-- Purchase 168: Passenger PSG116, PurchaseID 20240512-PCH-168
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240512-38157-PYM-163-4J9P', 100.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-05-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240512-PCH-168');
+
+-- Purchase 169: Passenger PSG137, PurchaseID 20240525-PCH-169
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240525-49137-PYM-267-6J8K', 20.00, 'Razer Pay', 'Completed', TO_TIMESTAMP('2024-05-25 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240525-PCH-169');
+
+-- Purchase 170: Passenger PSG175, PurchaseID 20240610-PCH-170
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240610-51938-PYM-642-7L9X', 190.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2024-06-10 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240610-PCH-170');
+
+-- Purchase 171: Passenger PSG114, PurchaseID 20240625-PCH-171
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240625-51289-PYM-175-3L6V', 16.00, 'Boost', 'Completed', TO_TIMESTAMP('2024-06-25 13:45:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240625-PCH-171');
+
+-- Purchase 172: Passenger PSG160, PurchaseID 20240629-PCH-172
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240629-83147-PYM-572-8J5L', 25.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2024-06-29 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240629-PCH-172');
+
+-- Purchase 173: Passenger PSG180, PurchaseID 20240715-PCH-173
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240715-71495-PYM-291-9L7S', 110.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2024-07-15 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240715-PCH-173');
+
+-- Purchase 174: Passenger PSG176, PurchaseID 20240728-PCH-174
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240728-43921-PYM-164-3D9X', 15.00, 'Cash', 'Completed', TO_TIMESTAMP('2024-07-28 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240728-PCH-174');
+
+-- Purchase 175: Passenger PSG129, PurchaseID 20240805-PCH-175
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240805-71293-PYM-817-6J5L', 34.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2024-08-05 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240805-PCH-175');
+
+-- Purchase 176: Passenger PSG113, PurchaseID 20240819-PCH-176
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240819-31729-PYM-614-9F3S', 50.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-08-19 20:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240819-PCH-176');
+
+-- Purchase 177: Passenger PSG089, PurchaseID 20240310-PCH-177
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240310-91253-PYM-451-4N8S', 70.00, 'Boost', 'Completed', TO_TIMESTAMP('2024-03-10 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240310-PCH-177');
+
+-- Purchase 178: Passenger PSG121, PurchaseID 20240320-PCH-178
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240320-51289-PYM-814-3C5K', 35.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2024-03-20 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240320-PCH-178');
+
+-- Purchase 179: Passenger PSG138, PurchaseID 20240410-PCH-179
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240410-41593-PYM-683-7H9X', 15.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-04-10 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240410-PCH-179');
+
+-- Purchase 180: Passenger PSG135, PurchaseID 20240418-PCH-180
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240418-92345-PYM-942-5G2L', 100.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2024-04-18 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240418-PCH-180');
+
+-- Purchase 181: Passenger PSG107, PurchaseID 20240508-PCH-181
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240508-91427-PYM-526-9L7M', 130.00, 'GrabPay', 'Completed', TO_TIMESTAMP('2024-05-08 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240508-PCH-181');
+
+-- Purchase 182: Passenger PSG154, PurchaseID 20240601-PCH-182
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240601-63827-PYM-983-2L9P', 25.00, 'Razer Pay', 'Completed', TO_TIMESTAMP('2024-06-01 07:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240601-PCH-182');
+
+-- Purchase 183: Passenger PSG141, PurchaseID 20240612-PCH-183
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240612-81953-PYM-791-4J8V', 15.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-06-12 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240612-PCH-183');
+
+-- Purchase 184: Passenger PSG104, PurchaseID 20240706-PCH-184
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240706-31859-PYM-842-7H4K', 124.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2024-07-06 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240706-PCH-184');
+
+-- Purchase 185: Passenger PSG119, PurchaseID 20240721-PCH-185
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240721-47139-PYM-647-2N8X', 20.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-07-21 17:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240721-PCH-185');
+
+-- Purchase 186: Passenger PSG145, PurchaseID 20240721-PCH-186
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240721-32947-PYM-862-5K7P', 20.00, 'Cash', 'Completed', TO_TIMESTAMP('2024-07-21 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240721-PCH-186');
+
+-- Purchase 187: Passenger PSG099, PurchaseID 20240728-PCH-187
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240728-91257-PYM-731-6B3K', 115.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2024-07-28 19:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240728-PCH-187');
+
+-- Purchase 188: Passenger PSG179, PurchaseID 20240810-PCH-188
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240810-83154-PYM-659-4L9S', 5.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-08-10 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240810-PCH-188');
+
+-- Purchase 189: Passenger PSG152, PurchaseID 20240816-PCH-189
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240816-72183-PYM-935-5H4N', 50.00, 'Alipay', 'Completed', TO_TIMESTAMP('2024-08-16 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240816-PCH-189');
+
+-- Purchase 190: Passenger PSG090, PurchaseID 20240824-PCH-190
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240824-19847-PYM-672-1L8X', 180.00, 'Debit Card', 'Completed', TO_TIMESTAMP('2024-08-24 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240824-PCH-190');
+
+-- Purchase 191: Passenger PSG091, PurchaseID 20240830-PCH-191
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240830-49137-PYM-261-4N5P', 10.00, 'Boost', 'Completed', TO_TIMESTAMP('2024-08-30 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240830-PCH-191');
+
+-- Purchase 192: Passenger PSG088, PurchaseID 20240902-PCH-192
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240902-58139-PYM-172-8F6V', 15.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2024-09-02 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240902-PCH-192');
+
+-- Purchase 193: Passenger PSG146, PurchaseID 20240905-PCH-193
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240905-23918-PYM-741-7G8K', 29.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-09-05 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240905-PCH-193');
+
+-- Purchase 194: Passenger PSG136, PurchaseID 20240912-PCH-194
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240912-92134-PYM-689-9K7L', 140.00, 'Touch n Go eWallet', 'Completed', TO_TIMESTAMP('2024-09-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240912-PCH-194');
+
+-- Purchase 195: Passenger PSG083, PurchaseID 20240913-PCH-195
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240913-39824-PYM-721-6J3M', 10.00, 'Razer Pay', 'Completed', TO_TIMESTAMP('2024-09-13 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240913-PCH-195');
+
+-- Purchase 196: Passenger PSG082, PurchaseID 20240915-PCH-196
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240915-23198-PYM-142-7H9S', 5.00, 'Bank Transfer', 'Completed', TO_TIMESTAMP('2024-09-15 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240915-PCH-196');
+
+-- Purchase 197: Passenger PSG108, PurchaseID 20240918-PCH-197
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240918-23894-PYM-583-4K2X', 40.00, 'Credit Card', 'Completed', TO_TIMESTAMP('2024-09-18 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240918-PCH-197');
+
+-- Purchase 198: Passenger PSG063, PurchaseID 20240920-PCH-198
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240920-91358-PYM-932-1F8K', 100.00, 'FPX (Online Banking)', 'Completed', TO_TIMESTAMP('2024-09-20 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240920-PCH-198');
+
+-- Purchase 199: Passenger PSG105, PurchaseID 20240925-PCH-199
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240925-19472-PYM-621-5S3V', 23.00, 'ShopeePay', 'Completed', TO_TIMESTAMP('2024-09-25 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240925-PCH-199');
+
+-- Purchase 200: Passenger PSG122, PurchaseID 20240930-PCH-200
+INSERT INTO Payment (PaymentID, PaymentAmount, PaymentMethod, PaymentStatus, PaymentDate, BookingID, PurchaseID) 
+VALUES ('20240930-63142-PYM-174-7J5N', 15.00, 'WeChat Pay', 'Completed', TO_TIMESTAMP('2024-09-30 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, '20240930-PCH-200');
+
+
+SELECT COUNT(*) FROM Payment;

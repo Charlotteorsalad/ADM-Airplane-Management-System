@@ -1,0 +1,481 @@
+-- Request 1
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-08-25 10:30:00', '230825-RQT-582019', 'Approved', 'CLS0004', '230820-TKT-127', 'More Legroom');
+
+-- Request 2
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-10 14:45:00', '230910-RQT-384720', 'Approved', 'CLS0005', '230909-TKT-141', 'Business Needs');
+
+-- Request 3
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 12:10:00', '230912-RQT-592314', 'Rejected', 'CLS0007', '230911-TKT-105', 'Flight Overbooked');
+
+-- Request 4
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-07 09:50:00', '230907-RQT-483671', 'Approved', 'CLS0003', '230819-TKT-083', 'Extra Space Needed');
+
+-- Request 5
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-18 16:10:00', '230918-RQT-194731', 'Rejected', 'CLS0009', '230817-TKT-109', 'Upgrade for Work');
+
+-- Request 6
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-24 13:30:00', '230924-RQT-837261', 'Approved', 'CLS0005', '230818-TKT-422', 'Long Flight');
+
+-- Request 7
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 10:25:00', '230919-RQT-573920', 'Approved', 'CLS0006', '230622-TKT-113', 'Comfort Upgrade');
+
+-- Request 8
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-16 14:20:00', '230916-RQT-384621', 'Approved', 'CLS0002', '210115-TKT-001', 'Extra Space');
+
+-- Request 9
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-22 10:15:00', '230922-RQT-192837', 'Rejected', 'CLS0008', '210208-TKT-002', 'Business Travel');
+
+-- Request 10
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-28 17:45:00', '230928-RQT-573610', 'Approved', 'CLS0004', '210312-TKT-003', 'More Privacy');
+
+-- Request 11
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-03 11:30:00', '230903-RQT-294731', 'Approved', 'CLS0010', '210420-TKT-004', 'Business Comfort');
+
+-- Request 12
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-20 15:20:00', '230920-RQT-738261', 'Approved', 'CLS0004', '210525-TKT-005', 'More Space');
+
+-- Request 13
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-11 16:50:00', '230911-RQT-837594', 'Rejected', 'CLS0009', '230824-TKT-153', 'Longer Flight');
+
+-- Request 14
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-15 13:10:00', '230915-RQT-948371', 'Approved', 'CLS0006', '210525-TKT-006', 'Extra Space Needed');
+
+-- Request 15
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-06 09:45:00', '230906-RQT-283649', 'Rejected', 'CLS0011', '230922-TKT-379', 'Extra Comfort');
+
+-- Request 16
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 12:10:00', '230919-RQT-192837', 'Approved', 'CLS0005', '230915-TKT-057', 'More Legroom');
+
+-- Request 17
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-25 16:20:00', '230925-RQT-384917', 'Approved', 'CLS0004', '210610-TKT-007', 'Upgrade for Business');
+
+-- Request 18
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-08 15:40:00', '230908-RQT-948271', 'Rejected', 'CLS0002', '230714-TKT-117', 'Extra Comfort');
+
+-- Request 19
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-27 09:50:00', '230927-RQT-583729', 'Approved', 'CLS0010', '230912-TKT-319', 'More Space');
+
+-- Request 20
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-17 11:30:00', '230917-RQT-283951', 'Approved', 'CLS0005', '210713-TKT-008', 'Upgrade for Comfort');
+
+-- Request 21
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-16 13:20:00', '230916-RQT-384916', 'Rejected', 'CLS0008', '230819-TKT-056', 'Business Needs');
+
+-- Request 22
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-30 16:45:00', '230930-RQT-573619', 'Approved', 'CLS0006', '210819-TKT-009', 'More Space');
+
+-- Request 23
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 10:55:00', '230912-RQT-283749', 'Approved', 'CLS0004', '230822-TKT-501', 'Comfort Upgrade');
+
+-- Request 24
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-22 13:20:00', '230922-RQT-193048', 'Rejected', 'CLS0009', '210819-TKT-010', 'Flight Overbooked');
+
+-- Request 25
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-07 14:40:00', '230907-RQT-374902', 'Approved', 'CLS0003', '221125-TKT-011', 'Upgrade for Work');
+
+-- Request 26
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-18 11:25:00', '230918-RQT-829374', 'Approved', 'CLS0011', '221210-TKT-012', 'Long Flight');
+
+-- Request 27
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-25 12:30:00', '230925-RQT-384927', 'Approved', 'CLS0008', '230115-TKT-013', 'Business Comfort');
+
+-- Request 28
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-04 14:45:00', '230904-RQT-847315', 'Rejected', 'CLS0004', '230220-TKT-014', 'Upgrade for Comfort');
+
+-- Request 29
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 11:10:00', '230912-RQT-594738', 'Approved', 'CLS0012', '240107-TKT-015', 'Extra Legroom');
+
+-- Request 30
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-29 14:20:00', '230929-RQT-573901', 'Approved', 'CLS0013', '230927-TKT-107', 'Comfort Upgrade');
+
+-- Request 31
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-08 12:45:00', '230908-RQT-947512', 'Approved', 'CLS0003', '240218-TKT-016', 'Upgrade for Business');
+
+-- Request 32
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-16 14:20:00', '230916-RQT-746382', 'Rejected', 'CLS0008', '230910-TKT-389', 'Extra Comfort Needed');
+
+-- Request 33
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-23 13:35:00', '230923-RQT-483562', 'Approved', 'CLS0010', '210819-TKT-017', 'Extra Legroom');
+
+-- Request 34
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-14 12:10:00', '230914-RQT-839576', 'Approved', 'CLS0004', '210930-TKT-018', 'More Space');
+
+-- Request 35
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-05 09:55:00', '230905-RQT-293481', 'Rejected', 'CLS0011', '230730-TKT-487', 'Better Seating');
+
+-- Request 36
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-18 11:45:00', '230918-RQT-739512', 'Approved', 'CLS0006', '211011-TKT-019', 'More Privacy');
+
+-- Request 37
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-26 14:30:00', '230926-RQT-283947', 'Approved', 'CLS0009', '211123-TKT-020', 'Business Upgrade');
+
+-- Request 38
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-10 13:50:00', '230910-RQT-582346', 'Approved', 'CLS0010', '211212-TKT-021', 'Extra Legroom');
+
+-- Request 39
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-15 10:25:00', '230915-RQT-491082', 'Rejected', 'CLS0012', '230712-TKT-100', 'More Comfort');
+
+-- Request 40
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-22 14:50:00', '230922-RQT-758329', 'Approved', 'CLS0013', '220103-TKT-022', 'More Comfort');
+
+-- Request 41
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-29 17:30:00', '230929-RQT-293821', 'Approved', 'CLS0004', '220214-TKT-023', 'Upgrade for Comfort');
+
+-- Request 42
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-20 10:40:00', '230920-RQT-637482', 'Approved', 'CLS0006', '220329-TKT-024', 'More Legroom');
+
+-- Request 43
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-07 09:20:00', '230907-RQT-937518', 'Rejected', 'CLS0009', '221125-TKT-025', 'Need More Space');
+
+-- Request 44
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 14:50:00', '230919-RQT-582034', 'Approved', 'CLS0007', '230623-TKT-062', 'Upgrade for Business');
+
+-- Request 45
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-13 15:30:00', '230913-RQT-738514', 'Approved', 'CLS0011', '221210-TKT-026', 'Comfort Needed');
+
+-- Request 46
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-21 16:10:00', '230921-RQT-493025', 'Rejected', 'CLS0013', '230115-TKT-027', 'More Privacy');
+
+-- Request 47
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-16 12:35:00', '230916-RQT-284917', 'Approved', 'CLS0002', '230115-TKT-028', 'Comfort Upgrade');
+
+-- Request 48
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 11:55:00', '230912-RQT-384617', 'Approved', 'CLS0010', '240107-TKT-029', 'Extra Space');
+
+-- Request 49
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-18 13:40:00', '230918-RQT-948273', 'Approved', 'CLS0006', '230220-TKT-030', 'More Comfort');
+
+-- Request 50
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-17 14:50:00', '230917-RQT-582314', 'Rejected', 'CLS0013', '230325-TKT-031', 'Business Travel');
+
+-- Request 51
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-22 12:40:00', '230922-RQT-948217', 'Approved', 'CLS0004', '230821-TKT-173', 'Long Flight');
+
+-- Request 52
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-26 11:15:00', '230926-RQT-394581', 'Approved', 'CLS0009', '240225-TKT-032', 'Extra Comfort');
+
+-- Request 53
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-29 15:25:00', '230929-RQT-582934', 'Approved', 'CLS0002', '230315-TKT-033', 'More Space');
+
+-- Request 54
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 09:50:00', '230912-RQT-847019', 'Approved', 'CLS0012', '230228-TKT-034', 'Better Comfort');
+
+-- Request 55
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-20 10:25:00', '230920-RQT-739512', 'Rejected', 'CLS0003', '230612-TKT-035', 'Need Comfort');
+
+-- Request 56
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-11 11:40:00', '230911-RQT-948273', 'Approved', 'CLS0008', '230706-TKT-036', 'Upgrade for Work');
+
+-- Request 57
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-28 16:50:00', '230928-RQT-573617', 'Approved', 'CLS0013', '230813-TKT-037', 'Extra Legroom');
+
+-- Request 58
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-26 14:45:00', '230926-RQT-483129', 'Approved', 'CLS0007', '230813-TKT-038', 'Business Travel');
+
+-- Request 59
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-13 10:35:00', '230913-RQT-273041', 'Rejected', 'CLS0011', '240211-TKT-039', 'More Space');
+
+-- Request 60
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 11:45:00', '230919-RQT-739518', 'Approved', 'CLS0009', '240310-TKT-040', 'Upgrade for Comfort');
+
+-- Request 61
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-17 13:10:00', '230917-RQT-582431', 'Approved', 'CLS0013', '230403-TKT-041', 'More Comfort');
+
+-- Request 62
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-24 14:40:00', '230924-RQT-493720', 'Rejected', 'CLS0009', '240408-TKT-042', 'Extra Legroom');
+
+-- Request 63
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-29 12:30:00', '230929-RQT-948342', 'Approved', 'CLS0010', '230918-TKT-179', 'Extra Space Needed');
+
+-- Request 64
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-21 11:20:00', '230921-RQT-582430', 'Approved', 'CLS0007', '230726-TKT-090', 'Comfort Upgrade');
+
+-- Request 65
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-27 10:30:00', '230927-RQT-839541', 'Rejected', 'CLS0008', '230824-TKT-157', 'More Comfort');
+
+-- Request 66
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 12:50:00', '230919-RQT-273815', 'Approved', 'CLS0011', '230527-TKT-043', 'Need More Space');
+
+-- Request 67
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-10 16:25:00', '230910-RQT-582103', 'Approved', 'CLS0013', '230711-TKT-044', 'More Comfort');
+
+-- Request 68
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-22 10:30:00', '230922-RQT-394812', 'Approved', 'CLS0010', '240712-TKT-045', 'Extra Legroom');
+
+-- Request 69
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 14:40:00', '230912-RQT-482937', 'Rejected', 'CLS0007', '230809-TKT-046', 'More Comfort');
+
+-- Request 70
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-17 16:50:00', '230917-RQT-937502', 'Approved', 'CLS0012', '230615-TKT-348', 'Business Travel');
+
+-- Request 71
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-20 13:25:00', '230920-RQT-483254', 'Approved', 'CLS0003', '230809-TKT-047', 'Need More Space');
+
+-- Request 72
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-09 15:20:00', '230909-RQT-839571', 'Approved', 'CLS0014', '240818-TKT-048', 'Long Flight Comfort');
+
+-- Request 73
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 11:10:00', '230919-RQT-284017', 'Approved', 'CLS0004', '240809-TKT-049', 'Comfort Upgrade');
+
+-- Request 74
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-25 16:40:00', '230925-RQT-947513', 'Rejected', 'CLS0015', '230914-TKT-050', 'Extra Comfort');
+
+-- Request 75
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-29 10:20:00', '230929-RQT-394812', 'Approved', 'CLS0012', '230515-TKT-051', 'More Privacy');
+
+-- Request 76
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-21 15:35:00', '230921-RQT-839234', 'Approved', 'CLS0013', '230527-TKT-052', 'Extra Space for Comfort');
+
+-- Request 77
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-28 14:30:00', '230928-RQT-739128', 'Approved', 'CLS0006', '230911-TKT-053', 'Need More Legroom');
+
+-- Request 78
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-26 13:20:00', '230926-RQT-384501', 'Rejected', 'CLS0010', '240215-TKT-054', 'More Space');
+
+-- Request 79
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 12:10:00', '230912-RQT-291830', 'Approved', 'CLS0007', '240318-TKT-055', 'Business Class Upgrade');
+
+-- Request 80
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 10:45:00', '230919-RQT-183407', 'Approved', 'CLS0014', '240215-TKT-058', 'Extra Comfort');
+
+-- Request 81
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-13 15:15:00', '230913-RQT-937521', 'Rejected', 'CLS0012', '230921-TKT-059', 'Need Comfort for Long Flight');
+
+-- Request 82
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-27 11:50:00', '230927-RQT-495310', 'Approved', 'CLS0009', '230907-TKT-060', 'Extra Space Needed');
+
+-- Request 83
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-18 13:50:00', '230918-RQT-582927', 'Approved', 'CLS0013', '240301-TKT-061', 'Extra Comfort for Work');
+
+-- Request 84
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-10 14:25:00', '230910-RQT-839625', 'Approved', 'CLS0004', '240518-TKT-063', 'Business Class Needed');
+
+-- Request 85
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-30 15:20:00', '230930-RQT-394735', 'Approved', 'CLS0009', '230510-TKT-064', 'More Space for Long Travel');
+
+-- Request 86
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 13:40:00', '230912-RQT-273591', 'Rejected', 'CLS0012', '230825-TKT-177', 'Comfort for Longer Travel');
+
+-- Request 87
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-15 16:35:00', '230915-RQT-847615', 'Approved', 'CLS0011', '230510-TKT-065', 'More Privacy');
+
+-- Request 88
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-21 12:55:00', '230921-RQT-394528', 'Approved', 'CLS0007', '240612-TKT-066', 'More Space');
+
+-- Request 89
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-24 14:15:00', '230924-RQT-572381', 'Approved', 'CLS0010', '230916-TKT-067', 'Need More Legroom');
+
+-- Request 90
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-23 13:45:00', '230923-RQT-839612', 'Rejected', 'CLS0012', '240220-TKT-068', 'Upgrade for Comfort');
+
+-- Request 91
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-15 15:10:00', '230915-RQT-729385', 'Approved', 'CLS0010', '230725-TKT-069', 'Extra Legroom');
+
+-- Request 92
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-17 13:30:00', '230917-RQT-937620', 'Approved', 'CLS0009', '230816-TKT-070', 'Business Upgrade');
+
+-- Request 93
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-14 14:25:00', '230914-RQT-294173', 'Approved', 'CLS0011', '240408-TKT-071', 'More Space for Work');
+
+-- Request 94
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-18 13:40:00', '230918-RQT-384920', 'Rejected', 'CLS0008', '230920-TKT-079', 'Comfort Upgrade');
+
+-- Request 95
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-29 10:20:00', '230929-RQT-273580', 'Approved', 'CLS0015', '230911-TKT-104', 'Business Class Request');
+
+-- Request 96
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-22 12:50:00', '230922-RQT-492835', 'Approved', 'CLS0012', '230527-TKT-072', 'More Legroom Needed');
+
+-- Request 97
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-26 13:20:00', '230926-RQT-948163', 'Approved', 'CLS0011', '240511-TKT-073', 'Upgrade for Comfort');
+
+-- Request 98
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-28 16:00:00', '230928-RQT-839517', 'Rejected', 'CLS0007', '230628-TKT-074', 'Extra Space for Long Flight');
+
+-- Request 99
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-11 10:45:00', '230911-RQT-394512', 'Approved', 'CLS0014', '230718-TKT-437', 'Comfort Upgrade');
+
+-- Request 100
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 13:15:00', '230912-RQT-938714', 'Approved', 'CLS0013', '230628-TKT-075', 'More Space for Family');
+
+-- Request 101
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-25 12:25:00', '230925-RQT-483940', 'Approved', 'CLS0011', '240703-TKT-076', 'Business Class Upgrade');
+
+-- Request 102
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-17 14:10:00', '230917-RQT-382514', 'Approved', 'CLS0004', '230822-TKT-077', 'Need More Space');
+
+-- Request 103
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-20 12:45:00', '230920-RQT-582417', 'Rejected', 'CLS0006', '230720-TKT-411', 'Comfort for Long Flight');
+
+-- Request 104
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-27 15:20:00', '230927-RQT-492836', 'Approved', 'CLS0010', '240815-TKT-078', 'Business Travel');
+
+-- Request 105
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 13:15:00', '230919-RQT-293750', 'Approved', 'CLS0013', '230923-TKT-193', 'Extra Comfort Needed');
+
+-- Request 106
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-22 11:00:00', '230922-RQT-938417', 'Approved', 'CLS0012', '240416-TKT-080', 'More Legroom');
+
+-- Request 107
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-13 10:35:00', '230913-RQT-293740', 'Rejected', 'CLS0007', '230915-TKT-081', 'More Comfort');
+
+-- Request 108
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-26 16:40:00', '230926-RQT-394815', 'Approved', 'CLS0010', '230921-TKT-185', 'Extra Comfort');
+
+-- Request 109
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-30 13:30:00', '230930-RQT-384721', 'Approved', 'CLS0015', '240510-TKT-082', 'Long Flight Comfort');
+
+-- Request 110
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-18 15:25:00', '230918-RQT-284501', 'Rejected', 'CLS0006', '240715-TKT-084', 'More Comfort');
+
+-- Request 111
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 12:10:00', '230919-RQT-572815', 'Approved', 'CLS0013', '230923-TKT-167', 'Business Travel');
+
+-- Request 112
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-27 11:30:00', '230927-RQT-938751', 'Approved', 'CLS0011', '230910-TKT-145', 'Need Extra Comfort');
+
+-- Request 113
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-11 15:20:00', '230911-RQT-493710', 'Approved', 'CLS0009', '230921-TKT-085', 'Comfort Upgrade');
+
+-- Request 114
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-21 12:50:00', '230921-RQT-384092', 'Approved', 'CLS0010', '240508-TKT-086', 'Extra Legroom');
+
+-- Request 115
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-10 14:25:00', '230910-RQT-485729', 'Approved', 'CLS0013', '230526-TKT-087', 'Need Business Upgrade');
+
+-- Request 116
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-19 14:10:00', '230919-RQT-294718', 'Approved', 'CLS0012', '230812-TKT-451', 'Long Flight');
+
+-- Request 117
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-12 15:15:00', '230912-RQT-837625', 'Rejected', 'CLS0008', '230526-TKT-088', 'Upgrade for Extra Comfort');
+
+-- Request 118
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-29 14:00:00', '230929-RQT-283956', 'Approved', 'CLS0011', '240610-TKT-089', 'More Privacy');
+
+-- Request 119
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-23 16:00:00', '230923-RQT-482315', 'Approved', 'CLS0014', '240716-TKT-091', 'Business Upgrade');
+
+-- Request 120
+INSERT INTO UpgradeRequest (RequestDate, RequestID, RequestStatus, ClassID, TicketID, UpgradeReason)
+VALUES (TIMESTAMP '2023-09-25 13:45:00', '230925-RQT-493027', 'Rejected', 'CLS0012', '230715-TKT-121', 'More Legroom');
+
+SELECT COUNT(*) FROM UpgradeRequest;

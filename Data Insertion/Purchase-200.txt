@@ -1,0 +1,999 @@
+-- Purchase 1: Passenger PSG001, TicketID 210115-TKT-001, FlightID FLA001, 'Checked-In'
+-- Flight Departure: '2021-01-05 08:00:00', Arrival: '2021-01-05 09:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-01-05 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210105-PCH-001', 'Placed', 'PSG001');
+
+-- Purchase 2: Passenger PSG001, Another Purchase on the same flight
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-01-05 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20210105-PCH-002', 'Placed', 'PSG001');
+
+-- Purchase 3: Passenger PSG002, TicketID 210208-TKT-002, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-003', 'Placed', 'PSG002');
+
+-- Purchase 4: Passenger PSG004, TicketID 210420-TKT-004, FlightID FLA002, 'Checked-In'
+-- Flight Departure: '2021-02-12 14:00:00', Arrival: '2021-02-12 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-02-12 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20210212-PCH-004', 'Placed', 'PSG004');
+
+-- Purchase 5: Passenger PSG004, Another Purchase on the same flight
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-02-12 17:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210212-PCH-005', 'Placed', 'PSG004');
+
+-- Purchase 6: Passenger PSG005, TicketID 210525-TKT-005, FlightID FLA031, 'Checked-In'
+-- Flight Departure: '2023-07-01 08:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-006', 'Placed', 'PSG005');
+
+-- Purchase 7: Passenger PSG007, TicketID 210610-TKT-007, FlightID FLA005, 'Checked-In'
+-- Flight Departure: '2021-05-08 12:00:00', Arrival: '2021-05-08 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-05-08 12:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210508-PCH-007', 'Placed', 'PSG007');
+
+-- Purchase 8: Passenger PSG008, TicketID 210713-TKT-008, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-008', 'Placed', 'PSG008');
+
+-- Purchase 9: Passenger PSG013, TicketID 230115-TKT-013, FlightID FLA062, 'Checked-In'
+-- Flight Departure: '2025-11-01 23:00:00', Arrival: '2025-11-02 08:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2025-11-01 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20251101-PCH-009', 'Placed', 'PSG013');
+
+-- Purchase 10: Passenger PSG018, TicketID 210930-TKT-018, FlightID FLA011, 'Checked-In'
+-- Flight Departure: '2021-11-15 10:00:00', Arrival: '2021-11-15 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-11-15 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20211115-PCH-010', 'Placed', 'PSG018');
+
+-- Purchase 11: Passenger PSG019, TicketID 211011-TKT-019, FlightID FLA020, 'Checked-In'
+-- Flight Departure: '2022-08-10 13:00:00', Arrival: '2022-08-10 20:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-08-10 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20220810-PCH-011', 'Placed', 'PSG019');
+
+-- Purchase 12: Passenger PSG021, TicketID 211212-TKT-021, FlightID FLA027, 'Checked-In'
+-- Flight Departure: '2023-03-01 07:00:00', Arrival: '2023-03-01 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-03-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230301-PCH-012', 'Placed', 'PSG021');
+
+-- Purchase 13: Passenger PSG022, TicketID 220103-TKT-022, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-013', 'Placed', 'PSG022');
+
+-- Purchase 14: Passenger PSG023, TicketID 220214-TKT-023, FlightID FLA023, 'Checked-In'
+-- Flight Departure: '2022-11-15 14:00:00', Arrival: '2022-11-15 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-11-15 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20221115-PCH-014', 'Placed', 'PSG023');
+
+-- Purchase 15: Passenger PSG027, TicketID 230115-TKT-027, FlightID FLA035, 'Checked-In'
+-- Flight Departure: '2023-10-05 13:00:00', Arrival: '2023-10-05 14:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-10-05 13:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20231005-PCH-015', 'Placed', 'PSG027');
+
+-- Purchase 16: Passenger PSG028, TicketID 230115-TKT-028, FlightID FLA035, 'Checked-In'
+-- Flight Departure: '2023-10-05 13:00:00', Arrival: '2023-10-05 14:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-10-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20231005-PCH-016', 'Placed', 'PSG028');
+
+-- Purchase 17: Passenger PSG031, TicketID 230325-TKT-031, FlightID FLA022, 'Checked-In'
+-- Flight Departure: '2022-10-10 08:30:00', Arrival: '2022-10-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-10-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20221010-PCH-017', 'Placed', 'PSG031');
+
+-- Purchase 18: Passenger PSG033, TicketID 230315-TKT-033, FlightID FLA012, 'Checked-In'
+-- Flight Departure: '2021-12-10 09:00:00', Arrival: '2021-12-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-12-10 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20211210-PCH-018', 'Placed', 'PSG033');
+
+-- Purchase 19: Passenger PSG034, TicketID 230228-TKT-034, FlightID FLA013, 'Checked-In'
+-- Flight Departure: '2022-01-05 07:30:00', Arrival: '2022-01-05 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-01-05 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20220105-PCH-019', 'Placed', 'PSG034');
+
+-- Purchase 20: Passenger PSG035, TicketID 230612-TKT-035, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-020', 'Placed', 'PSG035');
+
+-- Purchase 21: Passenger PSG036, TicketID 230706-TKT-036, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-021', 'Placed', 'PSG036');
+
+-- Purchase 22: Passenger PSG037, TicketID 230813-TKT-037, FlightID FLA014, 'Checked-In'
+-- Flight Departure: '2022-02-12 14:00:00', Arrival: '2022-02-12 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-02-12 14:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20220212-PCH-022', 'Placed', 'PSG037');
+
+-- Purchase 23: Passenger PSG038, TicketID 230813-TKT-038, FlightID FLA014, 'Checked-In'
+-- Flight Departure: '2022-02-12 14:00:00', Arrival: '2022-02-12 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-02-12 15:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20220212-PCH-023', 'Placed', 'PSG038');
+
+-- Purchase 24: Passenger PSG041, TicketID 230403-TKT-041, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-024', 'Placed', 'PSG041');
+
+-- Purchase 25: Passenger PSG043, TicketID 230527-TKT-043, FlightID FLA035, 'Checked-In'
+-- Flight Departure: '2023-10-05 13:00:00', Arrival: '2023-10-05 14:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-10-05 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20231005-PCH-025', 'Placed', 'PSG043');
+
+-- Purchase 26: Passenger PSG044, TicketID 230711-TKT-044, FlightID FLA024, 'Checked-In'
+-- Flight Departure: '2022-12-22 06:00:00', Arrival: '2022-12-22 07:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-12-22 06:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20221222-PCH-026', 'Placed', 'PSG044');
+
+-- Purchase 27: Passenger PSG046, TicketID 230809-TKT-046, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2023-08-15 10:00:00', Arrival: '2023-08-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-08-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20230815-PCH-027', 'Placed', 'PSG046');
+
+-- Purchase 28: Passenger PSG047, TicketID 230809-TKT-047, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2023-08-15 10:00:00', Arrival: '2023-08-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-08-15 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20230815-PCH-028', 'Placed', 'PSG047');
+
+-- Purchase 29: Passenger PSG050, TicketID 230914-TKT-050, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 18:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-029', 'Placed', 'PSG050');
+
+-- Purchase 30: Passenger PSG051, TicketID 230515-TKT-051, FlightID FLA012, 'Checked-In'
+-- Flight Departure: '2021-12-10 09:00:00', Arrival: '2021-12-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-12-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211210-PCH-030', 'Placed', 'PSG051');
+
+-- Purchase 31: Passenger PSG052, TicketID 230527-TKT-052, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-031', 'Placed', 'PSG052');
+
+-- Purchase 32: Passenger PSG053, TicketID 230911-TKT-053, FlightID FLA020, 'Checked-In'
+-- Flight Departure: '2022-08-10 13:00:00', Arrival: '2022-08-10 20:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-08-10 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20220810-PCH-032', 'Placed', 'PSG053');
+
+-- Purchase 33: Passenger PSG056, TicketID 230819-TKT-056, FlightID FLA012, 'Checked-In'
+-- Flight Departure: '2021-12-10 09:00:00', Arrival: '2021-12-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-12-10 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20211210-PCH-033', 'Placed', 'PSG056');
+
+-- Purchase 34: Passenger PSG057, TicketID 230915-TKT-057, FlightID FLA013, 'Checked-In'
+-- Flight Departure: '2022-01-05 07:30:00', Arrival: '2022-01-05 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-01-05 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20220105-PCH-034', 'Placed', 'PSG057');
+
+-- Purchase 35: Passenger PSG059, TicketID 230921-TKT-059, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2023-08-15 10:00:00', Arrival: '2023-08-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-08-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230815-PCH-035', 'Placed', 'PSG059');
+
+-- Purchase 36: Passenger PSG060, TicketID 230907-TKT-060, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-036', 'Placed', 'PSG060');
+
+-- Purchase 37: Passenger PSG062, TicketID 230623-TKT-062, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2023-08-15 10:00:00', Arrival: '2023-08-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-08-15 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20230815-PCH-037', 'Placed', 'PSG062');
+
+-- Purchase 38: Passenger PSG064, TicketID 230510-TKT-064, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-038', 'Placed', 'PSG064');
+
+-- Purchase 39: Passenger PSG065, TicketID 230510-TKT-065, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-039', 'Placed', 'PSG065');
+
+-- Purchase 40: Passenger PSG067, TicketID 230916-TKT-067, FlightID FLA020, 'Checked-In'
+-- Flight Departure: '2022-08-10 13:00:00', Arrival: '2022-08-10 20:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-08-10 15:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20220810-PCH-040', 'Placed', 'PSG067');
+
+-- Purchase 41: Passenger PSG001, TicketID 210115-TKT-001, FlightID FLA001, 'Checked-In'
+-- Flight Departure: '2021-01-05 08:00:00', Arrival: '2021-01-05 09:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-01-05 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20210105-PCH-041', 'Placed', 'PSG001');
+
+-- Purchase 42: Passenger PSG001, TicketID 210115-TKT-001, FlightID FLA001, 'Checked-In'
+-- Flight Departure: '2021-01-05 08:00:00', Arrival: '2021-01-05 09:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-01-05 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210105-PCH-042', 'Placed', 'PSG001');
+
+-- Purchase 43: Passenger PSG002, TicketID 210208-TKT-002, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-043', 'Placed', 'PSG002');
+
+-- Purchase 44: Passenger PSG002, TicketID 210208-TKT-002, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-044', 'Placed', 'PSG002');
+
+-- Purchase 45: Passenger PSG005, TicketID 210525-TKT-005, FlightID FLA031, 'Checked-In'
+-- Flight Departure: '2023-07-01 08:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-045', 'Placed', 'PSG005');
+
+-- Purchase 46: Passenger PSG005, TicketID 210525-TKT-005, FlightID FLA031, 'Checked-In'
+-- Flight Departure: '2023-07-01 08:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-046', 'Placed', 'PSG005');
+
+-- Purchase 47: Passenger PSG005, TicketID 210525-TKT-005, FlightID FLA031, 'Checked-In'
+-- Flight Departure: '2023-07-01 08:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-047', 'Placed', 'PSG005');
+
+-- Purchase 48: Passenger PSG007, TicketID 210610-TKT-007, FlightID FLA005, 'Checked-In'
+-- Flight Departure: '2021-05-08 12:00:00', Arrival: '2021-05-08 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-05-08 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20210508-PCH-048', 'Placed', 'PSG007');
+
+-- Purchase 49: Passenger PSG007, TicketID 210610-TKT-007, FlightID FLA005, 'Checked-In'
+-- Flight Departure: '2021-05-08 12:00:00', Arrival: '2021-05-08 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-05-08 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20210508-PCH-049', 'Placed', 'PSG007');
+
+-- Purchase 50: Passenger PSG008, TicketID 210713-TKT-008, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-050', 'Placed', 'PSG008');
+
+-- Purchase 51: Passenger PSG008, TicketID 210713-TKT-008, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-051', 'Placed', 'PSG008');
+
+-- Purchase 52: Passenger PSG007, TicketID 210610-TKT-007, FlightID FLA005, 'Checked-In'
+-- Flight Departure: '2021-05-08 12:00:00', Arrival: '2021-05-08 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-05-08 12:50:00', 'YYYY-MM-DD HH24:MI:SS'), '20210508-PCH-052', 'Placed', 'PSG007');
+
+-- Purchase 53: Passenger PSG007, TicketID 210610-TKT-007, FlightID FLA005, 'Checked-In'
+-- Flight Departure: '2021-05-08 12:00:00', Arrival: '2021-05-08 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-05-08 13:25:00', 'YYYY-MM-DD HH24:MI:SS'), '20210508-PCH-053', 'Placed', 'PSG007');
+
+-- Purchase 54: Passenger PSG005, TicketID 210525-TKT-005, FlightID FLA031, 'Checked-In'
+-- Flight Departure: '2023-07-01 08:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-054', 'Placed', 'PSG005');
+
+-- Purchase 55: Passenger PSG002, TicketID 210208-TKT-002, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-055', 'Placed', 'PSG002');
+
+-- Purchase 56: Passenger PSG001, TicketID 210115-TKT-001, FlightID FLA001, 'Checked-In'
+-- Flight Departure: '2021-01-05 08:00:00', Arrival: '2021-01-05 09:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-01-05 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210105-PCH-056', 'Placed', 'PSG001');
+
+-- Purchase 57: Passenger PSG004, TicketID 210420-TKT-004, FlightID FLA002, 'Checked-In'
+-- Flight Departure: '2021-02-12 14:00:00', Arrival: '2021-02-12 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-02-12 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20210212-PCH-057', 'Placed', 'PSG004');
+
+-- Purchase 58: Passenger PSG004, TicketID 210420-TKT-004, FlightID FLA002, 'Checked-In'
+-- Flight Departure: '2021-02-12 14:00:00', Arrival: '2021-02-12 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-02-12 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20210212-PCH-058', 'Placed', 'PSG004');
+
+-- Purchase 59: Passenger PSG007, TicketID 210610-TKT-007, FlightID FLA005, 'Checked-In'
+-- Flight Departure: '2021-05-08 12:00:00', Arrival: '2021-05-08 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-05-08 12:40:00', 'YYYY-MM-DD HH24:MI:SS'), '20210508-PCH-059', 'Placed', 'PSG007');
+
+-- Purchase 60: Passenger PSG008, TicketID 210713-TKT-008, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 10:50:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-060', 'Placed', 'PSG008');
+
+-- Purchase 61: Passenger PSG007, TicketID 210610-TKT-007, FlightID FLA005, 'Checked-In'
+-- Flight Departure: '2021-05-08 12:00:00', Arrival: '2021-05-08 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-05-08 13:20:00', 'YYYY-MM-DD HH24:MI:SS'), '20210508-PCH-061', 'Placed', 'PSG007');
+
+-- Purchase 62: Passenger PSG013, TicketID 230115-TKT-013, FlightID FLA062, 'Checked-In'
+-- Flight Departure: '2025-11-01 23:00:00', Arrival: '2025-11-02 08:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2025-11-01 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20251101-PCH-062', 'Placed', 'PSG013');
+
+-- Purchase 63: Passenger PSG001, TicketID 210115-TKT-001, FlightID FLA001, 'Checked-In'
+-- Flight Departure: '2021-01-05 08:00:00', Arrival: '2021-01-05 09:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-01-05 08:55:00', 'YYYY-MM-DD HH24:MI:SS'), '20210105-PCH-063', 'Placed', 'PSG001');
+
+-- Purchase 64: Passenger PSG004, TicketID 210420-TKT-004, FlightID FLA002, 'Checked-In'
+-- Flight Departure: '2021-02-12 14:00:00', Arrival: '2021-02-12 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-02-12 17:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210212-PCH-064', 'Placed', 'PSG004');
+
+-- Purchase 65: Passenger PSG004, TicketID 210420-TKT-004, FlightID FLA002, 'Checked-In'
+-- Flight Departure: '2021-02-12 14:00:00', Arrival: '2021-02-12 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-02-12 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20210212-PCH-065', 'Placed', 'PSG004');
+
+-- Purchase 66: Passenger PSG005, TicketID 210525-TKT-005, FlightID FLA031, 'Checked-In'
+-- Flight Departure: '2023-07-01 08:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-066', 'Placed', 'PSG005');
+
+-- Purchase 67: Passenger PSG005, TicketID 210525-TKT-005, FlightID FLA031, 'Checked-In'
+-- Flight Departure: '2023-07-01 08:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-067', 'Placed', 'PSG005');
+
+-- Purchase 68: Passenger PSG002, TicketID 210208-TKT-002, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-068', 'Placed', 'PSG002');
+
+-- Purchase 69: Passenger PSG007, TicketID 210610-TKT-007, FlightID FLA005, 'Checked-In'
+-- Flight Departure: '2021-05-08 12:00:00', Arrival: '2021-05-08 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-05-08 12:10:00', 'YYYY-MM-DD HH24:MI:SS'), '20210508-PCH-069', 'Placed', 'PSG007');
+
+-- Purchase 70: Passenger PSG008, TicketID 210713-TKT-008, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-070', 'Placed', 'PSG008');
+
+-- Purchase 71: Passenger PSG001, TicketID 210115-TKT-001, FlightID FLA001, 'Checked-In'
+-- Flight Departure: '2021-01-05 08:00:00', Arrival: '2021-01-05 09:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-01-05 08:40:00', 'YYYY-MM-DD HH24:MI:SS'), '20210105-PCH-071', 'Placed', 'PSG001');
+
+-- Purchase 72: Passenger PSG002, TicketID 210208-TKT-002, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-072', 'Placed', 'PSG002');
+
+-- Purchase 73: Passenger PSG013, TicketID 230115-TKT-013, FlightID FLA062, 'Checked-In'
+-- Flight Departure: '2025-11-01 23:00:00', Arrival: '2025-11-02 08:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2025-11-01 23:20:00', 'YYYY-MM-DD HH24:MI:SS'), '20251101-PCH-073', 'Placed', 'PSG013');
+
+-- Purchase 74: Passenger PSG001, TicketID 210115-TKT-001, FlightID FLA001, 'Checked-In'
+-- Flight Departure: '2021-01-05 08:00:00', Arrival: '2021-01-05 09:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-01-05 08:50:00', 'YYYY-MM-DD HH24:MI:SS'), '20210105-PCH-074', 'Placed', 'PSG001');
+
+-- Purchase 75: Passenger PSG008, TicketID 210713-TKT-008, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-075', 'Placed', 'PSG008');
+-- Purchase 76: Passenger PSG021, TicketID 211212-TKT-021, FlightID FLA027, 'Checked-In'
+-- Flight Departure: '2023-03-01 07:00:00', Arrival: '2023-03-01 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-03-01 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20230301-PCH-076', 'Placed', 'PSG021');
+
+-- Purchase 77: Passenger PSG021, TicketID 211212-TKT-021, FlightID FLA027, 'Checked-In'
+-- Flight Departure: '2023-03-01 07:00:00', Arrival: '2023-03-01 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-03-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230301-PCH-077', 'Placed', 'PSG021');
+
+-- Purchase 78: Passenger PSG052, TicketID 230527-TKT-052, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 08:20:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-078', 'Placed', 'PSG052');
+
+-- Purchase 79: Passenger PSG052, TicketID 230527-TKT-052, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 09:10:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-079', 'Placed', 'PSG052');
+
+-- Purchase 80: Passenger PSG033, TicketID 230315-TKT-033, FlightID FLA012, 'Checked-In'
+-- Flight Departure: '2021-12-10 09:00:00', Arrival: '2021-12-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-12-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211210-PCH-080', 'Placed', 'PSG033');
+
+-- Purchase 81: Passenger PSG033, TicketID 230315-TKT-033, FlightID FLA012, 'Checked-In'
+-- Flight Departure: '2021-12-10 09:00:00', Arrival: '2021-12-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-12-10 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20211210-PCH-081', 'Placed', 'PSG033');
+
+-- Purchase 82: Passenger PSG031, TicketID 230325-TKT-031, FlightID FLA022, 'Checked-In'
+-- Flight Departure: '2022-10-10 08:30:00', Arrival: '2022-10-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-10-10 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20221010-PCH-082', 'Placed', 'PSG031');
+
+-- Purchase 83: Passenger PSG031, TicketID 230325-TKT-031, FlightID FLA022, 'Checked-In'
+-- Flight Departure: '2022-10-10 08:30:00', Arrival: '2022-10-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-10-10 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20221010-PCH-083', 'Placed', 'PSG031');
+
+-- Purchase 84: Passenger PSG057, TicketID 230915-TKT-057, FlightID FLA013, 'Checked-In'
+-- Flight Departure: '2022-01-05 07:30:00', Arrival: '2022-01-05 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-01-05 08:10:00', 'YYYY-MM-DD HH24:MI:SS'), '20220105-PCH-084', 'Placed', 'PSG057');
+
+-- Purchase 85: Passenger PSG057, TicketID 230915-TKT-057, FlightID FLA013, 'Checked-In'
+-- Flight Departure: '2022-01-05 07:30:00', Arrival: '2022-01-05 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-01-05 09:50:00', 'YYYY-MM-DD HH24:MI:SS'), '20220105-PCH-085', 'Placed', 'PSG057');
+
+-- Purchase 86: Passenger PSG064, TicketID 230510-TKT-064, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 08:35:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-086', 'Placed', 'PSG064');
+
+-- Purchase 87: Passenger PSG053, TicketID 230911-TKT-053, FlightID FLA020, 'Checked-In'
+-- Flight Departure: '2022-08-10 13:00:00', Arrival: '2022-08-10 20:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-08-10 15:20:00', 'YYYY-MM-DD HH24:MI:SS'), '20220810-PCH-087', 'Placed', 'PSG053');
+
+-- Purchase 88: Passenger PSG053, TicketID 230911-TKT-053, FlightID FLA020, 'Checked-In'
+-- Flight Departure: '2022-08-10 13:00:00', Arrival: '2022-08-10 20:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-08-10 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20220810-PCH-088', 'Placed', 'PSG053');
+
+-- Purchase 89: Passenger PSG074, TicketID 230628-TKT-074, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2023-08-15 10:00:00', Arrival: '2023-08-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-08-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20230815-PCH-089', 'Placed', 'PSG074');
+
+-- Purchase 90: Passenger PSG074, TicketID 230628-TKT-074, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2023-08-15 10:00:00', Arrival: '2023-08-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-08-15 11:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20230815-PCH-090', 'Placed', 'PSG074');
+
+-- Purchase 91: Passenger PSG065, TicketID 230510-TKT-065, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 08:50:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-091', 'Placed', 'PSG065');
+
+-- Purchase 92: Passenger PSG065, TicketID 230510-TKT-065, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2022-04-10 08:00:00', Arrival: '2022-04-10 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-04-10 09:40:00', 'YYYY-MM-DD HH24:MI:SS'), '20220410-PCH-092', 'Placed', 'PSG065');
+
+-- Purchase 93: Passenger PSG010, TicketID 210819-TKT-010, FlightID FLA014, 'Checked-In'
+-- Flight Departure: '2022-02-12 14:00:00', Arrival: '2022-02-12 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-02-12 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20220212-PCH-093', 'Placed', 'PSG010');
+
+-- Purchase 94: Passenger PSG010, TicketID 210819-TKT-010, FlightID FLA014, 'Checked-In'
+-- Flight Departure: '2022-02-12 14:00:00', Arrival: '2022-02-12 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-02-12 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20220212-PCH-094', 'Placed', 'PSG010');
+
+-- Purchase 95: Passenger PSG102, TicketID 230820-TKT-102, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-095', 'Placed', 'PSG102');
+
+-- Purchase 96: Passenger PSG102, TicketID 230820-TKT-102, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2021-09-09 10:00:00', Arrival: '2021-09-09 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-09-09 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20210909-PCH-096', 'Placed', 'PSG102');
+
+-- Purchase 97: Passenger PSG123, TicketID 230922-TKT-123, FlightID FLA017, 'Checked-In'
+-- Flight Departure: '2022-05-18 11:00:00', Arrival: '2022-05-18 12:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-05-18 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20220518-PCH-097', 'Placed', 'PSG123');
+
+-- Purchase 98: Passenger PSG123, TicketID 230922-TKT-123, FlightID FLA017, 'Checked-In'
+-- Flight Departure: '2022-05-18 11:00:00', Arrival: '2022-05-18 12:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-05-18 11:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20220518-PCH-098', 'Placed', 'PSG123');
+
+-- Purchase 99: Passenger PSG050, TicketID 230914-TKT-050, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 12:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-099', 'Placed', 'PSG050');
+
+-- Purchase 100: Passenger PSG050, TicketID 230914-TKT-050, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 20:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-100', 'Placed', 'PSG050');
+
+-- Purchase 101: Passenger PSG125, TicketID 230716-TKT-125, FlightID FLA012, 'Checked-In'
+-- Flight Departure: '2021-12-10 09:00:00', Arrival: '2021-12-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-12-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211210-PCH-101', 'Placed', 'PSG125');
+
+-- Purchase 102: Passenger PSG125, TicketID 230716-TKT-125, FlightID FLA012, 'Checked-In'
+-- Flight Departure: '2021-12-10 09:00:00', Arrival: '2021-12-10 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-12-10 09:50:00', 'YYYY-MM-DD HH24:MI:SS'), '20211210-PCH-102', 'Placed', 'PSG125');
+
+-- Purchase 103: Passenger PSG085, TicketID 230921-TKT-085, FlightID FLA017, 'Checked-In'
+-- Flight Departure: '2022-05-18 11:00:00', Arrival: '2022-05-18 12:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-05-18 11:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20220518-PCH-103', 'Placed', 'PSG085');
+
+-- Purchase 104: Passenger PSG085, TicketID 230921-TKT-085, FlightID FLA017, 'Checked-In'
+-- Flight Departure: '2022-05-18 11:00:00', Arrival: '2022-05-18 12:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-05-18 11:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20220518-PCH-104', 'Placed', 'PSG085');
+
+-- Purchase 105: Passenger PSG099, TicketID 230819-TKT-096, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2023-07-01 15:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-105', 'Placed', 'PSG099');
+
+-- Purchase 106: Passenger PSG099, TicketID 230819-TKT-096, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2023-07-01 15:00:00', Arrival: '2023-07-01 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-07-01 16:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20230701-PCH-106', 'Placed', 'PSG099');
+
+-- Purchase 107: Passenger PSG062, TicketID 230623-TKT-062, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2023-08-15 10:00:00', Arrival: '2023-08-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-08-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230815-PCH-107', 'Placed', 'PSG062');
+
+-- Purchase 108: Passenger PSG062, TicketID 230623-TKT-062, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2023-08-15 10:00:00', Arrival: '2023-08-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2023-08-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20230815-PCH-108', 'Placed', 'PSG062');
+
+-- Purchase 109: Passenger PSG041, TicketID 230403-TKT-041, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-109', 'Placed', 'PSG041');
+
+-- Purchase 110: Passenger PSG041, TicketID 230403-TKT-041, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 19:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-110', 'Placed', 'PSG041');
+
+-- Purchase 111: Passenger PSG141, TicketID 230909-TKT-141, FlightID FLA011, 'Checked-In'
+-- Flight Departure: '2021-11-15 10:00:00', Arrival: '2021-11-15 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-11-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20211115-PCH-111', 'Placed', 'PSG141');
+
+-- Purchase 112: Passenger PSG141, TicketID 230909-TKT-141, FlightID FLA011, 'Checked-In'
+-- Flight Departure: '2021-11-15 10:00:00', Arrival: '2021-11-15 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-11-15 11:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20211115-PCH-112', 'Placed', 'PSG141');
+
+-- Purchase 113: Passenger PSG111, TicketID 230730-TKT-111, FlightID FLA011, 'Checked-In'
+-- Flight Departure: '2021-11-15 10:00:00', Arrival: '2021-11-15 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-11-15 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20211115-PCH-113', 'Placed', 'PSG111');
+
+-- Purchase 114: Passenger PSG111, TicketID 230730-TKT-111, FlightID FLA011, 'Checked-In'
+-- Flight Departure: '2021-11-15 10:00:00', Arrival: '2021-11-15 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-11-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20211115-PCH-114', 'Placed', 'PSG111');
+
+-- Purchase 115: Passenger PSG012, TicketID 221210-TKT-012, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-115', 'Placed', 'PSG012');
+
+-- Purchase 116: Passenger PSG012, TicketID 221210-TKT-012, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2022-03-15 09:00:00', Arrival: '2022-03-15 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2022-03-15 10:50:00', 'YYYY-MM-DD HH24:MI:SS'), '20220315-PCH-116', 'Placed', 'PSG012');
+
+-- Purchase 117: Passenger PSG017, TicketID 210819-TKT-017, FlightID FLA002, 'Checked-In'
+-- Flight Departure: '2021-02-12 14:00:00', Arrival: '2021-02-12 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-02-12 14:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20210212-PCH-117', 'Placed', 'PSG017');
+
+-- Purchase 118: Passenger PSG017, TicketID 210819-TKT-017, FlightID FLA002, 'Checked-In'
+-- Flight Departure: '2021-02-12 14:00:00', Arrival: '2021-02-12 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-02-12 17:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20210212-PCH-118', 'Placed', 'PSG017');
+
+-- Purchase 119: Passenger PSG015, TicketID 230815-TKT-015, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 13:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-119', 'Placed', 'PSG015');
+
+-- Purchase 120: Passenger PSG015, TicketID 230815-TKT-015, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2021-10-21 12:00:00', Arrival: '2021-10-21 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2021-10-21 20:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20211021-PCH-120', 'Placed', 'PSG015');
+
+-- Purchase 121: Passenger PSG078, TicketID 240101-TKT-078, FlightID FLA050, 'Checked-In'
+-- Flight Departure: '2024-01-05 13:00:00', Arrival: '2024-01-05 20:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-01-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240105-PCH-121', 'Placed', 'PSG078');
+
+-- Purchase 122: Passenger PSG099, TicketID 240105-TKT-099, FlightID FLA051, 'Checked-In'
+-- Flight Departure: '2024-01-10 09:00:00', Arrival: '2024-01-10 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-01-10 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240110-PCH-122', 'Placed', 'PSG099');
+
+-- Purchase 123: Passenger PSG081, TicketID 240109-TKT-081, FlightID FLA052, 'Checked-In'
+-- Flight Departure: '2024-01-15 12:00:00', Arrival: '2024-01-15 14:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-01-15 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240115-PCH-123', 'Placed', 'PSG081');
+
+-- Purchase 124: Passenger PSG110, TicketID 240114-TKT-110, FlightID FLA053, 'Checked-In'
+-- Flight Departure: '2024-01-25 09:00:00', Arrival: '2024-01-25 10:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-01-25 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240125-PCH-124', 'Placed', 'PSG110');
+
+-- Purchase 125: Passenger PSG114, TicketID 240202-TKT-114, FlightID FLA054, 'Checked-In'
+-- Flight Departure: '2024-02-05 08:00:00', Arrival: '2024-02-05 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-02-05 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240205-PCH-125', 'Placed', 'PSG114');
+
+-- Purchase 126: Passenger PSG120, TicketID 240218-TKT-120, FlightID FLA055, 'Checked-In'
+-- Flight Departure: '2024-02-20 13:00:00', Arrival: '2024-02-20 17:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-02-20 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240220-PCH-126', 'Placed', 'PSG120');
+
+-- Purchase 127: Passenger PSG095, TicketID 240301-TKT-095, FlightID FLA056, 'Checked-In'
+-- Flight Departure: '2024-03-05 06:00:00', Arrival: '2024-03-05 07:10:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-05 06:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240305-PCH-127', 'Placed', 'PSG095');
+
+-- Purchase 128: Passenger PSG102, TicketID 240307-TKT-102, FlightID FLA057, 'Checked-In'
+-- Flight Departure: '2024-03-12 14:00:00', Arrival: '2024-03-12 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-12 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240312-PCH-128', 'Placed', 'PSG102');
+
+-- Purchase 129: Passenger PSG103, TicketID 240321-TKT-103, FlightID FLA058, 'Checked-In'
+-- Flight Departure: '2024-03-29 12:00:00', Arrival: '2024-03-29 13:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-29 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240329-PCH-129', 'Placed', 'PSG103');
+
+-- Purchase 130: Passenger PSG108, TicketID 240401-TKT-108, FlightID FLA059, 'Checked-In'
+-- Flight Departure: '2024-04-10 10:00:00', Arrival: '2024-04-10 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-04-10 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240410-PCH-130', 'Placed', 'PSG108');
+
+-- Purchase 131: Passenger PSG127, TicketID 240501-TKT-127, FlightID FLA060, 'Checked-In'
+-- Flight Departure: '2024-05-09 14:00:00', Arrival: '2024-05-09 22:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-05-09 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240509-PCH-131', 'Placed', 'PSG127');
+
+-- Purchase 132: Passenger PSG088, TicketID 240524-TKT-088, FlightID FLA061, 'Checked-In'
+-- Flight Departure: '2024-06-01 15:00:00', Arrival: '2024-06-01 22:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-06-01 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240601-PCH-132', 'Placed', 'PSG088');
+
+-- Purchase 133: Passenger PSG105, TicketID 240610-TKT-105, FlightID FLA062, 'Checked-In'
+-- Flight Departure: '2024-07-01 23:00:00', Arrival: '2024-07-02 08:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-01 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240701-PCH-133', 'Placed', 'PSG105');
+
+-- Purchase 134: Passenger PSG121, TicketID 240710-TKT-121, FlightID FLA063, 'Checked-In'
+-- Flight Departure: '2024-07-15 12:00:00', Arrival: '2024-07-15 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-15 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240715-PCH-134', 'Placed', 'PSG121');
+
+-- Purchase 135: Passenger PSG133, TicketID 240815-TKT-133, FlightID FLA064, 'Checked-In'
+-- Flight Departure: '2024-08-20 09:00:00', Arrival: '2024-08-20 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-08-20 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240820-PCH-135', 'Placed', 'PSG133');
+
+-- Purchase 136: Passenger PSG097, TicketID 240909-TKT-097, FlightID FLA065, 'Checked-In'
+-- Flight Departure: '2024-09-12 08:00:00', Arrival: '2024-09-12 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-12 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240912-PCH-136', 'Placed', 'PSG097');
+
+-- Purchase 137: Passenger PSG106, TicketID 240915-TKT-106, FlightID FLA066, 'Checked-In'
+-- Flight Departure: '2024-10-01 08:00:00', Arrival: '2024-10-01 12:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-10-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20241001-PCH-137', 'Placed', 'PSG106');
+
+-- Purchase 138: Passenger PSG115, TicketID 240922-TKT-115, FlightID FLA067, 'Checked-In'
+-- Flight Departure: '2024-10-10 10:00:00', Arrival: '2024-10-10 13:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-10-10 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20241010-PCH-138', 'Placed', 'PSG115');
+
+-- Purchase 139: Passenger PSG124, TicketID 240928-TKT-124, FlightID FLA068, 'Checked-In'
+-- Flight Departure: '2024-11-01 12:00:00', Arrival: '2024-11-01 15:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-11-01 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20241101-PCH-139', 'Placed', 'PSG124');
+
+-- Purchase 140: Passenger PSG137, TicketID 240930-TKT-137, FlightID FLA069, 'Checked-In'
+-- Flight Departure: '2024-12-01 09:00:00', Arrival: '2024-12-01 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-12-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20241201-PCH-140', 'Placed', 'PSG137');
+
+-- Purchase 141: Passenger PSG079, TicketID 240201-TKT-079, FlightID FLA070, 'Checked-In'
+-- Flight Departure: '2024-02-10 10:00:00', Arrival: '2024-02-10 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-02-10 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240210-PCH-141', 'Placed', 'PSG079');
+
+-- Purchase 142: Passenger PSG077, TicketID 240210-TKT-077, FlightID FLA071, 'Checked-In'
+-- Flight Departure: '2024-02-20 14:00:00', Arrival: '2024-02-20 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-02-20 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240220-PCH-142', 'Placed', 'PSG077');
+
+-- Purchase 143: Passenger PSG093, TicketID 240311-TKT-093, FlightID FLA072, 'Checked-In'
+-- Flight Departure: '2024-03-22 13:00:00', Arrival: '2024-03-22 15:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-22 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240322-PCH-143', 'Placed', 'PSG093');
+
+-- Purchase 144: Passenger PSG084, TicketID 240401-TKT-084, FlightID FLA073, 'Checked-In'
+-- Flight Departure: '2024-04-11 14:00:00', Arrival: '2024-04-11 22:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-04-11 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240411-PCH-144', 'Placed', 'PSG084');
+
+-- Purchase 145: Passenger PSG118, TicketID 240502-TKT-118, FlightID FLA074, 'Checked-In'
+-- Flight Departure: '2024-05-10 23:00:00', Arrival: '2024-05-11 08:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-05-10 23:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240510-PCH-145', 'Placed', 'PSG118');
+
+-- Purchase 146: Passenger PSG090, TicketID 240615-TKT-090, FlightID FLA075, 'Checked-In'
+-- Flight Departure: '2024-06-20 12:00:00', Arrival: '2024-06-20 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-06-20 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240620-PCH-146', 'Placed', 'PSG090');
+
+-- Purchase 147: Passenger PSG073, TicketID 240728-TKT-073, FlightID FLA076, 'Checked-In'
+-- Flight Departure: '2024-07-05 12:00:00', Arrival: '2024-07-05 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-05 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240705-PCH-147', 'Placed', 'PSG073');
+
+-- Purchase 148: Passenger PSG130, TicketID 240810-TKT-130, FlightID FLA077, 'Checked-In'
+-- Flight Departure: '2024-08-15 08:00:00', Arrival: '2024-08-15 10:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-08-15 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240815-PCH-148', 'Placed', 'PSG130');
+
+-- Purchase 149: Passenger PSG144, TicketID 240918-TKT-144, FlightID FLA078, 'Checked-In'
+-- Flight Departure: '2024-09-22 09:00:00', Arrival: '2024-09-22 12:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-22 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240922-PCH-149', 'Placed', 'PSG144');
+
+-- Purchase 150: Passenger PSG128, TicketID 240928-TKT-128, FlightID FLA079, 'Checked-In'
+-- Flight Departure: '2024-10-05 09:00:00', Arrival: '2024-10-05 13:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-10-05 09:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20241005-PCH-150', 'Placed', 'PSG128');
+
+-- Purchase 151: Passenger PSG092, TicketID 240930-TKT-092, FlightID FLA080, 'Checked-In'
+-- Flight Departure: '2024-10-15 12:00:00', Arrival: '2024-10-15 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-10-15 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20241015-PCH-151', 'Placed', 'PSG092');
+
+-- Purchase 152: Passenger PSG066, TicketID 241011-TKT-066, FlightID FLA081, 'Checked-In'
+-- Flight Departure: '2024-10-20 14:00:00', Arrival: '2024-10-20 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-10-20 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20241020-PCH-152', 'Placed', 'PSG066');
+
+-- Purchase 153: Passenger PSG112, TicketID 241030-TKT-112, FlightID FLA082, 'Checked-In'
+-- Flight Departure: '2024-11-05 14:00:00', Arrival: '2024-11-05 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-11-05 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20241105-PCH-153', 'Placed', 'PSG112');
+
+-- Purchase 154: Passenger PSG140, TicketID 241120-TKT-140, FlightID FLA083, 'Checked-In'
+-- Flight Departure: '2024-12-01 15:00:00', Arrival: '2024-12-01 18:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-12-01 15:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20241201-PCH-154', 'Placed', 'PSG140');
+
+-- Purchase 155: Passenger PSG149, TicketID 240102-TKT-149, FlightID FLA084, 'Checked-In'
+-- Flight Departure: '2024-01-05 10:00:00', Arrival: '2024-01-05 13:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-01-05 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240105-PCH-155', 'Placed', 'PSG149');
+
+-- Purchase 156: Passenger PSG152, TicketID 240211-TKT-152, FlightID FLA085, 'Checked-In'
+-- Flight Departure: '2024-02-21 08:00:00', Arrival: '2024-02-21 12:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-02-21 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240221-PCH-156', 'Placed', 'PSG152');
+
+-- Purchase 157: Passenger PSG103, TicketID 240315-TKT-103, FlightID FLA086, 'Checked-In'
+-- Flight Departure: '2024-03-30 10:00:00', Arrival: '2024-03-30 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-30 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240330-PCH-157', 'Placed', 'PSG103');
+
+-- Purchase 158: Passenger PSG145, TicketID 240404-TKT-145, FlightID FLA087, 'Checked-In'
+-- Flight Departure: '2024-04-15 09:00:00', Arrival: '2024-04-15 15:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-04-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240415-PCH-158', 'Placed', 'PSG145');
+
+-- Purchase 159: Passenger PSG107, TicketID 240518-TKT-107, FlightID FLA088, 'Checked-In'
+-- Flight Departure: '2024-05-25 10:00:00', Arrival: '2024-05-25 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-05-25 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240525-PCH-159', 'Placed', 'PSG107');
+
+-- Purchase 160: Passenger PSG151, TicketID 240613-TKT-151, FlightID FLA089, 'Checked-In'
+-- Flight Departure: '2024-06-20 14:00:00', Arrival: '2024-06-20 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-06-20 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240620-PCH-160', 'Placed', 'PSG151');
+
+-- Purchase 161: Passenger PSG098, TicketID 240301-TKT-098, FlightID FLA045, 'Checked-In'
+-- Flight Departure: '2024-01-15 10:00:00', Arrival: '2024-01-15 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-01-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240115-PCH-161', 'Placed', 'PSG098');
+
+-- Purchase 162: Passenger PSG153, TicketID 240203-TKT-153, FlightID FLA044, 'Checked-In'
+-- Flight Departure: '2024-02-12 08:00:00', Arrival: '2024-02-12 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-02-12 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240212-PCH-162', 'Placed', 'PSG153');
+
+-- Purchase 163: Passenger PSG161, TicketID 240205-TKT-161, FlightID FLA043, 'Checked-In'
+-- Flight Departure: '2024-02-22 22:00:00', Arrival: '2024-02-23 06:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-02-22 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240222-PCH-163', 'Placed', 'PSG161');
+
+-- Purchase 164: Passenger PSG168, TicketID 240305-TKT-168, FlightID FLA042, 'Checked-In'
+-- Flight Departure: '2024-03-08 09:00:00', Arrival: '2024-03-08 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-08 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240308-PCH-164', 'Placed', 'PSG168');
+
+-- Purchase 165: Passenger PSG142, TicketID 240318-TKT-142, FlightID FLA041, 'Checked-In'
+-- Flight Departure: '2024-03-28 10:00:00', Arrival: '2024-03-28 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-28 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240328-PCH-165', 'Placed', 'PSG142');
+
+-- Purchase 166: Passenger PSG162, TicketID 240403-TKT-162, FlightID FLA040, 'Checked-In'
+-- Flight Departure: '2024-04-12 07:00:00', Arrival: '2024-04-12 08:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-04-12 07:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240412-PCH-166', 'Placed', 'PSG162');
+
+-- Purchase 167: Passenger PSG125, TicketID 240406-TKT-125, FlightID FLA039, 'Checked-In'
+-- Flight Departure: '2024-04-20 09:00:00', Arrival: '2024-04-20 10:15:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-04-20 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240420-PCH-167', 'Placed', 'PSG125');
+
+-- Purchase 168: Passenger PSG116, TicketID 240510-TKT-116, FlightID FLA038, 'Checked-In'
+-- Flight Departure: '2024-05-12 10:00:00', Arrival: '2024-05-12 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-05-12 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240512-PCH-168', 'Placed', 'PSG116');
+
+-- Purchase 169: Passenger PSG137, TicketID 240518-TKT-137, FlightID FLA037, 'Checked-In'
+-- Flight Departure: '2024-05-25 08:00:00', Arrival: '2024-05-25 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-05-25 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240525-PCH-169', 'Placed', 'PSG137');
+
+-- Purchase 170: Passenger PSG175, TicketID 240601-TKT-175, FlightID FLA036, 'Checked-In'
+-- Flight Departure: '2024-06-10 10:00:00', Arrival: '2024-06-10 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-06-10 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240610-PCH-170', 'Placed', 'PSG175');
+
+-- Purchase 171: Passenger PSG114, TicketID 240610-TKT-114, FlightID FLA035, 'Checked-In'
+-- Flight Departure: '2024-06-25 13:00:00', Arrival: '2024-06-25 14:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-06-25 13:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240625-PCH-171', 'Placed', 'PSG114');
+
+-- Purchase 172: Passenger PSG160, TicketID 240617-TKT-160, FlightID FLA034, 'Checked-In'
+-- Flight Departure: '2024-06-29 09:00:00', Arrival: '2024-06-29 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-06-29 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240629-PCH-172', 'Placed', 'PSG160');
+
+-- Purchase 173: Passenger PSG180, TicketID 240710-TKT-180, FlightID FLA033, 'Checked-In'
+-- Flight Departure: '2024-07-15 10:00:00', Arrival: '2024-07-15 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-15 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240715-PCH-173', 'Placed', 'PSG180');
+
+-- Purchase 174: Passenger PSG176, TicketID 240726-TKT-176, FlightID FLA032, 'Checked-In'
+-- Flight Departure: '2024-07-28 10:00:00', Arrival: '2024-07-28 12:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-28 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240728-PCH-174', 'Placed', 'PSG176');
+
+-- Purchase 175: Passenger PSG129, TicketID 240802-TKT-129, FlightID FLA031, 'Checked-In'
+-- Flight Departure: '2024-08-05 08:00:00', Arrival: '2024-08-05 17:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-08-05 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240805-PCH-175', 'Placed', 'PSG129');
+
+-- Purchase 176: Passenger PSG113, TicketID 240816-TKT-113, FlightID FLA030, 'Checked-In'
+-- Flight Departure: '2024-08-19 13:00:00', Arrival: '2024-08-19 20:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-08-19 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240819-PCH-176', 'Placed', 'PSG113');
+
+-- Purchase 177: Passenger PSG089, TicketID 240301-TKT-089, FlightID FLA029, 'Checked-In'
+-- Flight Departure: '2024-03-10 14:00:00', Arrival: '2024-03-10 18:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-10 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240310-PCH-177', 'Placed', 'PSG089');
+
+-- Purchase 178: Passenger PSG121, TicketID 240317-TKT-121, FlightID FLA028, 'Checked-In'
+-- Flight Departure: '2024-03-20 08:00:00', Arrival: '2024-03-20 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-03-20 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240320-PCH-178', 'Placed', 'PSG121');
+
+-- Purchase 179: Passenger PSG138, TicketID 240405-TKT-138, FlightID FLA027, 'Checked-In'
+-- Flight Departure: '2024-04-10 09:00:00', Arrival: '2024-04-10 15:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-04-10 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240410-PCH-179', 'Placed', 'PSG138');
+
+-- Purchase 180: Passenger PSG135, TicketID 240415-TKT-135, FlightID FLA026, 'Checked-In'
+-- Flight Departure: '2024-04-18 13:00:00', Arrival: '2024-04-18 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-04-18 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240418-PCH-180', 'Placed', 'PSG135');
+
+-- Purchase 181: Passenger PSG107, TicketID 240510-TKT-107, FlightID FLA025, 'Checked-In'
+-- Flight Departure: '2024-05-08 12:00:00', Arrival: '2024-05-08 14:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-05-08 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240508-PCH-181', 'Placed', 'PSG107');
+
+-- Purchase 182: Passenger PSG154, TicketID 240609-TKT-154, FlightID FLA024, 'Checked-In'
+-- Flight Departure: '2024-06-01 06:00:00', Arrival: '2024-06-01 07:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-06-01 06:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240601-PCH-182', 'Placed', 'PSG154');
+
+-- Purchase 183: Passenger PSG141, TicketID 240612-TKT-141, FlightID FLA023, 'Checked-In'
+-- Flight Departure: '2024-06-12 14:00:00', Arrival: '2024-06-12 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-06-12 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240612-PCH-183', 'Placed', 'PSG141');
+
+-- Purchase 184: Passenger PSG104, TicketID 240706-TKT-104, FlightID FLA022, 'Checked-In'
+-- Flight Departure: '2024-07-06 08:30:00', Arrival: '2024-07-06 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-06 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20240706-PCH-184', 'Placed', 'PSG104');
+
+-- Purchase 185: Passenger PSG119, TicketID 240712-TKT-119, FlightID FLA021, 'Checked-In'
+-- Flight Departure: '2024-07-21 12:00:00', Arrival: '2024-07-21 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-21 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240721-PCH-185', 'Placed', 'PSG119');
+
+-- Purchase 186: Passenger PSG145, TicketID 240721-TKT-145, FlightID FLA020, 'Checked-In'
+-- Flight Departure: '2024-07-21 12:00:00', Arrival: '2024-07-21 20:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-21 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240721-PCH-186', 'Placed', 'PSG145');
+
+-- Purchase 187: Passenger PSG099, TicketID 240726-TKT-099, FlightID FLA019, 'Checked-In'
+-- Flight Departure: '2024-07-28 15:00:00', Arrival: '2024-07-28 18:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-07-28 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240728-PCH-187', 'Placed', 'PSG099');
+
+-- Purchase 188: Passenger PSG179, TicketID 240808-TKT-179, FlightID FLA018, 'Checked-In'
+-- Flight Departure: '2024-08-10 10:00:00', Arrival: '2024-08-10 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-08-10 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240810-PCH-188', 'Placed', 'PSG179');
+
+-- Purchase 189: Passenger PSG152, TicketID 240816-TKT-152, FlightID FLA017, 'Checked-In'
+-- Flight Departure: '2024-08-16 11:00:00', Arrival: '2024-08-16 12:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-08-16 11:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240816-PCH-189', 'Placed', 'PSG152');
+
+-- Purchase 190: Passenger PSG090, TicketID 240824-TKT-090, FlightID FLA016, 'Checked-In'
+-- Flight Departure: '2024-08-24 08:00:00', Arrival: '2024-08-24 09:45:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-08-24 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240824-PCH-190', 'Placed', 'PSG090');
+
+-- Purchase 191: Passenger PSG091, TicketID 240830-TKT-091, FlightID FLA015, 'Checked-In'
+-- Flight Departure: '2024-08-30 09:00:00', Arrival: '2024-08-30 11:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-08-30 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240830-PCH-191', 'Placed', 'PSG091');
+
+-- Purchase 192: Passenger PSG088, TicketID 240902-TKT-088, FlightID FLA014, 'Checked-In'
+-- Flight Departure: '2024-09-02 14:00:00', Arrival: '2024-09-02 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-02 14:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240902-PCH-192', 'Placed', 'PSG088');
+
+-- Purchase 193: Passenger PSG146, TicketID 240905-TKT-146, FlightID FLA013, 'Checked-In'
+-- Flight Departure: '2024-09-05 07:30:00', Arrival: '2024-09-05 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-05 08:15:00', 'YYYY-MM-DD HH24:MI:SS'), '20240905-PCH-193', 'Placed', 'PSG146');
+
+-- Purchase 194: Passenger PSG136, TicketID 240912-TKT-136, FlightID FLA012, 'Checked-In'
+-- Flight Departure: '2024-09-12 09:00:00', Arrival: '2024-09-12 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-12 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240912-PCH-194', 'Placed', 'PSG136');
+
+-- Purchase 195: Passenger PSG083, TicketID 240913-TKT-083, FlightID FLA011, 'Checked-In'
+-- Flight Departure: '2024-09-13 10:00:00', Arrival: '2024-09-13 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-13 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240913-PCH-195', 'Placed', 'PSG083');
+
+-- Purchase 196: Passenger PSG082, TicketID 240915-TKT-082, FlightID FLA010, 'Checked-In'
+-- Flight Departure: '2024-09-15 12:00:00', Arrival: '2024-09-15 21:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-15 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), '20240915-PCH-196', 'Placed', 'PSG082');
+
+-- Purchase 197: Passenger PSG108, TicketID 240918-TKT-108, FlightID FLA009, 'Checked-In'
+-- Flight Departure: '2024-09-18 10:00:00', Arrival: '2024-09-18 11:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-18 10:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240918-PCH-197', 'Placed', 'PSG108');
+
+-- Purchase 198: Passenger PSG063, TicketID 240920-TKT-063, FlightID FLA008, 'Checked-In'
+-- Flight Departure: '2024-09-20 14:00:00', Arrival: '2024-09-20 16:00:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-20 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), '20240920-PCH-198', 'Placed', 'PSG063');
+
+-- Purchase 199: Passenger PSG105, TicketID 240925-TKT-105, FlightID FLA007, 'Checked-In'
+-- Flight Departure: '2024-09-25 08:00:00', Arrival: '2024-09-25 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-25 08:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240925-PCH-199', 'Placed', 'PSG105');
+
+-- Purchase 200: Passenger PSG122, TicketID 240930-TKT-122, FlightID FLA006, 'Checked-In'
+-- Flight Departure: '2024-09-30 09:00:00', Arrival: '2024-09-30 10:30:00'
+INSERT INTO Purchase (PurchaseDate, PurchaseID, PurchaseStatus, PassengerID) 
+VALUES (TO_TIMESTAMP('2024-09-30 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), '20240930-PCH-200', 'Placed', 'PSG122');
+
+
+SELECT COUNT(*) FROM Purchase;

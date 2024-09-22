@@ -1,0 +1,41 @@
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0001', 'Basic Economy', 1.00, 15.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0002', 'Economy', 1.05, 20.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0003', 'Economy Saver', 0.95, 18.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0004', 'Economy Promo', 0.98, 19.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0005', 'Economy Plus', 1.10, 22.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0006', 'Premium Economy', 1.20, 25.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0007', 'Business', 1.30, 30.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0008', 'Business Flex', 1.35, 33.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0009', 'Business Elite', 1.40, 35.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0010', 'Executive Business', 1.45, 38.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0011', 'First Class', 1.50, 40.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0012', 'First Class Flex', 1.55, 42.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0013', 'First Class Deluxe', 1.60, 45.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0014', 'Ultra First Class', 1.70, 50.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0015', 'Luxury', 1.75, 55.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0016', 'Ultra Luxury', 1.85, 60.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0017', 'Premium Business', 1.50, 37.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0018', 'Standard Economy', 1.05, 20.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0019', 'Budget Economy', 0.90, 17.00);
+
+INSERT INTO SeatClass (ClassID, ClassType, ClassRate, LuggageWeightLimit) VALUES ('CLS0020', 'Economy Flex', 1.08, 21.00);
+
+SELECT COUNT(*) FROM SeatClass;

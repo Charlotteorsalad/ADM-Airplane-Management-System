@@ -1,0 +1,23 @@
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR862', 'Personal Accident Insurance', '1054', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR777', 'Medical Insurance', '921', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR114', 'Family Travel Insurance', '8375', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR254', 'Evacuation Insurance', '5417', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR560', 'Medical Insurance', '6916', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR324', 'Accident Insurance', '7466', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR989', 'Medical Insurance', '3411', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR981', 'Whole Life Insurance', '2427', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR573', 'Flight Cancellation Insurance', '3417', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR093', 'Life Insurance', '1383', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR450', 'Travel Insurance', '8060', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR769', 'Accident Insurance', '4326', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR195', 'Baggage Loss Insurance', '7034', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR086', 'Critical Illness Insurance', '2267', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR747', 'Whole Life Insurance', '4396', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR738', 'Flight Cancellation Insurance', '4841', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR590', 'Business Travel Insurance', '2842', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR489', 'Term Life Insurance', '3054', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR867', 'Travel Insurance', '5708', 'Active');
+INSERT INTO Insurance (InsuranceID, CoverageType, Premium, InsuranceStatus) VALUES ('ISR977', 'Term Life Insurance', '3830', 'Active');
+
+
+select count(*) from insurance;

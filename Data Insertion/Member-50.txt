@@ -1,0 +1,151 @@
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM44300', 'Alisa Philpot', 'Gold', '030849298', '6655', 'aphilpot0@cdc.gov', 'eF1//OCHj', 'Active', TIMESTAMP '2021-07-15 10:32:25');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM34717', 'Nahum O''Sherrin', 'Platinum', '07-6317008', '1613', 'nosherrin1@google.co.jp', 'jP7{n*kb*DdUgW', 'Active', TIMESTAMP '2023-02-08 12:12:15');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM11930', 'Nowell Sibray', 'Bronze', '013-3462386', '4858', 'nsibray2@census.gov', 'sT5<Z$3L{c', 'Active', TIMESTAMP '2020-09-23 16:45:36');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM56255', 'Ginevra Zisneros', 'Platinum', '017-54754716', '4015', 'gzisneros3@ezinearticles.com', 'oW1)9>oqwJctjG)', 'Inactive', TIMESTAMP '2022-12-20 11:04:52');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM29431', 'Gaven Triggol', 'Gold', '01596087319', '7852', 'gtriggol4@admin.ch', 'tH3(,lG,_''OlD', 'Active', TIMESTAMP '2021-04-02 09:27:18');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM04611', 'Charlie Fullerlove', 'Platinum', '010-39949362', '3655', 'cfullerlove5@slate.com', 'cL4{|\$|OQoF>+i=', 'Active', TIMESTAMP '2023-07-19 08:22:45');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM52117', 'Elnora Finlow', 'Silver', '066689398', '4105', 'efinlow6@elpais.com', 'aK9!MpRr', 'Active', TIMESTAMP '2022-03-11 15:55:36');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM38783', 'Dalton Alenichev', 'Bronze', '017-1757815', '1713', 'dalenichev7@dell.com', 'kR7*I2E?', 'Active', TIMESTAMP '2020-10-30 14:02:10');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM18765', 'Laurella MacConnechie', 'Platinum', '0772767888', '4926', 'lmacconnechie8@webs.com', 'oX8/rmGW7i>Ee', 'Inactive', TIMESTAMP '2021-01-25 20:25:47');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM47055', 'Radcliffe Overil', 'Platinum', '07-88024753', '7215', 'roveril9@ebay.com', 'vH3>=NTZdo=Y', 'Inactive', TIMESTAMP '2022-09-09 19:13:22');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM28869', 'Aeriell Blowen', 'Platinum', '08-1316601', '8216', 'ablowena@accuweather.com', 'tN6|q?y>xd}<C4''', 'Active', TIMESTAMP '2023-05-13 17:39:55');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM85894', 'Cordy Linstead', 'Silver', '0804618997', '3200', 'clinsteadb@kickstarter.com', 'zX3(_N9@', 'Active', TIMESTAMP '2020-06-22 09:15:48');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM70084', 'Elvyn Turbill', 'Bronze', '056411935', '5717', 'eturbillc@feedburner.com', 'zR0}C6?&><""+DO', 'Active', TIMESTAMP '2023-08-29 10:45:37');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM23988', 'Melisandra Insko', 'Platinum', '09-4482389', '1498', 'minskod@jalbum.net', 'yW3+D7RfIX', 'Inactive', TIMESTAMP '2021-11-17 11:54:12');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM90860', 'Eldridge Docker', 'Bronze', '082484232', '2874', 'edockere@google.co.jp', 'iX2\aA8vU@Q<', 'Inactive', TIMESTAMP '2022-04-05 16:33:56');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM14895', 'Lemar Foulstone', 'Silver', '096794331', '2599', 'lfoulstonef@blogtalkradio.com', 'kI6>w1,fXY}g', 'Active', TIMESTAMP '2020-12-14 08:23:41');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM95497', 'Gavin Creggan', 'Gold', '017-1185968', '7458', 'gcreggang@wordpress.com', 'sG8`CmTn}ZhuVt7', 'Active', TIMESTAMP '2023-10-02 21:05:03');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM86643', 'Vilma Ubach', 'Platinum', '01609811909', '5604', 'vubachh@paginegialle.it', 'wV3+8Ycm+umJ?u', 'Active', TIMESTAMP '2022-02-24 12:01:23');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM62911', 'Carena Antoniak', 'Gold', '01784012831', '3604', 'cantoniaki@icq.com', 'bK3*THCzU', 'Active', TIMESTAMP '2020-05-11 14:19:08');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM22125', 'Carmine Tremain', 'Gold', '013-6888743', '9793', 'ctremainj@oaic.gov.au', 'gV8%,Z_b', 'Active', TIMESTAMP '2023-09-14 18:34:19');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM09594', 'Darla Crennan', 'Platinum', '015-70194664', '6783', 'dcrennank@freewebs.com', 'sO1_J""xm', 'Active', TIMESTAMP '2020-11-12 09:21:34');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM06436', 'Cosimo Cockcroft', 'Silver', '03-18761909', '2864', 'ccockcroftl@mayoclinic.com', 'zN5}5u""4?)DM', 'Active', TIMESTAMP '2021-02-17 10:13:54');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM64260', 'Antonie Kunat', 'Platinum', '0195248066', '339', 'akunatm@jimdo.com', 'gU3?IE95=', 'Active', TIMESTAMP '2023-01-09 14:31:45');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM69754', 'Valentia Stoffers', 'Gold', '0134225459', '990', 'vstoffersn@huffingtonpost.com', 'dZ4""o""|?8dOz#}Wm', 'Active', TIMESTAMP '2021-06-15 11:48:30');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM74127', 'Josephine Happel', 'Bronze', '01632265881', '8198', 'jhappelo@etsy.com', 'nR6<oDFAAw', 'Active', TIMESTAMP '2020-08-20 16:10:22');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM45559', 'Dorine Grevile', 'Platinum', '015-23104217', '2570', 'dgrevilep@dmoz.org', 'qE8!k_\\@0}Zx+', 'Inactive', TIMESTAMP '2021-03-25 09:17:49');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM46811', 'Natty Van De Cappelle', 'Bronze', '018-44042914', '4002', 'nvanq@tinyurl.com', 'tS5&o&h""S', 'Inactive', TIMESTAMP '2022-11-14 14:44:12');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM58831', 'Lorry Borge', 'Silver', '014-27913127', '277', 'lborger@discuz.net', 'bG3$~VadSEV+CJ+', 'Active', TIMESTAMP '2023-05-09 09:27:41');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM57594', 'Burlie Voden', 'Bronze', '052841880', '2971', 'bvodens@businessweek.com', 'fI0)Z?QY<fi', 'Inactive', TIMESTAMP '2022-03-13 12:03:22');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM20601', 'Felicia Heino', 'Platinum', '011-16082285', '6390', 'fheinot@marketwatch.com', 'fR3\p*b.', 'Inactive', TIMESTAMP '2020-09-09 17:14:06');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM02523', 'Lester Winscomb', 'Gold', '011-15762317', '6873', 'lwinscombu@sciencedaily.com', 'zQ3}OnwPp`_', 'Active', TIMESTAMP '2023-06-17 19:22:49');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM81795', 'Vinny Cano', 'Gold', '08-7680297', '3575', 'vcanov@cisco.com', 'bH3!MyyA<_''', 'Active', TIMESTAMP '2021-08-29 08:14:35');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM33700', 'Titus Culpin', 'Bronze', '0191332458', '9792', 'tculpinw@theatlantic.com', 'pZ9}p%mT', 'Active', TIMESTAMP '2020-12-23 13:53:17');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM71875', 'Pattie Rowet', 'Silver', '015-85271086', '2091', 'prowetx@cam.ac.uk', 'bW1?3!Gj', 'Active', TIMESTAMP '2021-05-21 09:08:52');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM33850', 'Ibby Oguz', 'Gold', '038864869', '555', 'ioguzy@cornell.edu', 'kY8(gGIshQ,t1', 'Active', TIMESTAMP '2020-06-30 16:02:10');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM97820', 'Hayden Probbin', 'Gold', '03-38356640', '3231', 'hprobbinz@unblog.fr', 'dP2/q5B.|P', 'Active', TIMESTAMP '2022-07-24 12:50:27');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM92583', 'Adey De Normanville', 'Bronze', '0102400089', '4831', 'ade10@moonfruit.com', 'wH9#LW8`K#&\gbR>', 'Active', TIMESTAMP '2023-09-01 11:36:04');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM46511', 'Debora Godsmark', 'Platinum', '0741352408', '7935', 'dgodsmark11@wordpress.org', 'aV6+2z\7pA`%', 'Active', TIMESTAMP '2021-04-28 15:44:48');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM67316', 'Harriot Dusting', 'Silver', '0339179554', '4264', 'hdusting12@printfriendly.com', 'zH0\{f''nh', 'Active', TIMESTAMP '2022-05-26 10:18:14');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM13711', 'Hermann Gummory', 'Gold', '04-58950970', '7789', 'hgummory13@github.io', 'eU3~ORXV&u@%KyU', 'Inactive', TIMESTAMP '2020-10-12 17:52:01');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM72239', 'Murray Waldron', 'Bronze', '0353754284', '7060', 'mwaldron14@vimeo.com', 'yP1!#{''w?', 'Active', TIMESTAMP '2023-08-11 08:25:32');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM04805', 'Sheba Rattray', 'Gold', '07-2043226', '883', 'srattray15@nymag.com', 'aT2}S90po', 'Active', TIMESTAMP '2021-02-01 19:44:36');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM63349', 'Myer Igounet', 'Silver', '06-0881646', '7653', 'migounet16@hhs.gov', 'uD9\_EBo', 'Active', TIMESTAMP '2020-06-14 15:23:08');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM27256', 'Hadley Bury', 'Silver', '04-0610993', '9155', 'hbury17@tumblr.com', 'wD6}z=9l?._M', 'Active', TIMESTAMP '2022-09-18 12:32:46');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM84381', 'Darice Ead', 'Platinum', '011-09678029', '9652', 'dead18@purevolume.com', 'vJ4/_kq!F_,DH', 'Active', TIMESTAMP '2023-06-09 13:47:22');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM31758', 'Reinold Scally', 'Gold', '013-5511567', '4884', 'rscally19@wunderground.com', 'mK7,}$FQp#', 'Active', TIMESTAMP '2021-01-23 17:39:54');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM42843', 'Cordey Digan', 'Gold', '063167163', '4630', 'cdigan1a@scientificamerican.com', 'lN2?P\NG', 'Active', TIMESTAMP '2022-04-11 14:54:17');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM83926', 'Otis Spears', 'Bronze', '0157998378', '2204', 'ospears1b@themeforest.net', 'gR5_bP&9_9NtT', 'Active', TIMESTAMP '2020-10-07 09:13:35');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM93359', 'Dionisio Bovey', 'Bronze', '07-41589772', '1173', 'dbovey1c@360.cn', 'hM0!""+x88V', 'Active', TIMESTAMP '2021-07-29 10:26:42');
+
+INSERT INTO Member (MemberID, MemberName, MembershipLevel, MemberContactNo, Points, Email, Password, MemberStatus, RegistrationDate) 
+VALUES ('MEM31931', 'Nelson Smalridge', 'Platinum', '0167780421', '8076', 'nsmalridge1d@drupal.org', 'kV7<f.`(Yuc*Xx=', 'Active', TIMESTAMP '2023-09-04 11:47:53');
+
+SELECT COUNT(*) FROM Member;

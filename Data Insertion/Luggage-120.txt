@@ -1,0 +1,361 @@
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5200', '20', 'M', 'Claimed', '230821-TKT-173');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2706', '12', 'S', 'Pending', '230714-TKT-117');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3413', '26', 'L', 'Pending', '240911-TKT-198');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9561', '29', 'XL', 'Claimed', '230726-TKT-199');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4897', '13', 'S', 'Lost', '240901-TKT-200');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG1244', '23', 'M', 'Claimed', '240911-TKT-176');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7043', '17', 'M', 'Claimed', '230715-TKT-191');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0751', '14', 'S', 'On Hold', '210115-TKT-001');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5412', '19', 'M', 'Lost', '210208-TKT-002');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2143', '6', 'S', 'Lost', '230918-TKT-197');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0405', '3', 'S', 'Lost', '230418-TKT-515');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8994', '15', 'M', 'Claimed', '210312-TKT-003');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2647', '10', 'S', 'Pending', '210420-TKT-004');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6198', '14', 'S', 'Claimed', '230824-TKT-153');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2741', '32', 'XXL', 'On Hold', '210525-TKT-005');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG1862', '23', 'L', 'On Hold', '210525-TKT-006');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8312', '28', 'XL', 'Pending', '230914-TKT-129');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4247', '8', 'S', 'Claimed', '210610-TKT-007');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7628', '16', 'M', 'On Hold', '210713-TKT-008');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6205', '20', 'M', 'Claimed', '210819-TKT-009');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6274', '26', 'L', 'On Hold', '210819-TKT-010');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7247', '8', 'S', 'Claimed', '221125-TKT-011');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3906', '21', 'L', 'Claimed', '221210-TKT-012');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4033', '25', 'L', 'Lost', '230912-TKT-161');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6377', '26', 'L', 'Claimed', '230115-TKT-013');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9563', '10', 'S', 'Claimed', '230220-TKT-014');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9307', '24', 'L', 'On Hold', '240107-TKT-015');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6404', '32', 'XXL', 'Pending', '240218-TKT-016');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9443', '6', 'S', 'Claimed', '210819-TKT-017');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9280', '5', 'S', 'On Hold', '210930-TKT-018');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9115', '11', 'S', 'On Hold', '211011-TKT-019');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5158', '29', 'XL', 'Pending', '211123-TKT-020');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7682', '9', 'S', 'Lost', '211212-TKT-021');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2146', '24', 'L', 'Claimed', '220103-TKT-022');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2945', '31', 'XXL', 'Lost', '220214-TKT-023');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3703', '10', 'S', 'Claimed', '220329-TKT-024');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4770', '12', 'S', 'Pending', '221125-TKT-025');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5882', '8', 'S', 'Claimed', '230929-TKT-159');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0611', '12', 'S', 'On Hold', '221210-TKT-026');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3696', '25', 'L', 'Claimed', '230115-TKT-027');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8219', '20', 'M', 'On Hold', '230115-TKT-028');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9450', '24', 'L', 'Pending', '240107-TKT-029');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8983', '11', 'S', 'Claimed', '230220-TKT-030');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2888', '32', 'XXL', 'On Hold', '230325-TKT-031');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0133', '18', 'M', 'Pending', '230917-TKT-163');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8812', '30', 'XL', 'Claimed', '240225-TKT-032');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG1190', '26', 'L', 'Claimed', '230315-TKT-033');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5120', '8', 'S', 'Claimed', '230228-TKT-034');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6019', '9', 'S', 'Pending', '230612-TKT-035');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9139', '26', 'L', 'Pending', '230923-TKT-193');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9181', '15', 'M', 'Lost', '230706-TKT-036');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3476', '23', 'M', 'Pending', '230925-TKT-171');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6478', '19', 'M', 'On Hold', '230813-TKT-037');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5233', '5', 'S', 'Pending', '230813-TKT-038');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4043', '3', 'S', 'Claimed', '230712-TKT-100');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2437', '28', 'XL', 'Pending', '240211-TKT-039');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4668', '15', 'M', 'Claimed', '240310-TKT-040');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7184', '29', 'XL', 'Lost', '230921-TKT-185');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4304', '26', 'L', 'Pending', '230820-TKT-143');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8631', '10', 'S', 'Claimed', '230403-TKT-041');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4422', '9', 'S', 'Pending', '240408-TKT-042');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5469', '10', 'S', 'Claimed', '230527-TKT-043');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4288', '16', 'M', 'Claimed', '230711-TKT-044');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6196', '32', 'XXL', 'Pending', '240712-TKT-045');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9909', '11', 'S', 'Claimed', '230809-TKT-046');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6249', '7', 'S', 'Pending', '230809-TKT-047');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2311', '7', 'S', 'Pending', '240818-TKT-048');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8324', '10', 'S', 'Pending', '240809-TKT-049');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6161', '32', 'XXL', 'Lost', '230914-TKT-050');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG1704', '16', 'M', 'Pending', '230515-TKT-051');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0789', '20', 'L', 'Claimed', '230527-TKT-052');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6031', '12', 'S', 'Pending', '230911-TKT-053');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7661', '9', 'S', 'Lost', '230822-TKT-155');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3209', '4', 'S', 'Lost', '240215-TKT-054');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8145', '27', 'L', 'Pending', '240318-TKT-055');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8966', '6', 'S', 'Claimed', '230819-TKT-056');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7585', '14', 'S', 'On Hold', '230915-TKT-057');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0587', '5', 'S', 'Lost', '240215-TKT-058');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4225', '31', 'XXL', 'Pending', '230921-TKT-059');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7103', '14', 'S', 'Pending', '230907-TKT-060');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG1177', '17', 'M', 'On Hold', '240301-TKT-061');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8937', '23', 'L', 'Claimed', '230623-TKT-062');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6413', '31', 'XXL', 'Lost', '240518-TKT-063');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0961', '29', 'XL', 'Pending', '230510-TKT-064');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4242', '4', 'S', 'Lost', '230510-TKT-065');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG7997', '14', 'S', 'On Hold', '240612-TKT-066');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5681', '13', 'S', 'Pending', '230916-TKT-067');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3037', '17', 'M', 'Pending', '240220-TKT-068');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9903', '32', 'XXL', 'Lost', '230725-TKT-069');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3090', '20', 'L', 'Lost', '230816-TKT-070');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8095', '19', 'M', 'On Hold', '240408-TKT-071');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0028', '22', 'L', 'Pending', '230527-TKT-072');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0697', '11', 'S', 'Claimed', '240511-TKT-073');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0713', '9', 'S', 'Pending', '230628-TKT-074');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0149', '22', 'L', 'Claimed', '230628-TKT-075');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0540', '3', 'S', 'Lost', '240703-TKT-076');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG2461', '15', 'M', 'Claimed', '230822-TKT-077');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4771', '11', 'S', 'Lost', '240815-TKT-078');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3577', '27', 'L', 'On Hold', '230920-TKT-079');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9277', '15', 'M', 'Lost', '240416-TKT-080');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8068', '25', 'L', 'Claimed', '230915-TKT-081');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3283', '14', 'S', 'Pending', '240510-TKT-082');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6439', '7', 'S', 'Pending', '230819-TKT-083');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG4185', '21', 'L', 'Claimed', '240715-TKT-084');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0698', '14', 'S', 'Pending', '230921-TKT-085');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG1139', '14', 'S', 'Claimed', '240508-TKT-086');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5137', '9', 'S', 'Lost', '230526-TKT-087');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG1843', '15', 'M', 'On Hold', '230526-TKT-088');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3904', '16', 'M', 'Claimed', '240610-TKT-089');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6936', '25', 'L', 'Lost', '230726-TKT-090');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG6939', '31', 'XXL', 'Lost', '240716-TKT-091');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG9796', '8', 'S', 'Pending', '230825-TKT-092');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0159', '24', 'L', 'Pending', '240611-TKT-093');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG0276', '4', 'S', 'Claimed', '230527-TKT-094');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG1105', '29', 'XL', 'On Hold', '240701-TKT-095');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3237', '22', 'L', 'Claimed', '230819-TKT-096');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5954', '18', 'M', 'Pending', '240815-TKT-097');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG3463', '3', 'S', 'Lost', '230917-TKT-098');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG8341', '6', 'S', 'Pending', '240501-TKT-099');
+
+INSERT INTO Luggage (LuggageID, Weight, LuggageSize, LuggageStatus, TicketID) 
+VALUES ('LUG5262', '6', 'S', 'Claimed', '240613-TKT-101');
+
+SELECT COUNT(*) FROM Luggage;

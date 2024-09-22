@@ -1,0 +1,487 @@
+-- Past Flight 1 (Short flight, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA001', 'Kuala Lumpur', 'Singapore', TO_TIMESTAMP('2021-01-05 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-01-05 08:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-01-05 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-01-05 09:20:00', 'YYYY-MM-DD HH24:MI:SS'), 150.00, 'On Time', 'PLANE9612');
+
+-- Past Flight 2 (Long haul, London to New York, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA002', 'London', 'New York', TO_TIMESTAMP('2021-02-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-02-12 14:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-02-12 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-02-12 18:15:00', 'YYYY-MM-DD HH24:MI:SS'), 700.00, 'Delayed', 'PLANE9487');
+
+-- Past Flight 3 (Short flight, Paris to Berlin, Airbus A320)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA003', 'Paris', 'Berlin', TO_TIMESTAMP('2021-03-15 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-03-15 06:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-03-15 07:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-03-15 07:35:00', 'YYYY-MM-DD HH24:MI:SS'), 120.00, 'On Time', 'PLANE0507');
+
+-- Past Flight 4 (Long haul, Dubai to Sydney, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA004', 'Dubai', 'Sydney', TO_TIMESTAMP('2021-04-10 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-04-10 22:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-04-11 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-04-11 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), 1100.00, 'On Time', 'PLANE4387');
+
+-- Past Flight 5 (Short domestic flight, Sydney to Melbourne, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA005', 'Sydney', 'Melbourne', TO_TIMESTAMP('2021-05-08 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-05-08 12:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-05-08 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-05-08 13:35:00', 'YYYY-MM-DD HH24:MI:SS'), 200.00, 'On Time', 'PLANE5009');
+
+-- Past Flight 6 (Kuala Lumpur to Bangkok, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA006', 'Kuala Lumpur', 'Bangkok', TO_TIMESTAMP('2021-06-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-06-15 10:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-06-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-06-15 12:10:00', 'YYYY-MM-DD HH24:MI:SS'), 500.00, 'On Time', 'PLANE3860');
+
+-- Past Flight 7 (Short flight, Penang to Jakarta, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA007', 'Penang', 'Jakarta', TO_TIMESTAMP('2021-07-05 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-07-05 08:35:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-07-05 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-07-05 10:40:00', 'YYYY-MM-DD HH24:MI:SS'), 450.00, 'On Time', 'PLANE9612');
+
+-- Flight 8 (Airbus A330, Kuala Lumpur to Ho Chi Minh City)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA008', 'Kuala Lumpur', 'Ho Chi Minh City', TO_TIMESTAMP('2021-08-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-08-12 14:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-08-12 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-08-12 16:35:00', 'YYYY-MM-DD HH24:MI:SS'), 350.00, 'Delayed', 'PLANE9798');
+
+-- Flight 9 (Singapore to Kuala Lumpur, Bombardier CRJ700)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA009', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2021-09-09 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-09-09 10:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-09-09 11:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-09-09 11:35:00', 'YYYY-MM-DD HH24:MI:SS'), 300.00, 'On Time', 'PLANE4232');
+
+-- Flight 10 (Kuala Lumpur to Sydney, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA010', 'Kuala Lumpur', 'Sydney', TO_TIMESTAMP('2021-10-21 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-10-21 12:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-10-21 21:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-10-21 21:15:00', 'YYYY-MM-DD HH24:MI:SS'), 1600.00, 'On Time', 'PLANE4387');
+
+-- Flight 11 (Langkawi to Kuala Lumpur, Boeing 717)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA011', 'Langkawi', 'Kuala Lumpur', TO_TIMESTAMP('2021-11-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-11-15 10:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-11-15 11:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-11-15 11:35:00', 'YYYY-MM-DD HH24:MI:SS'), 300.00, 'On Time', 'PLANE8647');
+
+-- Flight 12 (Penang to Singapore, Bombardier Q400)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA012', 'Penang', 'Singapore', TO_TIMESTAMP('2021-12-10 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-12-10 09:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-12-10 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2021-12-10 10:35:00', 'YYYY-MM-DD HH24:MI:SS'), 320.00, 'Delayed', 'PLANE7734');
+
+-- Flight 13 (Kota Kinabalu to Manila, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA013', 'Kota Kinabalu', 'Manila', TO_TIMESTAMP('2022-01-05 07:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-01-05 07:35:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-01-05 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-01-05 10:35:00', 'YYYY-MM-DD HH24:MI:SS'), 800.00, 'On Time', 'PLANE9612');
+
+-- Flight 14 (Kuala Lumpur to Jakarta, Airbus A330)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA014', 'Kuala Lumpur', 'Jakarta', TO_TIMESTAMP('2022-02-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-02-12 14:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-02-12 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-02-12 16:10:00', 'YYYY-MM-DD HH24:MI:SS'), 600.00, 'On Time', 'PLANE9798');
+
+-- Flight 15 (Singapore to Bangkok, Airbus A320)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA015', 'Singapore', 'Bangkok', TO_TIMESTAMP('2022-03-15 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-03-15 09:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-03-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-03-15 11:05:00', 'YYYY-MM-DD HH24:MI:SS'), 550.00, 'On Time', 'PLANE0507');
+
+-- Flight 16 (Kuala Lumpur to Phnom Penh, Embraer E190)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA016', 'Kuala Lumpur', 'Phnom Penh', TO_TIMESTAMP('2022-04-10 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-04-10 08:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-04-10 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-04-10 09:50:00', 'YYYY-MM-DD HH24:MI:SS'), 450.00, 'On Time', 'PLANE6107');
+
+-- Flight 17 (Penang to Langkawi, Gulfstream G650)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA017', 'Penang', 'Langkawi', TO_TIMESTAMP('2022-05-18 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-05-18 11:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-05-18 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-05-18 12:05:00', 'YYYY-MM-DD HH24:MI:SS'), 250.00, 'On Time', 'PLANE7258');
+
+-- Flight 18 (Johor Bahru to Kuala Lumpur, Airbus A220)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA018', 'Johor Bahru', 'Kuala Lumpur', TO_TIMESTAMP('2022-06-21 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-06-21 07:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-06-21 08:15:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-06-21 08:20:00', 'YYYY-MM-DD HH24:MI:SS'), 180.00, 'On Time', 'PLANE5403');
+
+-- Flight 19 (Singapore to Denpasar, Boeing 767)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA019', 'Singapore', 'Denpasar', TO_TIMESTAMP('2022-07-02 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-07-02 15:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-07-02 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-07-02 18:10:00', 'YYYY-MM-DD HH24:MI:SS'), 650.00, 'On Time', 'PLANE4587');
+
+-- Flight 20 (Kuala Lumpur to Beijing, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA020', 'Kuala Lumpur', 'Beijing', TO_TIMESTAMP('2022-08-10 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-08-10 13:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-08-10 20:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-08-10 20:15:00', 'YYYY-MM-DD HH24:MI:SS'), 1400.00, 'On Time', 'PLANE3860');
+
+-- Flight 21 (Kuala Lumpur to Hong Kong, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA021', 'Kuala Lumpur', 'Hong Kong', TO_TIMESTAMP('2022-09-01 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-09-01 12:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-09-01 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-09-01 16:05:00', 'YYYY-MM-DD HH24:MI:SS'), 900.00, 'On Time', 'PLANE9487');
+
+-- Flight 22 (Langkawi to Singapore, Bombardier CRJ700)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA022', 'Langkawi', 'Singapore', TO_TIMESTAMP('2022-10-10 08:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-10-10 08:35:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-10-10 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-10-10 10:35:00', 'YYYY-MM-DD HH24:MI:SS'), 400.00, 'Delayed', 'PLANE4232');
+
+-- Flight 23 (Penang to Jakarta, Boeing 747)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA023', 'Penang', 'Jakarta', TO_TIMESTAMP('2022-11-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-11-15 14:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-11-15 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-11-15 16:05:00', 'YYYY-MM-DD HH24:MI:SS'), 500.00, 'On Time', 'PLANE2573');
+
+-- Flight 24 (Johor Bahru to Kuala Lumpur, Cessna 172)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA024', 'Johor Bahru', 'Kuala Lumpur', TO_TIMESTAMP('2022-12-22 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-12-22 06:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-12-22 07:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2022-12-22 07:35:00', 'YYYY-MM-DD HH24:MI:SS'), 200.00, 'On Time', 'PLANE8738');
+
+-- Flight 25 (Kuala Lumpur to Bangkok, Boeing 757)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA025', 'Kuala Lumpur', 'Bangkok', TO_TIMESTAMP('2023-01-05 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-01-05 10:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-01-05 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-01-05 12:10:00', 'YYYY-MM-DD HH24:MI:SS'), 550.00, 'On Time', 'PLANE5414');
+
+-- Flight 26 (Kuala Lumpur to Phuket, Airbus A321)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA026', 'Kuala Lumpur', 'Phuket', TO_TIMESTAMP('2023-02-10 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-02-10 12:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-02-10 13:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-02-10 13:35:00', 'YYYY-MM-DD HH24:MI:SS'), 450.00, 'On Time', 'PLANE5647');
+
+-- Flight 27 (Kuala Lumpur to Seoul, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA027', 'Kuala Lumpur', 'Seoul', TO_TIMESTAMP('2023-03-01 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-03-01 07:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-03-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-03-01 14:10:00', 'YYYY-MM-DD HH24:MI:SS'), 1700.00, 'On Time', 'PLANE5009');
+
+-- Flight 28 (Langkawi to Penang, Bombardier Q400)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA028', 'Langkawi', 'Penang', TO_TIMESTAMP('2023-04-10 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-04-10 08:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-04-10 09:15:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-04-10 09:20:00', 'YYYY-MM-DD HH24:MI:SS'), 300.00, 'On Time', 'PLANE7734');
+
+-- Flight 29 (Johor Bahru to Kuala Lumpur, Airbus A319)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA029', 'Johor Bahru', 'Kuala Lumpur', TO_TIMESTAMP('2023-05-15 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-05-15 06:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-05-15 07:15:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-05-15 07:20:00', 'YYYY-MM-DD HH24:MI:SS'), 180.00, 'On Time', 'PLANE2785');
+
+-- Flight 30 (Kuala Lumpur to Dubai, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA030', 'Kuala Lumpur', 'Dubai', TO_TIMESTAMP('2023-06-01 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-06-01 13:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-06-01 20:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-06-01 20:15:00', 'YYYY-MM-DD HH24:MI:SS'), 2000.00, 'On Time', 'PLANE3860');
+
+-- Flight 31 (Kuala Lumpur to Melbourne, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA031', 'Kuala Lumpur', 'Melbourne', TO_TIMESTAMP('2023-07-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-07-01 08:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-07-01 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-07-01 17:05:00', 'YYYY-MM-DD HH24:MI:SS'), 2200.00, 'On Time', 'PLANE9487');
+
+-- Flight 32 (Singapore to Kuala Lumpur, Gulfstream G650)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA032', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2023-07-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-07-10 14:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-07-10 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-07-10 15:05:00', 'YYYY-MM-DD HH24:MI:SS'), 300.00, 'On Time', 'PLANE7258');
+
+-- Flight 33 (Kuala Lumpur to Jakarta, Airbus A220)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA033', 'Kuala Lumpur', 'Jakarta', TO_TIMESTAMP('2023-08-15 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-08-15 10:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-08-15 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-08-15 12:35:00', 'YYYY-MM-DD HH24:MI:SS'), 600.00, 'Delayed', 'PLANE5403');
+
+-- Flight 34 (Penang to Bangkok, Boeing 767)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA034', 'Penang', 'Bangkok', TO_TIMESTAMP('2023-09-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-09-01 09:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-09-01 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-09-01 11:05:00', 'YYYY-MM-DD HH24:MI:SS'), 450.00, 'On Time', 'PLANE4587');
+
+-- Flight 35 (Kuala Lumpur to Phuket, Airbus A319)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA035', 'Kuala Lumpur', 'Phuket', TO_TIMESTAMP('2023-10-05 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-10-05 13:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-10-05 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-10-05 14:35:00', 'YYYY-MM-DD HH24:MI:SS'), 550.00, 'On Time', 'PLANE2785');
+
+-- Flight 36 (Kuala Lumpur to Tokyo, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA036', 'Kuala Lumpur', 'Tokyo', TO_TIMESTAMP('2023-11-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-11-01 10:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-11-01 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-11-01 18:05:00', 'YYYY-MM-DD HH24:MI:SS'), 1800.00, 'On Time', 'PLANE5009');
+
+-- Flight 37 (Kuala Lumpur to Bali, Airbus A320)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA037', 'Kuala Lumpur', 'Bali', TO_TIMESTAMP('2023-12-15 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-12-15 08:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-12-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2023-12-15 11:05:00', 'YYYY-MM-DD HH24:MI:SS'), 600.00, 'On Time', 'PLANE0507');
+
+-- Flight 38 (Kuala Lumpur to Jakarta, Bombardier CRJ700)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA038', 'Kuala Lumpur', 'Jakarta', TO_TIMESTAMP('2024-01-05 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-01-05 10:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-01-05 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-01-05 12:35:00', 'YYYY-MM-DD HH24:MI:SS'), 500.00, 'On Time', 'PLANE4232');
+
+-- Flight 39 (Penang to Kuala Lumpur, Boeing 717)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA039', 'Penang', 'Kuala Lumpur', TO_TIMESTAMP('2024-02-10 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-02-10 09:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-02-10 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-02-10 10:20:00', 'YYYY-MM-DD HH24:MI:SS'), 180.00, 'On Time', 'PLANE8647');
+
+-- Flight 40 (Langkawi to Penang, Bombardier Q400)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA040', 'Langkawi', 'Penang', TO_TIMESTAMP('2024-03-15 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-03-15 07:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-03-15 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-03-15 08:05:00', 'YYYY-MM-DD HH24:MI:SS'), 300.00, 'On Time', 'PLANE7734');
+
+-- Flight 41 (Kuala Lumpur to Manila, Airbus A330)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA041', 'Kuala Lumpur', 'Manila', TO_TIMESTAMP('2024-04-10 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-04-10 10:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-04-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-04-10 14:05:00', 'YYYY-MM-DD HH24:MI:SS'), 800.00, 'On Time', 'PLANE9798');
+
+-- Flight 42 (Kuala Lumpur to Bangkok, Boeing 767)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA042', 'Kuala Lumpur', 'Bangkok', TO_TIMESTAMP('2024-05-08 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-05-08 09:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-05-08 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-05-08 11:05:00', 'YYYY-MM-DD HH24:MI:SS'), 500.00, 'On Time', 'PLANE4587');
+
+-- Flight 43 (Kuala Lumpur to London, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA043', 'Kuala Lumpur', 'London', TO_TIMESTAMP('2024-06-01 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-06-01 22:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-06-02 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-06-02 06:05:00', 'YYYY-MM-DD HH24:MI:SS'), 2500.00, 'On Time', 'PLANE4387');
+
+-- Flight 44 (Kuala Lumpur to Phnom Penh, Boeing 717)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA044', 'Kuala Lumpur', 'Phnom Penh', TO_TIMESTAMP('2024-07-12 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-07-12 08:10:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-07-12 09:45:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-07-12 09:50:00', 'YYYY-MM-DD HH24:MI:SS'), 450.00, 'On Time', 'PLANE8647');
+
+-- Flight 45 (Kuala Lumpur to Bangkok, Airbus A321)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA045', 'Kuala Lumpur', 'Bangkok', TO_TIMESTAMP('2024-08-18 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-08-18 12:05:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-08-18 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-08-18 14:10:00', 'YYYY-MM-DD HH24:MI:SS'), 500.00, 'On Time', 'PLANE5647');
+
+-- Flight 46 (Singapore to Kuala Lumpur, Boeing 717) - Future flight, scheduled, actual times are NULL
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA046', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2024-09-25 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-09-25 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 300.00, 'Scheduled', 'PLANE8647');
+
+-- Flight 47 (Penang to Jakarta, Boeing 737) - Future flight, scheduled, actual times are NULL
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA047', 'Penang', 'Jakarta', TO_TIMESTAMP('2024-10-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-10-01 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 500.00, 'Scheduled', 'PLANE9612');
+
+-- Flight 48 (Langkawi to Singapore, Boeing 717) - Future flight, scheduled, actual times are NULL
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA048', 'Langkawi', 'Singapore', TO_TIMESTAMP('2024-11-15 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-11-15 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 400.00, 'Scheduled', 'PLANE8647');
+
+-- Flight 49 (Johor Bahru to Kuala Lumpur, Bombardier CRJ700) - Future flight, scheduled, actual times are NULL
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA049', 'Johor Bahru', 'Kuala Lumpur', TO_TIMESTAMP('2024-12-01 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-12-01 08:20:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 180.00, 'Scheduled', 'PLANE4232');
+
+-- Flight 50 (Kuala Lumpur to Dubai, Boeing 787 Dreamliner) - Future flight, scheduled, actual times are NULL
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA050', 'Kuala Lumpur', 'Dubai', TO_TIMESTAMP('2025-01-05 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-01-05 20:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2500.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 51 (Kuala Lumpur to Bangkok, Airbus A321)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA051', 'Kuala Lumpur', 'Bangkok', TO_TIMESTAMP('2025-02-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-02-01 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 500.00, 'Scheduled', 'PLANE5647');
+
+-- Flight 52 (Singapore to Jakarta, Airbus A220)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA052', 'Singapore', 'Jakarta', TO_TIMESTAMP('2025-02-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-02-15 14:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 600.00, 'Scheduled', 'PLANE5403');
+
+-- Flight 53 (Penang to Kuala Lumpur, Bombardier CRJ700)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA053', 'Penang', 'Kuala Lumpur', TO_TIMESTAMP('2025-03-05 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-03-05 10:15:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 350.00, 'Scheduled', 'PLANE4232');
+
+-- Flight 54 (Langkawi to Singapore, Boeing 717)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA054', 'Langkawi', 'Singapore', TO_TIMESTAMP('2025-04-12 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-04-12 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 500.00, 'Scheduled', 'PLANE8647');
+
+-- Flight 55 (Kuala Lumpur to Manila, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA055', 'Kuala Lumpur', 'Manila', TO_TIMESTAMP('2025-05-07 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-05-07 17:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 850.00, 'Scheduled', 'PLANE9612');
+
+-- Flight 56 (Johor Bahru to Kuala Lumpur, Bombardier CRJ700)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA056', 'Johor Bahru', 'Kuala Lumpur', TO_TIMESTAMP('2025-06-01 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-06-01 07:10:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 200.00, 'Scheduled', 'PLANE4232');
+
+-- Flight 57 (Kuala Lumpur to Dubai, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA057', 'Kuala Lumpur', 'Dubai', TO_TIMESTAMP('2025-06-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-06-15 21:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2500.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 58 (Singapore to Kuala Lumpur, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA058', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2025-07-10 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-07-10 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 300.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 59 (Penang to Jakarta, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA059', 'Penang', 'Jakarta', TO_TIMESTAMP('2025-08-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-08-01 12:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 600.00, 'Scheduled', 'PLANE3860');
+
+-- Flight 60 (Kuala Lumpur to Tokyo, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA060', 'Kuala Lumpur', 'Tokyo', TO_TIMESTAMP('2025-09-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-09-01 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2000.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 61 (Kuala Lumpur to Los Angeles, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA061', 'Kuala Lumpur', 'Los Angeles', TO_TIMESTAMP('2025-10-15 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-10-15 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3200.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 62 (Singapore to Paris, Boeing 747)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA062', 'Singapore', 'Paris', TO_TIMESTAMP('2025-11-01 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-11-02 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2900.00, 'Scheduled', 'PLANE2573');
+
+-- Flight 63 (Penang to Hong Kong, Boeing 767)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA063', 'Penang', 'Hong Kong', TO_TIMESTAMP('2025-12-12 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-12-12 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1000.00, 'Scheduled', 'PLANE4587');
+
+-- Flight 64 (Kuala Lumpur to Beijing, Boeing 747)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA064', 'Kuala Lumpur', 'Beijing', TO_TIMESTAMP('2026-01-10 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-01-10 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2000.00, 'Scheduled', 'PLANE2573');
+
+-- Flight 65 (Singapore to Seoul, Airbus A320)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA065', 'Singapore', 'Seoul', TO_TIMESTAMP('2026-02-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-02-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1500.00, 'Scheduled', 'PLANE0507');
+
+-- Flight 66 (Kuala Lumpur to Sydney, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA066', 'Kuala Lumpur', 'Sydney', TO_TIMESTAMP('2026-03-15 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-03-15 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2500.00, 'Scheduled', 'PLANE3860');
+
+-- Flight 67 (Kuala Lumpur to Bangkok, Airbus A320)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA067', 'Kuala Lumpur', 'Bangkok', TO_TIMESTAMP('2026-04-12 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-04-12 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 500.00, 'Scheduled', 'PLANE0507');
+
+-- Flight 68 (Johor Bahru to Singapore, Gulfstream G650)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA068', 'Johor Bahru', 'Singapore', TO_TIMESTAMP('2026-05-01 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-05-01 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 250.00, 'Scheduled', 'PLANE7258');
+
+-- Flight 69 (Kuala Lumpur to Bali, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA069', 'Kuala Lumpur', 'Bali', TO_TIMESTAMP('2026-06-10 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-06-10 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1000.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 70 (Kuala Lumpur to Tokyo, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA070', 'Kuala Lumpur', 'Tokyo', TO_TIMESTAMP('2026-07-05 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-07-05 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1800.00, 'Scheduled', 'PLANE3860');
+
+-- Flight 71 (Singapore to Kuala Lumpur, Bombardier Q400)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA071', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2026-08-20 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-08-20 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 300.00, 'Scheduled', 'PLANE7734');
+
+-- Flight 72 (Penang to Jakarta, Boeing 767)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA072', 'Penang', 'Jakarta', TO_TIMESTAMP('2026-09-01 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-09-01 11:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 600.00, 'Scheduled', 'PLANE4587');
+
+-- Flight 73 (Kuala Lumpur to Los Angeles, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA073', 'Kuala Lumpur', 'Los Angeles', TO_TIMESTAMP('2026-10-05 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-10-05 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3200.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 74 (Singapore to Paris, Boeing 747)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA074', 'Singapore', 'Paris', TO_TIMESTAMP('2026-11-01 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-11-02 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2900.00, 'Scheduled', 'PLANE2573');
+
+-- Flight 75 (Kuala Lumpur to Seoul, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA075', 'Kuala Lumpur', 'Seoul', TO_TIMESTAMP('2026-12-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-12-15 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1800.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 76 (Kuala Lumpur to Dubai, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA076', 'Kuala Lumpur', 'Dubai', TO_TIMESTAMP('2027-01-05 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-01-05 20:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2500.00, 'Scheduled', 'PLANE4387');
+
+-- Flight 77 (Penang to Singapore, Airbus A321)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA077', 'Penang', 'Singapore', TO_TIMESTAMP('2027-02-10 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-02-10 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 450.00, 'Scheduled', 'PLANE5647');
+
+-- Flight 78 (Kuala Lumpur to London, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA078', 'Kuala Lumpur', 'London', TO_TIMESTAMP('2027-03-15 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-03-16 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3200.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 79 (Singapore to Bangkok, Gulfstream G650)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA079', 'Singapore', 'Bangkok', TO_TIMESTAMP('2027-04-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-04-05 16:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 900.00, 'Scheduled', 'PLANE7258');
+
+-- Flight 80 (Kuala Lumpur to Paris, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA080', 'Kuala Lumpur', 'Paris', TO_TIMESTAMP('2027-05-20 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-05-20 21:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2700.00, 'Scheduled', 'PLANE3860');
+
+-- Flight 81 (Johor Bahru to Kuala Lumpur, Boeing 717)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA081', 'Johor Bahru', 'Kuala Lumpur', TO_TIMESTAMP('2027-06-01 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-06-01 08:20:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 200.00, 'Scheduled', 'PLANE8647');
+
+-- Flight 82 (Penang to Jakarta, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA082', 'Penang', 'Jakarta', TO_TIMESTAMP('2027-07-15 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-07-15 11:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 500.00, 'Scheduled', 'PLANE9612');
+
+-- Flight 83 (Singapore to Kuala Lumpur, Bombardier CRJ700)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA083', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2027-08-10 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-08-10 11:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 300.00, 'Scheduled', 'PLANE4232');
+
+-- Flight 84 (Kuala Lumpur to Dubai, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA084', 'Kuala Lumpur', 'Dubai', TO_TIMESTAMP('2027-09-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-09-15 21:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2500.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 85 (Kuala Lumpur to Tokyo, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA085', 'Kuala Lumpur', 'Tokyo', TO_TIMESTAMP('2027-10-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-10-01 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2000.00, 'Scheduled', 'PLANE4387');
+
+-- Flight 86 (Kuala Lumpur to Sydney, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA086', 'Kuala Lumpur', 'Sydney', TO_TIMESTAMP('2027-11-01 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-11-01 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2500.00, 'Scheduled', 'PLANE3860');
+
+-- Flight 87 (Johor Bahru to Singapore, Gulfstream G650)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA087', 'Johor Bahru', 'Singapore', TO_TIMESTAMP('2027-12-12 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2027-12-12 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 250.00, 'Scheduled', 'PLANE7258');
+
+-- Flight 88 (Kuala Lumpur to London, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA088', 'Kuala Lumpur', 'London', TO_TIMESTAMP('2028-01-05 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2028-01-06 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3200.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 89 (Singapore to Paris, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA089', 'Singapore', 'Paris', TO_TIMESTAMP('2028-02-01 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2028-02-02 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2900.00, 'Scheduled', 'PLANE4387');
+
+-- Flight 90 (Kuala Lumpur to Seoul, Boeing 747)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA090', 'Kuala Lumpur', 'Seoul', TO_TIMESTAMP('2028-03-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2028-03-10 20:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1800.00, 'Scheduled', 'PLANE2573');
+
+-- Flight 91 (Kuala Lumpur to Bangkok, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA091', 'Kuala Lumpur', 'Bangkok', TO_TIMESTAMP('2024-10-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-10-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 600.00, 'Scheduled', 'PLANE9612');
+
+-- Flight 92 (Singapore to Kuala Lumpur, Airbus A320)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA092', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2024-10-20 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-10-20 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 300.00, 'Scheduled', 'PLANE0507');
+
+-- Flight 93 (Penang to Jakarta, Boeing 757)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA093', 'Penang', 'Jakarta', TO_TIMESTAMP('2024-11-05 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-11-05 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 700.00, 'Scheduled', 'PLANE5414');
+
+-- Flight 94 (Kuala Lumpur to London, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA094', 'Kuala Lumpur', 'London', TO_TIMESTAMP('2024-11-15 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-11-16 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3200.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 95 (Kuala Lumpur to Seoul, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA095', 'Kuala Lumpur', 'Seoul', TO_TIMESTAMP('2024-12-05 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-12-05 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1800.00, 'Scheduled', 'PLANE3860');
+
+-- Flight 96 (Singapore to Paris, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA096', 'Singapore', 'Paris', TO_TIMESTAMP('2024-12-20 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-12-21 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2800.00, 'Scheduled', 'PLANE4387');
+
+-- Flight 97 (Kuala Lumpur to Sydney, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA097', 'Kuala Lumpur', 'Sydney', TO_TIMESTAMP('2024-12-30 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2024-12-30 19:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2500.00, 'Scheduled', 'PLANE9612');
+
+-- Flight 98 (Singapore to Kuala Lumpur, Airbus A220)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA098', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2025-01-15 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-01-15 09:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 300.00, 'Scheduled', 'PLANE5403');
+
+-- Flight 99 (Kuala Lumpur to Tokyo, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA099', 'Kuala Lumpur', 'Tokyo', TO_TIMESTAMP('2025-02-05 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-02-05 21:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1800.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 100 (Penang to Hong Kong, Boeing 767)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA100', 'Penang', 'Hong Kong', TO_TIMESTAMP('2025-02-20 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-02-20 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1000.00, 'Scheduled', 'PLANE4587');
+
+-- Flight 101 (Singapore to New York, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA101', 'Singapore', 'New York', TO_TIMESTAMP('2025-03-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-03-01 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3500.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 102 (Kuala Lumpur to Los Angeles, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA102', 'Kuala Lumpur', 'Los Angeles', TO_TIMESTAMP('2025-03-18 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-03-19 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3400.00, 'Scheduled', 'PLANE4387');
+
+-- Flight 103 (Singapore to Kuala Lumpur, Bombardier Q400)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA103', 'Singapore', 'Kuala Lumpur', TO_TIMESTAMP('2025-04-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-04-01 15:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 300.00, 'Scheduled', 'PLANE7734');
+
+-- Flight 104 (Kuala Lumpur to Bangkok, Airbus A320)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA104', 'Kuala Lumpur', 'Bangkok', TO_TIMESTAMP('2025-04-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-04-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 500.00, 'Scheduled', 'PLANE0507');
+
+-- Flight 105 (Penang to Jakarta, Boeing 757)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA105', 'Penang', 'Jakarta', TO_TIMESTAMP('2025-05-05 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-05-05 10:30:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 700.00, 'Scheduled', 'PLANE5414');
+
+-- Flight 106 (Singapore to Paris, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA106', 'Singapore', 'Paris', TO_TIMESTAMP('2025-06-10 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-06-11 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2900.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 107 (Kuala Lumpur to Sydney, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA107', 'Kuala Lumpur', 'Sydney', TO_TIMESTAMP('2025-07-01 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-07-01 19:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2500.00, 'Scheduled', 'PLANE9612');
+
+-- Flight 108 (Kuala Lumpur to London, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA108', 'Kuala Lumpur', 'London', TO_TIMESTAMP('2025-08-12 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-08-13 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3200.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 109 (Kuala Lumpur to Tokyo, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA109', 'Kuala Lumpur', 'Tokyo', TO_TIMESTAMP('2025-09-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-09-01 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1800.00, 'Scheduled', 'PLANE4387');
+
+-- Flight 110 (Singapore to Los Angeles, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA110', 'Singapore', 'Los Angeles', TO_TIMESTAMP('2025-10-15 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-10-16 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3500.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 111 (Kuala Lumpur to Hong Kong, Boeing 747)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA111', 'Kuala Lumpur', 'Hong Kong', TO_TIMESTAMP('2025-11-20 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-11-20 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 900.00, 'Scheduled', 'PLANE2573');
+
+-- Flight 111 (Kuala Lumpur to Nairobi, Boeing 747)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA111', 'Kuala Lumpur', 'Nairobi', TO_TIMESTAMP('2025-11-20 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-11-20 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2300.00, 'Scheduled', 'PLANE2573');
+
+-- Flight 112 (Kuala Lumpur to Changsha, Airbus A321)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA112', 'Kuala Lumpur', 'Changsha', TO_TIMESTAMP('2026-06-10 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-06-10 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1200.00, 'Scheduled', 'PLANE5647');
+
+-- Flight 113 (Singapore to Taipei, Airbus A320)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA113', 'Singapore', 'Taipei', TO_TIMESTAMP('2025-12-05 08:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-12-05 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 700.00, 'Scheduled', 'PLANE0507');
+
+-- Flight 114 (Kuala Lumpur to Lagos, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA114', 'Kuala Lumpur', 'Lagos', TO_TIMESTAMP('2025-12-12 22:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-12-13 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 3200.00, 'Scheduled', 'PLANE3860');
+
+-- Flight 115 (Kuala Lumpur to Guangzhou, Boeing 737)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA115', 'Kuala Lumpur', 'Guangzhou', TO_TIMESTAMP('2025-12-20 13:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2025-12-20 16:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 650.00, 'Scheduled', 'PLANE9612');
+
+-- Flight 116 (Singapore to Harbin, Airbus A380)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA116', 'Singapore', 'Harbin', TO_TIMESTAMP('2026-01-05 10:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-01-05 18:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1500.00, 'Scheduled', 'PLANE9487');
+
+-- Flight 117 (Penang to Chengdu, Boeing 767)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA117', 'Penang', 'Chengdu', TO_TIMESTAMP('2026-02-15 12:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-02-15 17:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1000.00, 'Scheduled', 'PLANE4587');
+
+-- Flight 118 (Kuala Lumpur to Dubai, Boeing 787 Dreamliner)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA118', 'Kuala Lumpur', 'Dubai', TO_TIMESTAMP('2026-03-10 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-03-11 06:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2000.00, 'Scheduled', 'PLANE5009');
+
+-- Flight 119 (Singapore to Cairo, Airbus A350)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA119', 'Singapore', 'Cairo', TO_TIMESTAMP('2026-04-01 23:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-04-02 07:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 2400.00, 'Scheduled', 'PLANE3860');
+
+-- Flight 120 (Kuala Lumpur to Beijing, Boeing 777)
+INSERT INTO Flight (FlightID, Origin, Destination, DepartureTime, ActualDepartureTime, ArrivalTime, ActualArrivalTime, FlightBasePrice, FlightStatus, AirplaneID)
+VALUES ('FLA120', 'Kuala Lumpur', 'Beijing', TO_TIMESTAMP('2026-05-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, TO_TIMESTAMP('2026-05-05 21:00:00', 'YYYY-MM-DD HH24:MI:SS'), NULL, 1700.00, 'Scheduled', 'PLANE4387');
+
+
+SELECT COUNT(*) FROM Flight;
+
