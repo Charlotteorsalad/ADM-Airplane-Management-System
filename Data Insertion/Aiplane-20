@@ -1,0 +1,22 @@
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE9612', 'Boeing 737', '255', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE0507', 'Airbus A320', '264', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE4387', 'Boeing 777', '315', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE9487', 'Airbus A380', '384', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE5009', 'Boeing 787 Dreamliner', '352', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE3860', 'Airbus A350', '383', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE2573', 'Boeing 747', '304', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE9798', 'Airbus A330', '298', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE6107', 'Embraer E190', '314', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE4232', 'Bombardier CRJ700', '453', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE4587', 'Boeing 767', '284', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE5403', 'Airbus A220', '319', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE8738', 'Cessna 172', '338', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE7258', 'Gulfstream G650', '250', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE5414', 'Boeing 757', '431', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE5647', 'Airbus A321', '269', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE7734', 'Bombardier Q400', '478', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE1899', 'Dassault Falcon 7X', '494', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE8647', 'Boeing 717', '283', 'Active');
+INSERT INTO Airplane (AirplaneID, Model, Capacity, AirplaneStatus) VALUES ('PLANE2785', 'Airbus A319', '261', 'Active');
+
+select count(*) from airplane;
