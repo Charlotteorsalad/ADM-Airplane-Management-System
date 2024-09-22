@@ -40,7 +40,13 @@ Advanced Database Management Assignment
 <h2>How to Run</h2>
 <ol>
   <li>Ensure you have access to an Oracle or compatible SQL database environment.</li>
-  <li>Upload or copy the SQL files from the <code>src</code>, <code>queries</code>, and <code>reports</code> folders into your SQL workspace.</li>
+  <li>First, run the table schema and data insertion files to set up the database:
+    <ul>
+      <li>Run <code>schema/TableSchema.sql</code> to create the tables.</li>
+      <li>Run <code>schema/DataInsertion.sql</code> to insert the sample data into the tables.</li>
+    </ul>
+  </li>
+  <li>Next, upload or copy the SQL files from the <code>src</code>, <code>queries</code>, and <code>reports</code> folders into your SQL workspace.</li>
   <li>Execute the SQL files in the following order:
     <ul>
       <li><strong>Procedures</strong>: 
