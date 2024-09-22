@@ -1,0 +1,24 @@
+##Data insertion sequence
+
+1. SeatClass
+2. Airplane
+3. Flight
+4. Member
+5. Passenger
+6. Purchase
+7. Booking
+8. Payment
+9. Department
+10. Staff
+11. Maintenance
+12. Part
+13. Insurance
+14. Item
+15. Refund
+16. Ticket
+17. Luggage
+18. UpgradeRequest
+19. InsuranceClaim
+20. PurchaseItem
+21. AirplaneMaintenance
+22. FlightStaff  
