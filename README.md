@@ -77,11 +77,20 @@ Advanced Database Management Assignment
   </li>
 </ol>
 
-<h2>ERD Diagram</h2>
-![image](https://github.com/user-attachments/assets/b7880d46-cf5a-485d-bffa-65d559e64e21)
+<img src="https://github.com/user-attachments/assets/31ca1441-6d3d-4d0f-867c-5c9e7edf5b69" alt="image" width="500"/>
 
 
-<h2>Expected Output</h2>
+
+<h2>Output</h2>
+
+
+
+
+
+
+
+
+
 
 <h3>Example 1: Procedure1-Get_Insurance_Claim_Details</h3>
 <p>This procedure will fetch details about an insurance claim and related claims within the last 24 months.</p>
