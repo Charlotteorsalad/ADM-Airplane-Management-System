@@ -77,7 +77,7 @@ Advanced Database Management Assignment
   </li>
 </ol>
 
-<h2>Entity-relaationship Diagram</h2>
+<h2>Entity-Relationship Diagram</h2>
 <img src="https://github.com/user-attachments/assets/31ca1441-6d3d-4d0f-867c-5c9e7edf5b69" alt="image" width="500"/>
 
 <h2>Project Outputs</h2>
