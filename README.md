@@ -2,7 +2,7 @@
 Advanced Database Management Assignment
 
 <h2>Project Description</h2>
-<p>This project was developed as part of our university assignment for <strong>Advanced Database Management</strong>. The aim is to develop a series of SQL procedures, queries, triggers and reports for managing and analyzing data related to airplane management systems using SQL and PL/SQL.</p>
+<p>This project was developed as part of our university assignment for <strong>Advanced Database Management</strong>. The aim is to develop a series of SQL procedures, queries, triggers, and reports for managing and analyzing data related to airplane management systems using SQL and PL/SQL.</p>
 
 <h2>Team Members</h2>
 <ul>
@@ -78,7 +78,7 @@ Advanced Database Management Assignment
 </ol>
 
 <h2>ERD Diagram</h2>
-![image](https://github.com/user-attachments/assets/ae09fc78-aa15-4405-850e-4e31e41ab12e)
+![image](https://github.com/user-attachments/assets/b7880d46-cf5a-485d-bffa-65d559e64e21)
 
 
 <h2>Expected Output</h2>
